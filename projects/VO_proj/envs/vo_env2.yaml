@@ -1,0 +1,41 @@
+world:
+  height: 10
+  width: 10
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
+robot:
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [1.0, 5.0, 0.0]
+    goal: [9.0, 5.0, 0.0]
+    color: 'g'
+    vel_max: [4.0, 4.0]
+    vel_min: [-4.0, -4.0]
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+obstacle:
+  # Obstáculo estático 1 no caminho da linha reta y = 5.0
+  - shape: {name: circle, radius: 0.3}
+    state: [4.0, 5.0, 0.0]
+
+  # Obstáculo estático 2 no caminho da linha reta y = 5.0
+  - shape: {name: circle, radius: 0.3}
+    state: [6.5, 5.0, 0.0]
+
+  # Obstáculos dinâmicos (RVO)
+  - number: 20
+    kinematics: {name: omni}
+    behavior: {name: rvo}
+    distribution: {name: random, range_low: [2.0, 2.0, -3.14], range_high: [9.0, 9.0, 3.14]}
+    vel_max: [1.0, 1.0]
+    vel_min: [-1.0, -1.0]
+    shape:
+      - {name: circle, radius: 0.1}

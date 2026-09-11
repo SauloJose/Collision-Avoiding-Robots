@@ -1,0 +1,60 @@
+world:
+  height: 26
+  width: 26
+  step_time: 0.1
+  sample_time: 0.1
+  offset:
+  - 0
+  - 0
+  step_mode: internal
+  control_mode: manual
+  collision_mode: stop
+robot:
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 21.0
+  - 13.0
+  - 0.0
+  goal:
+  - 5.0
+  - 13.0
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.0
+  - 13.0
+  - 0.0
+  goal:
+  - 21.0
+  - 13.0
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true

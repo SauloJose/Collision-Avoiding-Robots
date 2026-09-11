@@ -1,0 +1,4812 @@
+world:
+  height: 68
+  width: 68
+  step_time: 0.1
+  sample_time: 0.1
+  offset:
+  - 0
+  - 0
+  step_mode: internal
+  control_mode: manual
+  collision_mode: stop
+robot:
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.65
+  - 34.0
+  - 0.0
+  goal:
+  - 5.35
+  - 34.0
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.6359
+  - 34.8999
+  - 0.0
+  goal:
+  - 5.3641
+  - 33.1001
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.5935
+  - 35.7989
+  - 0.0
+  goal:
+  - 5.4065
+  - 32.2011
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: r
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.5229
+  - 36.6962
+  - 0.0
+  goal:
+  - 5.4771
+  - 31.3038
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: c
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.4241
+  - 37.5908
+  - 0.0
+  goal:
+  - 5.5759
+  - 30.4092
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: m
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.2973
+  - 38.4818
+  - 0.0
+  goal:
+  - 5.7027
+  - 29.5182
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: y
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.1425
+  - 39.3685
+  - 0.0
+  goal:
+  - 5.8575
+  - 28.6315
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orange
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.96
+  - 40.2498
+  - 0.0
+  goal:
+  - 6.04
+  - 27.7502
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: purple
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.7499
+  - 41.125
+  - 0.0
+  goal:
+  - 6.2501
+  - 26.875
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: pink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.5124
+  - 41.9931
+  - 0.0
+  goal:
+  - 6.4876
+  - 26.0069
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: brown
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.2478
+  - 42.8533
+  - 0.0
+  goal:
+  - 6.7522
+  - 25.1467
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gray
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 60.9562
+  - 43.7048
+  - 0.0
+  goal:
+  - 7.0438
+  - 24.2952
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: olive
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 60.6381
+  - 44.5468
+  - 0.0
+  goal:
+  - 7.3619
+  - 23.4532
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: cyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 60.2937
+  - 45.3783
+  - 0.0
+  goal:
+  - 7.7063
+  - 22.6217
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 59.9233
+  - 46.1986
+  - 0.0
+  goal:
+  - 8.0767
+  - 21.8014
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkgreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 59.5273
+  - 47.0068
+  - 0.0
+  goal:
+  - 8.4727
+  - 20.9932
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: crimson
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 59.1062
+  - 47.8022
+  - 0.0
+  goal:
+  - 8.8938
+  - 20.1978
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gold
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 58.6603
+  - 48.584
+  - 0.0
+  goal:
+  - 9.3397
+  - 19.416
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: violet
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 58.19
+  - 49.3514
+  - 0.0
+  goal:
+  - 9.81
+  - 18.6486
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: indigo
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 57.6959
+  - 50.1037
+  - 0.0
+  goal:
+  - 10.3041
+  - 17.8963
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: teal
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 57.1783
+  - 50.84
+  - 0.0
+  goal:
+  - 10.8217
+  - 17.16
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lime
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 56.6379
+  - 51.5598
+  - 0.0
+  goal:
+  - 11.3621
+  - 16.4402
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: coral
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 56.0752
+  - 52.2622
+  - 0.0
+  goal:
+  - 11.9248
+  - 15.7378
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: khaki
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 55.4907
+  - 52.9466
+  - 0.0
+  goal:
+  - 12.5093
+  - 15.0534
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: magenta
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 54.885
+  - 53.6123
+  - 0.0
+  goal:
+  - 13.115
+  - 14.3877
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: navy
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 54.2586
+  - 54.2586
+  - 0.0
+  goal:
+  - 13.7414
+  - 13.7414
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: salmon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 53.6123
+  - 54.885
+  - 0.0
+  goal:
+  - 14.3877
+  - 13.115
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: turquoise
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 52.9466
+  - 55.4907
+  - 0.0
+  goal:
+  - 15.0534
+  - 12.5093
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: plum
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 52.2622
+  - 56.0752
+  - 0.0
+  goal:
+  - 15.7378
+  - 11.9248
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: maroon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 51.5598
+  - 56.6379
+  - 0.0
+  goal:
+  - 16.4402
+  - 11.3621
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orchid
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 50.84
+  - 57.1783
+  - 0.0
+  goal:
+  - 17.16
+  - 10.8217
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: tan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 50.1037
+  - 57.6959
+  - 0.0
+  goal:
+  - 17.8963
+  - 10.3041
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: sienna
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 49.3514
+  - 58.19
+  - 0.0
+  goal:
+  - 18.6486
+  - 9.81
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: skyblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 48.584
+  - 58.6603
+  - 0.0
+  goal:
+  - 19.416
+  - 9.3397
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: chocolate
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 47.8022
+  - 59.1062
+  - 0.0
+  goal:
+  - 20.1978
+  - 8.8938
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: peru
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 47.0068
+  - 59.5273
+  - 0.0
+  goal:
+  - 20.9932
+  - 8.4727
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkred
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 46.1986
+  - 59.9233
+  - 0.0
+  goal:
+  - 21.8014
+  - 8.0767
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkcyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 45.3783
+  - 60.2937
+  - 0.0
+  goal:
+  - 22.6217
+  - 7.7063
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lawngreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 44.5468
+  - 60.6381
+  - 0.0
+  goal:
+  - 23.4532
+  - 7.3619
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: deeppink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 43.7048
+  - 60.9562
+  - 0.0
+  goal:
+  - 24.2952
+  - 7.0438
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 42.8533
+  - 61.2478
+  - 0.0
+  goal:
+  - 25.1467
+  - 6.7522
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 41.9931
+  - 61.5124
+  - 0.0
+  goal:
+  - 26.0069
+  - 6.4876
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: r
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 41.125
+  - 61.7499
+  - 0.0
+  goal:
+  - 26.875
+  - 6.2501
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: c
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 40.2498
+  - 61.96
+  - 0.0
+  goal:
+  - 27.7502
+  - 6.04
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: m
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 39.3685
+  - 62.1425
+  - 0.0
+  goal:
+  - 28.6315
+  - 5.8575
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: y
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 38.4818
+  - 62.2973
+  - 0.0
+  goal:
+  - 29.5182
+  - 5.7027
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orange
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 37.5908
+  - 62.4241
+  - 0.0
+  goal:
+  - 30.4092
+  - 5.5759
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: purple
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 36.6962
+  - 62.5229
+  - 0.0
+  goal:
+  - 31.3038
+  - 5.4771
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: pink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 35.7989
+  - 62.5935
+  - 0.0
+  goal:
+  - 32.2011
+  - 5.4065
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: brown
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 34.8999
+  - 62.6359
+  - 0.0
+  goal:
+  - 33.1001
+  - 5.3641
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gray
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 34.0
+  - 62.65
+  - 0.0
+  goal:
+  - 34.0
+  - 5.35
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: olive
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 33.1001
+  - 62.6359
+  - 0.0
+  goal:
+  - 34.8999
+  - 5.3641
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: cyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 32.2011
+  - 62.5935
+  - 0.0
+  goal:
+  - 35.7989
+  - 5.4065
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 31.3038
+  - 62.5229
+  - 0.0
+  goal:
+  - 36.6962
+  - 5.4771
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkgreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 30.4092
+  - 62.4241
+  - 0.0
+  goal:
+  - 37.5908
+  - 5.5759
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: crimson
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 29.5182
+  - 62.2973
+  - 0.0
+  goal:
+  - 38.4818
+  - 5.7027
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gold
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 28.6315
+  - 62.1425
+  - 0.0
+  goal:
+  - 39.3685
+  - 5.8575
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: violet
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 27.7502
+  - 61.96
+  - 0.0
+  goal:
+  - 40.2498
+  - 6.04
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: indigo
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 26.875
+  - 61.7499
+  - 0.0
+  goal:
+  - 41.125
+  - 6.2501
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: teal
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 26.0069
+  - 61.5124
+  - 0.0
+  goal:
+  - 41.9931
+  - 6.4876
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lime
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 25.1467
+  - 61.2478
+  - 0.0
+  goal:
+  - 42.8533
+  - 6.7522
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: coral
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 24.2952
+  - 60.9562
+  - 0.0
+  goal:
+  - 43.7048
+  - 7.0438
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: khaki
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 23.4532
+  - 60.6381
+  - 0.0
+  goal:
+  - 44.5468
+  - 7.3619
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: magenta
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 22.6217
+  - 60.2937
+  - 0.0
+  goal:
+  - 45.3783
+  - 7.7063
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: navy
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 21.8014
+  - 59.9233
+  - 0.0
+  goal:
+  - 46.1986
+  - 8.0767
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: salmon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 20.9932
+  - 59.5273
+  - 0.0
+  goal:
+  - 47.0068
+  - 8.4727
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: turquoise
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 20.1978
+  - 59.1062
+  - 0.0
+  goal:
+  - 47.8022
+  - 8.8938
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: plum
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 19.416
+  - 58.6603
+  - 0.0
+  goal:
+  - 48.584
+  - 9.3397
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: maroon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 18.6486
+  - 58.19
+  - 0.0
+  goal:
+  - 49.3514
+  - 9.81
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orchid
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 17.8963
+  - 57.6959
+  - 0.0
+  goal:
+  - 50.1037
+  - 10.3041
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: tan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 17.16
+  - 57.1783
+  - 0.0
+  goal:
+  - 50.84
+  - 10.8217
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: sienna
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 16.4402
+  - 56.6379
+  - 0.0
+  goal:
+  - 51.5598
+  - 11.3621
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: skyblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 15.7378
+  - 56.0752
+  - 0.0
+  goal:
+  - 52.2622
+  - 11.9248
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: chocolate
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 15.0534
+  - 55.4907
+  - 0.0
+  goal:
+  - 52.9466
+  - 12.5093
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: peru
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 14.3877
+  - 54.885
+  - 0.0
+  goal:
+  - 53.6123
+  - 13.115
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkred
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 13.7414
+  - 54.2586
+  - 0.0
+  goal:
+  - 54.2586
+  - 13.7414
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkcyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 13.115
+  - 53.6123
+  - 0.0
+  goal:
+  - 54.885
+  - 14.3877
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lawngreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 12.5093
+  - 52.9466
+  - 0.0
+  goal:
+  - 55.4907
+  - 15.0534
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: deeppink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 11.9248
+  - 52.2622
+  - 0.0
+  goal:
+  - 56.0752
+  - 15.7378
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 11.3621
+  - 51.5598
+  - 0.0
+  goal:
+  - 56.6379
+  - 16.4402
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 10.8217
+  - 50.84
+  - 0.0
+  goal:
+  - 57.1783
+  - 17.16
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: r
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 10.3041
+  - 50.1037
+  - 0.0
+  goal:
+  - 57.6959
+  - 17.8963
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: c
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 9.81
+  - 49.3514
+  - 0.0
+  goal:
+  - 58.19
+  - 18.6486
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: m
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 9.3397
+  - 48.584
+  - 0.0
+  goal:
+  - 58.6603
+  - 19.416
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: y
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 8.8938
+  - 47.8022
+  - 0.0
+  goal:
+  - 59.1062
+  - 20.1978
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orange
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 8.4727
+  - 47.0068
+  - 0.0
+  goal:
+  - 59.5273
+  - 20.9932
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: purple
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 8.0767
+  - 46.1986
+  - 0.0
+  goal:
+  - 59.9233
+  - 21.8014
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: pink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 7.7063
+  - 45.3783
+  - 0.0
+  goal:
+  - 60.2937
+  - 22.6217
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: brown
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 7.3619
+  - 44.5468
+  - 0.0
+  goal:
+  - 60.6381
+  - 23.4532
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gray
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 7.0438
+  - 43.7048
+  - 0.0
+  goal:
+  - 60.9562
+  - 24.2952
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: olive
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.7522
+  - 42.8533
+  - 0.0
+  goal:
+  - 61.2478
+  - 25.1467
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: cyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.4876
+  - 41.9931
+  - 0.0
+  goal:
+  - 61.5124
+  - 26.0069
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.2501
+  - 41.125
+  - 0.0
+  goal:
+  - 61.7499
+  - 26.875
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkgreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.04
+  - 40.2498
+  - 0.0
+  goal:
+  - 61.96
+  - 27.7502
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: crimson
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.8575
+  - 39.3685
+  - 0.0
+  goal:
+  - 62.1425
+  - 28.6315
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gold
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.7027
+  - 38.4818
+  - 0.0
+  goal:
+  - 62.2973
+  - 29.5182
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: violet
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.5759
+  - 37.5908
+  - 0.0
+  goal:
+  - 62.4241
+  - 30.4092
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: indigo
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.4771
+  - 36.6962
+  - 0.0
+  goal:
+  - 62.5229
+  - 31.3038
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: teal
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.4065
+  - 35.7989
+  - 0.0
+  goal:
+  - 62.5935
+  - 32.2011
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lime
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.3641
+  - 34.8999
+  - 0.0
+  goal:
+  - 62.6359
+  - 33.1001
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: coral
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.35
+  - 34.0
+  - 0.0
+  goal:
+  - 62.65
+  - 34.0
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: khaki
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.3641
+  - 33.1001
+  - 0.0
+  goal:
+  - 62.6359
+  - 34.8999
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: magenta
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.4065
+  - 32.2011
+  - 0.0
+  goal:
+  - 62.5935
+  - 35.7989
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: navy
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.4771
+  - 31.3038
+  - 0.0
+  goal:
+  - 62.5229
+  - 36.6962
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: salmon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.5759
+  - 30.4092
+  - 0.0
+  goal:
+  - 62.4241
+  - 37.5908
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: turquoise
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.7027
+  - 29.5182
+  - 0.0
+  goal:
+  - 62.2973
+  - 38.4818
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: plum
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 5.8575
+  - 28.6315
+  - 0.0
+  goal:
+  - 62.1425
+  - 39.3685
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: maroon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.04
+  - 27.7502
+  - 0.0
+  goal:
+  - 61.96
+  - 40.2498
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orchid
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.2501
+  - 26.875
+  - 0.0
+  goal:
+  - 61.7499
+  - 41.125
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: tan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.4876
+  - 26.0069
+  - 0.0
+  goal:
+  - 61.5124
+  - 41.9931
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: sienna
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 6.7522
+  - 25.1467
+  - 0.0
+  goal:
+  - 61.2478
+  - 42.8533
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: skyblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 7.0438
+  - 24.2952
+  - 0.0
+  goal:
+  - 60.9562
+  - 43.7048
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: chocolate
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 7.3619
+  - 23.4532
+  - 0.0
+  goal:
+  - 60.6381
+  - 44.5468
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: peru
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 7.7063
+  - 22.6217
+  - 0.0
+  goal:
+  - 60.2937
+  - 45.3783
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkred
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 8.0767
+  - 21.8014
+  - 0.0
+  goal:
+  - 59.9233
+  - 46.1986
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkcyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 8.4727
+  - 20.9932
+  - 0.0
+  goal:
+  - 59.5273
+  - 47.0068
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lawngreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 8.8938
+  - 20.1978
+  - 0.0
+  goal:
+  - 59.1062
+  - 47.8022
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: deeppink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 9.3397
+  - 19.416
+  - 0.0
+  goal:
+  - 58.6603
+  - 48.584
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 9.81
+  - 18.6486
+  - 0.0
+  goal:
+  - 58.19
+  - 49.3514
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 10.3041
+  - 17.8963
+  - 0.0
+  goal:
+  - 57.6959
+  - 50.1037
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: r
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 10.8217
+  - 17.16
+  - 0.0
+  goal:
+  - 57.1783
+  - 50.84
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: c
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 11.3621
+  - 16.4402
+  - 0.0
+  goal:
+  - 56.6379
+  - 51.5598
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: m
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 11.9248
+  - 15.7378
+  - 0.0
+  goal:
+  - 56.0752
+  - 52.2622
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: y
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 12.5093
+  - 15.0534
+  - 0.0
+  goal:
+  - 55.4907
+  - 52.9466
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orange
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 13.115
+  - 14.3877
+  - 0.0
+  goal:
+  - 54.885
+  - 53.6123
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: purple
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 13.7414
+  - 13.7414
+  - 0.0
+  goal:
+  - 54.2586
+  - 54.2586
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: pink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 14.3877
+  - 13.115
+  - 0.0
+  goal:
+  - 53.6123
+  - 54.885
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: brown
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 15.0534
+  - 12.5093
+  - 0.0
+  goal:
+  - 52.9466
+  - 55.4907
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gray
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 15.7378
+  - 11.9248
+  - 0.0
+  goal:
+  - 52.2622
+  - 56.0752
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: olive
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 16.4402
+  - 11.3621
+  - 0.0
+  goal:
+  - 51.5598
+  - 56.6379
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: cyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 17.16
+  - 10.8217
+  - 0.0
+  goal:
+  - 50.84
+  - 57.1783
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 17.8963
+  - 10.3041
+  - 0.0
+  goal:
+  - 50.1037
+  - 57.6959
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkgreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 18.6486
+  - 9.81
+  - 0.0
+  goal:
+  - 49.3514
+  - 58.19
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: crimson
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 19.416
+  - 9.3397
+  - 0.0
+  goal:
+  - 48.584
+  - 58.6603
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gold
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 20.1978
+  - 8.8938
+  - 0.0
+  goal:
+  - 47.8022
+  - 59.1062
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: violet
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 20.9932
+  - 8.4727
+  - 0.0
+  goal:
+  - 47.0068
+  - 59.5273
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: indigo
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 21.8014
+  - 8.0767
+  - 0.0
+  goal:
+  - 46.1986
+  - 59.9233
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: teal
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 22.6217
+  - 7.7063
+  - 0.0
+  goal:
+  - 45.3783
+  - 60.2937
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lime
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 23.4532
+  - 7.3619
+  - 0.0
+  goal:
+  - 44.5468
+  - 60.6381
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: coral
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 24.2952
+  - 7.0438
+  - 0.0
+  goal:
+  - 43.7048
+  - 60.9562
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: khaki
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 25.1467
+  - 6.7522
+  - 0.0
+  goal:
+  - 42.8533
+  - 61.2478
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: magenta
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 26.0069
+  - 6.4876
+  - 0.0
+  goal:
+  - 41.9931
+  - 61.5124
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: navy
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 26.875
+  - 6.2501
+  - 0.0
+  goal:
+  - 41.125
+  - 61.7499
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: salmon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 27.7502
+  - 6.04
+  - 0.0
+  goal:
+  - 40.2498
+  - 61.96
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: turquoise
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 28.6315
+  - 5.8575
+  - 0.0
+  goal:
+  - 39.3685
+  - 62.1425
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: plum
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 29.5182
+  - 5.7027
+  - 0.0
+  goal:
+  - 38.4818
+  - 62.2973
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: maroon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 30.4092
+  - 5.5759
+  - 0.0
+  goal:
+  - 37.5908
+  - 62.4241
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orchid
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 31.3038
+  - 5.4771
+  - 0.0
+  goal:
+  - 36.6962
+  - 62.5229
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: tan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 32.2011
+  - 5.4065
+  - 0.0
+  goal:
+  - 35.7989
+  - 62.5935
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: sienna
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 33.1001
+  - 5.3641
+  - 0.0
+  goal:
+  - 34.8999
+  - 62.6359
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: skyblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 34.0
+  - 5.35
+  - 0.0
+  goal:
+  - 34.0
+  - 62.65
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: chocolate
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 34.8999
+  - 5.3641
+  - 0.0
+  goal:
+  - 33.1001
+  - 62.6359
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: peru
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 35.7989
+  - 5.4065
+  - 0.0
+  goal:
+  - 32.2011
+  - 62.5935
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkred
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 36.6962
+  - 5.4771
+  - 0.0
+  goal:
+  - 31.3038
+  - 62.5229
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkcyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 37.5908
+  - 5.5759
+  - 0.0
+  goal:
+  - 30.4092
+  - 62.4241
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lawngreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 38.4818
+  - 5.7027
+  - 0.0
+  goal:
+  - 29.5182
+  - 62.2973
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: deeppink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 39.3685
+  - 5.8575
+  - 0.0
+  goal:
+  - 28.6315
+  - 62.1425
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 40.2498
+  - 6.04
+  - 0.0
+  goal:
+  - 27.7502
+  - 61.96
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 41.125
+  - 6.2501
+  - 0.0
+  goal:
+  - 26.875
+  - 61.7499
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: r
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 41.9931
+  - 6.4876
+  - 0.0
+  goal:
+  - 26.0069
+  - 61.5124
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: c
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 42.8533
+  - 6.7522
+  - 0.0
+  goal:
+  - 25.1467
+  - 61.2478
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: m
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 43.7048
+  - 7.0438
+  - 0.0
+  goal:
+  - 24.2952
+  - 60.9562
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: y
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 44.5468
+  - 7.3619
+  - 0.0
+  goal:
+  - 23.4532
+  - 60.6381
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orange
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 45.3783
+  - 7.7063
+  - 0.0
+  goal:
+  - 22.6217
+  - 60.2937
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: purple
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 46.1986
+  - 8.0767
+  - 0.0
+  goal:
+  - 21.8014
+  - 59.9233
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: pink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 47.0068
+  - 8.4727
+  - 0.0
+  goal:
+  - 20.9932
+  - 59.5273
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: brown
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 47.8022
+  - 8.8938
+  - 0.0
+  goal:
+  - 20.1978
+  - 59.1062
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gray
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 48.584
+  - 9.3397
+  - 0.0
+  goal:
+  - 19.416
+  - 58.6603
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: olive
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 49.3514
+  - 9.81
+  - 0.0
+  goal:
+  - 18.6486
+  - 58.19
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: cyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 50.1037
+  - 10.3041
+  - 0.0
+  goal:
+  - 17.8963
+  - 57.6959
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 50.84
+  - 10.8217
+  - 0.0
+  goal:
+  - 17.16
+  - 57.1783
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkgreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 51.5598
+  - 11.3621
+  - 0.0
+  goal:
+  - 16.4402
+  - 56.6379
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: crimson
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 52.2622
+  - 11.9248
+  - 0.0
+  goal:
+  - 15.7378
+  - 56.0752
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: gold
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 52.9466
+  - 12.5093
+  - 0.0
+  goal:
+  - 15.0534
+  - 55.4907
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: violet
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 53.6123
+  - 13.115
+  - 0.0
+  goal:
+  - 14.3877
+  - 54.885
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: indigo
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 54.2586
+  - 13.7414
+  - 0.0
+  goal:
+  - 13.7414
+  - 54.2586
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: teal
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 54.885
+  - 14.3877
+  - 0.0
+  goal:
+  - 13.115
+  - 53.6123
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lime
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 55.4907
+  - 15.0534
+  - 0.0
+  goal:
+  - 12.5093
+  - 52.9466
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: coral
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 56.0752
+  - 15.7378
+  - 0.0
+  goal:
+  - 11.9248
+  - 52.2622
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: khaki
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 56.6379
+  - 16.4402
+  - 0.0
+  goal:
+  - 11.3621
+  - 51.5598
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: magenta
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 57.1783
+  - 17.16
+  - 0.0
+  goal:
+  - 10.8217
+  - 50.84
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: navy
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 57.6959
+  - 17.8963
+  - 0.0
+  goal:
+  - 10.3041
+  - 50.1037
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: salmon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 58.19
+  - 18.6486
+  - 0.0
+  goal:
+  - 9.81
+  - 49.3514
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: turquoise
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 58.6603
+  - 19.416
+  - 0.0
+  goal:
+  - 9.3397
+  - 48.584
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: plum
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 59.1062
+  - 20.1978
+  - 0.0
+  goal:
+  - 8.8938
+  - 47.8022
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: maroon
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 59.5273
+  - 20.9932
+  - 0.0
+  goal:
+  - 8.4727
+  - 47.0068
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: orchid
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 59.9233
+  - 21.8014
+  - 0.0
+  goal:
+  - 8.0767
+  - 46.1986
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: tan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 60.2937
+  - 22.6217
+  - 0.0
+  goal:
+  - 7.7063
+  - 45.3783
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: sienna
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 60.6381
+  - 23.4532
+  - 0.0
+  goal:
+  - 7.3619
+  - 44.5468
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: skyblue
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 60.9562
+  - 24.2952
+  - 0.0
+  goal:
+  - 7.0438
+  - 43.7048
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: chocolate
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.2478
+  - 25.1467
+  - 0.0
+  goal:
+  - 6.7522
+  - 42.8533
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: peru
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.5124
+  - 26.0069
+  - 0.0
+  goal:
+  - 6.4876
+  - 41.9931
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkred
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.7499
+  - 26.875
+  - 0.0
+  goal:
+  - 6.2501
+  - 41.125
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: darkcyan
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 61.96
+  - 27.7502
+  - 0.0
+  goal:
+  - 6.04
+  - 40.2498
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: lawngreen
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.1425
+  - 28.6315
+  - 0.0
+  goal:
+  - 5.8575
+  - 39.3685
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: deeppink
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.2973
+  - 29.5182
+  - 0.0
+  goal:
+  - 5.7027
+  - 38.4818
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: g
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.4241
+  - 30.4092
+  - 0.0
+  goal:
+  - 5.5759
+  - 37.5908
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: b
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.5229
+  - 31.3038
+  - 0.0
+  goal:
+  - 5.4771
+  - 36.6962
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: r
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.5935
+  - 32.2011
+  - 0.0
+  goal:
+  - 5.4065
+  - 35.7989
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: c
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true
+- kinematics:
+    name: omni
+  shape:
+    name: circle
+    radius: 0.3
+  state:
+  - 62.6359
+  - 33.1001
+  - 0.0
+  goal:
+  - 5.3641
+  - 34.8999
+  - 0.0
+  vel_max:
+  - 1.5
+  - 1.5
+  vel_min:
+  - -1.5
+  - -1.5
+  color: m
+  plot:
+    show_trajectory: true
+    show_goal: true
+    show_arrow: true

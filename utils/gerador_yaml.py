@@ -117,8 +117,11 @@ def generate_circle_yaml(
 
 
 if __name__ == "__main__":
-    generate_circle_yaml(
-        num_robots=50,
-        output_path="projects/ORCA_proj/envs/orca_env_50.yaml",
-        min_clearance=0.3,
-    )
+    n_robot = [2,10,20,40,100,200,1000]
+    for i in n_robot:
+        generate_circle_yaml(
+            num_robots=i,
+            output_path=f"projects/NH-ORCA_proj/envs/NHORCA_env_{i}.yaml",
+            min_clearance=0.3,
+        )
+    

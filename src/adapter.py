@@ -1,10 +1,10 @@
 import numpy as np
 from numba import njit
 from scipy.spatial import cKDTree
-from orca import *
+from src.orca import *
 
 # ============================================================================
-# Adaptador para utilizar com a biblioteca IRSim.
+# Adapter for use with the IRSim library.
 class IRSimAdapter:
     def __init__(self, planner: PyORCA, safety_margin=0.1, arrival_threshold=0.1, default_radius=0.3):
         self.planner = planner
@@ -49,7 +49,7 @@ class IRSimAdapter:
         goals = np.array([self._extract_vec2(r, "goal") if r.goal is not None else self._extract_vec2(r, "state") for r in robot_list], dtype=np.float64)
         radii = np.array([self._extract_radius(r) + self.safety_margin for r in robot_list], dtype=np.float64)
 
-        # Checagem de parada
+        # Arrival check.
         all_arrived = True
         for i in range(len(robot_list)):
             if np.linalg.norm(positions[i] - goals[i]) < self.arrival_threshold:
@@ -57,7 +57,7 @@ class IRSimAdapter:
             else:
                 all_arrived = False
 
-        # Executa o PyORCA puro
+        # Run the pure PyORCA planner.
         new_velocities = self.planner.compute_velocities(
             positions=positions,
             velocities=self.current_velocities,

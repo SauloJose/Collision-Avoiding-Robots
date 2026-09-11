@@ -27,7 +27,7 @@ def select_velocity_jit(
 ):
     num_obs_raw = obs_pos.shape[0]
 
-    # Pre-alocação para armazenar apenas os obstáculos dentro da distância de percepção (d_max)
+    # Pre-allocate storage for obstacles within the perception distance (d_max).
     active_dx = np.empty(num_obs_raw, dtype=np.float64)
     active_dy = np.empty(num_obs_raw, dtype=np.float64)
     active_d_sq = np.empty(num_obs_raw, dtype=np.float64)
@@ -40,7 +40,7 @@ def select_velocity_jit(
     num_active = 0
     d_max_sq = d_max * d_max if d_max > 0.0 else 0.0
 
-    # --- ETAPA 1: Pre-filtragem e Cache Geométrico dos Obstáculos ---
+    # --- STEP 1: Obstacle pre-filtering and geometric cache ---
     for k in range(num_obs_raw):
         dx = obs_pos[k, 0] - pos_a[0]
         dy = obs_pos[k, 1] - pos_a[1]
@@ -68,7 +68,7 @@ def select_velocity_jit(
 
         num_active += 1
 
-    # --- ETAPA 2: Velocidade Preferida (v_pref) ---
+    # --- STEP 2: Preferred velocity (v_pref) ---
     gx = pos_goal[0] - pos_a[0]
     gy = pos_goal[1] - pos_a[1]
     g_dist = np.sqrt(gx * gx + gy * gy)
@@ -81,7 +81,7 @@ def select_velocity_jit(
         v_pref_x = (gx / g_dist) * speed_target
         v_pref_y = (gy / g_dist) * speed_target
 
-    # --- ETAPA 3: Janela Dinâmica ---
+    # --- STEP 3: Dynamic window ---
     vx_min = max(-v_max, v_a[0] - a_max * dt)
     vx_max = min(v_max, v_a[0] + a_max * dt)
     vy_min = max(-v_max, v_a[1] - a_max * dt)
@@ -99,7 +99,7 @@ def select_velocity_jit(
     best_fb_vx, best_fb_vy = 0.0, 0.0
     min_fb_cost = 1e30
 
-    # --- ETAPA 4: Amostragem da Grade e Testes de Colisão ---
+    # --- STEP 4: Grid sampling and collision tests ---
     for i in range(n_samples):
         vx = vx_min + i * step_x
         for j in range(n_samples):
@@ -130,7 +130,7 @@ def select_velocity_jit(
                 if dot_product <= 0.0:
                     continue
 
-                # Discriminante da equação quadrática raio-esfera:
+                # Discriminant of the ray-sphere quadratic equation:
                 # Δ' = (v_rel · Δp)² - ||v_rel||² * (||Δp||² - R²)
                 disc = (
                     dot_product * dot_product
@@ -139,7 +139,7 @@ def select_velocity_jit(
                 if disc < 0.0:
                     continue
 
-                # Comparação sem divisão: (dot - sqrt(disc)) / v_rel_sq <= t_h
+                # Division-free comparison: (dot - sqrt(disc)) / v_rel_sq <= t_h
                 if t_h > 0.0:
                     if (dot_product - np.sqrt(disc)) <= t_h * v_rel_sq:
                         in_collision = True

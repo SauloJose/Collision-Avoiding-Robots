@@ -1,9 +1,9 @@
 """
-    Versão corrigida do ORCA (Optimal Reciprocal Collision Avoidance)
-    de Van den Berg et al. (2013), baseada no RVO2.
+    Corrected version of ORCA (Optimal Reciprocal Collision Avoidance)
+    by Van den Berg et al. (2013), based on RVO2.
 
     made by: Saulo José (UFCG)
-    corrigido: 11/09/2026
+    corrected: 11/09/2026
 """
 
 import numpy as np
@@ -14,33 +14,33 @@ from scipy.spatial import cKDTree
 @njit(fastmath=True)
 def compute_orca_line_jit(pos_a, v_opt_a, r_a, pos_b, v_opt_b, r_b, tau, dt, is_obstacle=False):
     """
-    Calcula a linha ORCA (semiplano) que separa a velocidade de 'a' do
-    cone de colisão com 'b'.
+    Computes the ORCA line (half-plane) that separates agent 'a's velocity
+    from the collision cone with 'b'.
 
     Convenções (RVO2):
         rel_pos = pos_b - pos_a
         rel_vel = v_a - v_b
-        r = r_a + r_b (soma de Minkowski)
-        w = rel_vel - rel_pos/tau    (vetor no espaço de velocidades relativas)
-        n = normal apontando para FORA do cone RVO
-        u = menor deslocamento de rel_vel até a fronteira do cone
+        r = r_a + r_b (Minkowski sum)
+        w = rel_vel - rel_pos/tau    (vector in relative velocity space)
+        n = normal pointing OUTSIDE the RVO cone
+        u = smallest displacement from rel_vel to the cone boundary
         p0 = v_opt_a + w_factor * u
-            w_factor = 1.0  -> obstáculo estático (responsabilidade total)
-            w_factor = 0.5  -> agente recíproco (50% de responsabilidade)
+            w_factor = 1.0  -> static obstacle (full responsibility)
+            w_factor = 0.5  -> reciprocal agent (50% responsibility)
     """
     rel_pos = pos_b - pos_a
     rel_vel = v_opt_a - v_opt_b
     r = r_a + r_b
     dist_sq = rel_pos[0]*rel_pos[0] + rel_pos[1]*rel_pos[1]
 
-    # Fator de responsabilidade: obstáculo assume 100%, agente recíproco 50%
+    # Responsibility factor: obstacle takes 100%, reciprocal agent 50%.
     w_factor = 1.0 if is_obstacle else 0.5
 
     n_x, n_y = 0.0, 0.0
     u_x, u_y = 0.0, 0.0
 
     if dist_sq <= r*r:
-        # --- Colisão imediata ou sobreposição ---
+        # --- Immediate collision or overlap ---
         # w = rel_vel - rel_pos/dt
         # u = (r/dt - |w|) * w/|w|
         # n = w/|w|
@@ -56,15 +56,15 @@ def compute_orca_line_jit(pos_a, v_opt_a, r_a, pos_b, v_opt_b, r_b, tau, dt, is_
         u_y = (r * inv_dt - w_len) * n_y
 
     else:
-        # --- Sem colisão imediata: analisa o cone RVO truncado em tau ---
+        # --- No immediate collision: analyze the RVO cone truncated at tau ---
         # c = rel_pos/tau ; w = rel_vel - c
         c_x, c_y = rel_pos[0] / tau, rel_pos[1] / tau
         w_x, w_y = rel_vel[0] - c_x, rel_vel[1] - c_y
         w_sq = w_x*w_x + w_y*w_y
         dot_w_pos = w_x * rel_pos[0] + w_y * rel_pos[1]
 
-        # Projeção no "cut-off circle" (colisão frontal):
-        #   dot_w_pos < 0  e  dot_w_pos^2 > r^2 |w|^2
+        # Projection onto the "cut-off circle" (head-on collision):
+        #   dot_w_pos < 0 and dot_w_pos^2 > r^2 |w|^2
         # u = (r/tau - |w|) * w/|w| ;  n = w/|w|
         if dot_w_pos < 0.0 and dot_w_pos*dot_w_pos > r*r*w_sq:
             w_len = np.sqrt(w_sq)
@@ -76,29 +76,29 @@ def compute_orca_line_jit(pos_a, v_opt_a, r_a, pos_b, v_opt_b, r_b, tau, dt, is_
             u_y = (r / tau - w_len) * n_y
 
         else:
-            # Projeção nas pernas (legs) do cone: colisão tangencial.
+            # Projection onto the cone legs: tangential collision.
             # leg = sqrt(|rel_pos|^2 - r^2)
             leg = np.sqrt(dist_sq - r*r)
             det = rel_pos[0] * w_y - rel_pos[1] * w_x   # det(rel_pos, w)
 
             if det > 0.0:
-                # Perna esquerda
+                # Left leg
                 d_x = (rel_pos[0] * leg - rel_pos[1] * r) / dist_sq
                 d_y = (rel_pos[0] * r   + rel_pos[1] * leg) / dist_sq
             else:
-                # Perna direita
+                # Right leg
                 d_x = -(rel_pos[0] * leg + rel_pos[1] * r) / dist_sq
                 d_y = -(-rel_pos[0] * r  + rel_pos[1] * leg) / dist_sq
 
-            # u = (rel_vel · d) * d - rel_vel   (remove a componente na direção da perna)
+            # u = (rel_vel · d) * d - rel_vel   (remove the component along the leg)
             dot_rel_d = rel_vel[0] * d_x + rel_vel[1] * d_y
             u_x = dot_rel_d * d_x - rel_vel[0]
             u_y = dot_rel_d * d_y - rel_vel[1]
 
-            # Normal perpendicular a d, apontando para fora do cone
+            # Normal perpendicular to d, pointing outside the cone.
             n_x, n_y = -d_y, d_x
 
-    # Ponto na fronteira do semiplano: p0 = v_opt_a + w_factor * u
+    # Point on the half-plane boundary: p0 = v_opt_a + w_factor * u
     p0_x = v_opt_a[0] + w_factor * u_x
     p0_y = v_opt_a[1] + w_factor * u_y
     return p0_x, p0_y, n_x, n_y
@@ -108,15 +108,15 @@ def compute_orca_line_jit(pos_a, v_opt_a, r_a, pos_b, v_opt_b, r_b, tau, dt, is_
 @njit(fastmath=True)
 def linear_program_1d_jit(lines, line_no, v_max, v_pref, result_v):
     """
-    Resolve o LP unidimensional sobre a reta da linha 'line_no'.
-    A reta é parametrizada como v = p0 + t*d, com d = (-n_y, n_x).
-    Restrições anteriores: (v - p0_i) · n_i >= 0.
+    Solves the one-dimensional LP on line 'line_no'.
+    The line is parameterized as v = p0 + t*d, with d = (-n_y, n_x).
+    Previous constraints: (v - p0_i) · n_i >= 0.
     """
     p0_x, p0_y = lines[line_no, 0], lines[line_no, 1]
     n_x,  n_y  = lines[line_no, 2], lines[line_no, 3]
     d_x,  d_y  = -n_y, n_x
 
-    # Interseção da reta com o disco |v| <= v_max:
+    # Intersection of the line with the disk |v| <= v_max:
     #   |p0 + t*d|^2 = v_max^2  ->  t = -(p0·d) ± sqrt(v_max^2 - (p0·n)^2)
     dot_p0_d = p0_x * d_x + p0_y * d_y
     dot_p0_n = p0_x * n_x + p0_y * n_y
@@ -127,9 +127,9 @@ def linear_program_1d_jit(lines, line_no, v_max, v_pref, result_v):
     t_min = -dot_p0_d - sqrt_disc
     t_max = -dot_p0_d + sqrt_disc
 
-    # Restrições anteriores: A + t*B >= 0, com
-    #   A = (p0 - p0_i) · n_i     (escalar)
-    #   B = d · n_i               (escalar)
+    # Previous constraints: A + t*B >= 0, where
+    #   A = (p0 - p0_i) · n_i     (scalar)
+    #   B = d · n_i               (scalar)
     for i in range(line_no):
         p0_i_x, p0_i_y = lines[i, 0], lines[i, 1]
         n_i_x,  n_i_y  = lines[i, 2], lines[i, 3]
@@ -137,7 +137,7 @@ def linear_program_1d_jit(lines, line_no, v_max, v_pref, result_v):
         B = d_x * n_i_x + d_y * n_i_y
 
         if abs(B) < 1e-9:
-            # Reta paralela: exige A >= 0
+            # Parallel line: requires A >= 0.
             if A < 0.0:
                 return False
         elif B > 0.0:
@@ -148,7 +148,7 @@ def linear_program_1d_jit(lines, line_no, v_max, v_pref, result_v):
         if t_min > t_max:
             return False
 
-    # t mais próximo da preferência dentro de [t_min, t_max]
+    # t closest to the preferred velocity within [t_min, t_max]
     t_pref = (v_pref[0] - p0_x) * d_x + (v_pref[1] - p0_y) * d_y
     t_opt = max(t_min, min(t_max, t_pref))
     result_v[0] = p0_x + t_opt * d_x
@@ -160,11 +160,11 @@ def linear_program_1d_jit(lines, line_no, v_max, v_pref, result_v):
 @njit(fastmath=True)
 def linear_program_2d_jit(lines, num_lines, v_max, v_pref, result_v):
     """
-    Resolve o LP 2D: encontra v dentro do disco |v| <= v_max que
-    satisfaz (v - p0_i) · n_i >= 0 para todo i, mais próximo de v_pref.
-    Retorna o índice da primeira linha violada (ou num_lines se sucesso).
+    Solves the 2D LP: finds v inside the disk |v| <= v_max that
+    satisfies (v - p0_i) · n_i >= 0 for every i, closest to v_pref.
+    Returns the index of the first violated line (or num_lines on success).
     """
-    # Começa com v_pref clipado ao disco de raio v_max
+    # Start with v_pref clipped to the disk of radius v_max.
     v_pref_sq = v_pref[0]*v_pref[0] + v_pref[1]*v_pref[1]
     if v_pref_sq > v_max * v_max:
         scale = v_max / np.sqrt(v_pref_sq)
@@ -188,9 +188,9 @@ def linear_program_2d_jit(lines, num_lines, v_max, v_pref, result_v):
 @njit(fastmath=True)
 def linear_program_3d_jit(lines, num_lines, v_max, v_pref, result_v, begin_line=0):
     """
-    Fallback: quando o LP2D falha, resolve o LP projetando sobre a linha
-    violada (RVO2). Cada linha anterior é intersectada com a linha i,
-    gerando um subespaço 1D onde um LP2D reduzido é tentado.
+    Fallback: when the 2D LP fails, solves the LP by projecting onto the
+    violated line (RVO2). Each previous line is intersected with line i,
+    generating a 1D subspace where a reduced 2D LP is attempted.
     """
     distance = 0.0
     proj_lines = np.empty((num_lines, 4), dtype=lines.dtype)
@@ -200,12 +200,12 @@ def linear_program_3d_jit(lines, num_lines, v_max, v_pref, result_v, begin_line=
         p0_i_x, p0_i_y = lines[i, 0], lines[i, 1]
         n_i_x,  n_i_y  = lines[i, 2], lines[i, 3]
 
-        # viol = (result_v - p0_i) · n_i   (positivo = violado)
+        # viol = (result_v - p0_i) · n_i   (positive = violated)
         viol = (p0_i_x - result_v[0]) * n_i_x + (p0_i_y - result_v[1]) * n_i_y
 
         if viol > distance:
             count = 0
-            # Direção da linha i: d_i = (-n_i.y, n_i.x)
+            # Direction of line i: d_i = (-n_i.y, n_i.x)
             d_i_x, d_i_y = -n_i_y, n_i_x
 
             for j in range(i):
@@ -216,19 +216,19 @@ def linear_program_3d_jit(lines, num_lines, v_max, v_pref, result_v, begin_line=
                 det = n_i_x * n_j_y - n_i_y * n_j_x
 
                 if abs(det) <= 1e-9:
-                    # Retas paralelas
+                    # Parallel lines
                     if n_i_x * n_j_x + n_i_y * n_j_y > 0.0:
-                        continue            # mesma orientação: redundante
+                        continue            # same orientation: redundant
                     proj_p0_x = 0.5 * (p0_i_x + p0_j_x)
                     proj_p0_y = 0.5 * (p0_i_y + p0_j_y)
                 else:
-                    # Interseção: t = ((p0_j - p0_i) · n_j) / (n_i × n_j)
+                    # Intersection: t = ((p0_j - p0_i) · n_j) / (n_i × n_j)
                     t = ((p0_j_x - p0_i_x) * n_j_x +
                          (p0_j_y - p0_i_y) * n_j_y) / det
                     proj_p0_x = p0_i_x + t * d_i_x
                     proj_p0_y = p0_i_y + t * d_i_y
 
-                # Normal projetada: normalize(n_j - n_i)
+                # Projected normal: normalize(n_j - n_i)
                 nd_x = n_j_x - n_i_x
                 nd_y = n_j_y - n_i_y
                 len_n = np.sqrt(nd_x*nd_x + nd_y*nd_y)
@@ -245,15 +245,15 @@ def linear_program_3d_jit(lines, num_lines, v_max, v_pref, result_v, begin_line=
 
             temp_x, temp_y = result_v[0], result_v[1]
 
-            # Direção ótima para satisfazer a linha i: n_i * v_max
+            # Optimal direction for satisfying line i: n_i * v_max
             opt_dir[0] = n_i_x * v_max
             opt_dir[1] = n_i_y * v_max
 
-            # Tenta o LP2D no subespaço projetado (inclui o caso count == 0)
+            # Try the 2D LP in the projected subspace (including count == 0).
             if linear_program_2d_jit(proj_lines, count, v_max, opt_dir, result_v) < count:
                 result_v[0], result_v[1] = temp_x, temp_y
 
-            # Atualiza distância (violação residual)
+            # Update distance (residual violation).
             distance = (result_v[0] - p0_i_x) * n_i_x + (result_v[1] - p0_i_y) * n_i_y
 
 
@@ -266,13 +266,13 @@ def select_velocity_jit(
     t_h, d_max, angle_bias
 ):
     """
-    Seleciona a velocidade ótima para um agente via ORCA.
+    Selects the optimal velocity for an agent using ORCA.
 
     obs_is_obstacle: array booleano (n_obs,) indicando quais vizinhos são
-                     obstáculos estáticos (responsabilidade total) versus
-                     agentes recíprocos (responsabilidade dividida).
+                     static obstacles (full responsibility) versus
+                     reciprocal agents (shared responsibility).
     """
-    # Velocidade preferida: aponta para o goal, magnitude v_max
+    # Preferred velocity: points toward the goal with magnitude v_max.
     goal_dir_x = pos_goal[0] - pos_a[0]
     goal_dir_y = pos_goal[1] - pos_a[1]
     dist_goal_sq = goal_dir_x*goal_dir_x + goal_dir_y*goal_dir_y
@@ -291,7 +291,7 @@ def select_velocity_jit(
         v_pref[0] = vx_raw * cos_n - vy_raw * sin_n 
         v_pref[1] = vx_raw * sin_n + vy_raw * cos_n
 
-    # Coleta linhas ORCA de vizinhos dentro de d_max
+    # Collect ORCA lines for neighbors within d_max.
     num_obs = obs_pos.shape[0]
     lines = np.empty((num_obs, 4), dtype=pos_a.dtype)
     line_count = 0
@@ -318,7 +318,7 @@ def select_velocity_jit(
     if fail_line < line_count:
         linear_program_3d_jit(lines, line_count, v_max, v_pref, result_v, fail_line)
 
-    # Limita a variação de velocidade por a_max * dt
+    # Limit the velocity change to a_max * dt.
     dv_x = result_v[0] - v_a[0]
     dv_y = result_v[1] - v_a[1]
     dv_sq = dv_x*dv_x + dv_y*dv_y
@@ -332,7 +332,7 @@ def select_velocity_jit(
 
 
 # ============================================================================
-# Classe principal
+# Main class
 class PyORCA:
     def __init__(
         self,
@@ -358,21 +358,21 @@ class PyORCA:
         velocities: np.ndarray,     # (N, 2)
         goals: np.ndarray,          # (N, 2)
         radii: np.ndarray,          # (N,)
-        static_pos: np.ndarray = None,   # (M, 2) opcional
-        static_radii: np.ndarray = None, # (M,) opcional
+        static_pos: np.ndarray = None,   # (M, 2), optional
+        static_radii: np.ndarray = None, # (M,), optional
     ) -> np.ndarray:
         """
-        Calcula as novas velocidades para qualquer aplicação baseada em matrizes NumPy.
-        Retorna: np.ndarray de formato (N, 2) com as velocidades calculadas.
+        Computes new velocities for any application based on NumPy arrays.
+        Returns an np.ndarray of shape (N, 2) with the computed velocities.
         """
         num_robots = len(positions)
 
-        # 1. Ajuste do Angle Bias dinâmico por densidade
+        # 1. Adjust the angle bias dynamically based on density.
         angle_bias = float(
             np.clip(self.base_bias / np.sqrt(num_robots / 10.0), 0.03, self.base_bias)
         )
 
-        # 2. Unificação de robôs com obstáculos estáticos (se existirem)
+        # 2. Combine robots with static obstacles, if any.
         if static_pos is not None and len(static_pos) > 0:
             num_obs = len(static_pos)
             all_pos = np.vstack([positions, static_pos])
@@ -386,7 +386,7 @@ class PyORCA:
             all_pos, all_v, all_radii = positions, velocities, radii
             all_is_obs = np.zeros(num_robots, dtype=np.bool_)
 
-        # 3. Busca por vizinhos via KDTree e cálculo via JIT
+        # 3. Find neighbors using KDTree and perform the JIT computation.
         tree = cKDTree(all_pos)
         new_velocities = np.empty((num_robots, 2), dtype=np.float64)
 

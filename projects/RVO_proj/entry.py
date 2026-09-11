@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 
 # PARÂMETROS GLOBAIS DE CONTROLE E SIMULAÇÃO
-ENV_NAME = "envs/rvo_env3.yaml"
+ENV_NAME = "envs/rvo_env4.yaml"
 
 # Parâmetros Cinemáticos e do Planejador RVO
 DT = 0.1                 # Passo de tempo (s)

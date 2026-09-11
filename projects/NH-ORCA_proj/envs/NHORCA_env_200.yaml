@@ -1,4016 +1,2410 @@
 world:
-  height: 68
-  width: 68
+  height: 71
+  width: 71
   step_time: 0.1
   sample_time: 0.1
-  offset:
-  - 0
-  - 0
-  step_mode: internal
-  control_mode: manual
-  collision_mode: stop
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
 robot:
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.65
-  - 34.0
-  - 3.1416
-  goal:
-  - 5.35
-  - 34.0
-  - 3.1416
-  vel_max: &id001
-  - 1.5
-  - 3.14
-  vel_min: &id002
-  - 0.0
-  - -3.14
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.6359
-  - 34.8999
-  - -3.1102
-  goal:
-  - 5.3641
-  - 33.1001
-  - -3.1102
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.5935
-  - 35.7989
-  - -3.0788
-  goal:
-  - 5.4065
-  - 32.2011
-  - -3.0788
-  vel_max: *id001
-  vel_min: *id002
-  color: r
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.5229
-  - 36.6962
-  - -3.0473
-  goal:
-  - 5.4771
-  - 31.3038
-  - -3.0473
-  vel_max: *id001
-  vel_min: *id002
-  color: c
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.4241
-  - 37.5908
-  - -3.0159
-  goal:
-  - 5.5759
-  - 30.4092
-  - -3.0159
-  vel_max: *id001
-  vel_min: *id002
-  color: m
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.2973
-  - 38.4818
-  - -2.9845
-  goal:
-  - 5.7027
-  - 29.5182
-  - -2.9845
-  vel_max: *id001
-  vel_min: *id002
-  color: y
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.1425
-  - 39.3685
-  - -2.9531
-  goal:
-  - 5.8575
-  - 28.6315
-  - -2.9531
-  vel_max: *id001
-  vel_min: *id002
-  color: orange
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.96
-  - 40.2498
-  - -2.9217
-  goal:
-  - 6.04
-  - 27.7502
-  - -2.9217
-  vel_max: *id001
-  vel_min: *id002
-  color: purple
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.7499
-  - 41.125
-  - -2.8903
-  goal:
-  - 6.2501
-  - 26.875
-  - -2.8903
-  vel_max: *id001
-  vel_min: *id002
-  color: pink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.5124
-  - 41.9931
-  - -2.8588
-  goal:
-  - 6.4876
-  - 26.0069
-  - -2.8588
-  vel_max: *id001
-  vel_min: *id002
-  color: brown
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.2478
-  - 42.8533
-  - -2.8274
-  goal:
-  - 6.7522
-  - 25.1467
-  - -2.8274
-  vel_max: *id001
-  vel_min: *id002
-  color: gray
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 60.9562
-  - 43.7048
-  - -2.796
-  goal:
-  - 7.0438
-  - 24.2952
-  - -2.796
-  vel_max: *id001
-  vel_min: *id002
-  color: olive
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 60.6381
-  - 44.5468
-  - -2.7646
-  goal:
-  - 7.3619
-  - 23.4532
-  - -2.7646
-  vel_max: *id001
-  vel_min: *id002
-  color: cyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 60.2937
-  - 45.3783
-  - -2.7332
-  goal:
-  - 7.7063
-  - 22.6217
-  - -2.7332
-  vel_max: *id001
-  vel_min: *id002
-  color: darkblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 59.9233
-  - 46.1986
-  - -2.7018
-  goal:
-  - 8.0767
-  - 21.8014
-  - -2.7018
-  vel_max: *id001
-  vel_min: *id002
-  color: darkgreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 59.5273
-  - 47.0068
-  - -2.6704
-  goal:
-  - 8.4727
-  - 20.9932
-  - -2.6704
-  vel_max: *id001
-  vel_min: *id002
-  color: crimson
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 59.1062
-  - 47.8022
-  - -2.6389
-  goal:
-  - 8.8938
-  - 20.1978
-  - -2.6389
-  vel_max: *id001
-  vel_min: *id002
-  color: gold
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 58.6603
-  - 48.584
-  - -2.6075
-  goal:
-  - 9.3397
-  - 19.416
-  - -2.6075
-  vel_max: *id001
-  vel_min: *id002
-  color: violet
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 58.19
-  - 49.3514
-  - -2.5761
-  goal:
-  - 9.81
-  - 18.6486
-  - -2.5761
-  vel_max: *id001
-  vel_min: *id002
-  color: indigo
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 57.6959
-  - 50.1037
-  - -2.5447
-  goal:
-  - 10.3041
-  - 17.8963
-  - -2.5447
-  vel_max: *id001
-  vel_min: *id002
-  color: teal
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 57.1783
-  - 50.84
-  - -2.5133
-  goal:
-  - 10.8217
-  - 17.16
-  - -2.5133
-  vel_max: *id001
-  vel_min: *id002
-  color: lime
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 56.6379
-  - 51.5598
-  - -2.4819
-  goal:
-  - 11.3621
-  - 16.4402
-  - -2.4819
-  vel_max: *id001
-  vel_min: *id002
-  color: coral
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 56.0752
-  - 52.2622
-  - -2.4504
-  goal:
-  - 11.9248
-  - 15.7378
-  - -2.4504
-  vel_max: *id001
-  vel_min: *id002
-  color: khaki
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 55.4907
-  - 52.9466
-  - -2.419
-  goal:
-  - 12.5093
-  - 15.0534
-  - -2.419
-  vel_max: *id001
-  vel_min: *id002
-  color: magenta
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 54.885
-  - 53.6123
-  - -2.3876
-  goal:
-  - 13.115
-  - 14.3877
-  - -2.3876
-  vel_max: *id001
-  vel_min: *id002
-  color: navy
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 54.2586
-  - 54.2586
-  - -2.3562
-  goal:
-  - 13.7414
-  - 13.7414
-  - -2.3562
-  vel_max: *id001
-  vel_min: *id002
-  color: salmon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 53.6123
-  - 54.885
-  - -2.3248
-  goal:
-  - 14.3877
-  - 13.115
-  - -2.3248
-  vel_max: *id001
-  vel_min: *id002
-  color: turquoise
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 52.9466
-  - 55.4907
-  - -2.2934
-  goal:
-  - 15.0534
-  - 12.5093
-  - -2.2934
-  vel_max: *id001
-  vel_min: *id002
-  color: plum
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 52.2622
-  - 56.0752
-  - -2.2619
-  goal:
-  - 15.7378
-  - 11.9248
-  - -2.2619
-  vel_max: *id001
-  vel_min: *id002
-  color: maroon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 51.5598
-  - 56.6379
-  - -2.2305
-  goal:
-  - 16.4402
-  - 11.3621
-  - -2.2305
-  vel_max: *id001
-  vel_min: *id002
-  color: orchid
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 50.84
-  - 57.1783
-  - -2.1991
-  goal:
-  - 17.16
-  - 10.8217
-  - -2.1991
-  vel_max: *id001
-  vel_min: *id002
-  color: tan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 50.1037
-  - 57.6959
-  - -2.1677
-  goal:
-  - 17.8963
-  - 10.3041
-  - -2.1677
-  vel_max: *id001
-  vel_min: *id002
-  color: sienna
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 49.3514
-  - 58.19
-  - -2.1363
-  goal:
-  - 18.6486
-  - 9.81
-  - -2.1363
-  vel_max: *id001
-  vel_min: *id002
-  color: skyblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 48.584
-  - 58.6603
-  - -2.1049
-  goal:
-  - 19.416
-  - 9.3397
-  - -2.1049
-  vel_max: *id001
-  vel_min: *id002
-  color: chocolate
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 47.8022
-  - 59.1062
-  - -2.0734
-  goal:
-  - 20.1978
-  - 8.8938
-  - -2.0734
-  vel_max: *id001
-  vel_min: *id002
-  color: peru
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 47.0068
-  - 59.5273
-  - -2.042
-  goal:
-  - 20.9932
-  - 8.4727
-  - -2.042
-  vel_max: *id001
-  vel_min: *id002
-  color: darkred
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 46.1986
-  - 59.9233
-  - -2.0106
-  goal:
-  - 21.8014
-  - 8.0767
-  - -2.0106
-  vel_max: *id001
-  vel_min: *id002
-  color: darkcyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 45.3783
-  - 60.2937
-  - -1.9792
-  goal:
-  - 22.6217
-  - 7.7063
-  - -1.9792
-  vel_max: *id001
-  vel_min: *id002
-  color: lawngreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 44.5468
-  - 60.6381
-  - -1.9478
-  goal:
-  - 23.4532
-  - 7.3619
-  - -1.9478
-  vel_max: *id001
-  vel_min: *id002
-  color: deeppink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 43.7048
-  - 60.9562
-  - -1.9164
-  goal:
-  - 24.2952
-  - 7.0438
-  - -1.9164
-  vel_max: *id001
-  vel_min: *id002
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 42.8533
-  - 61.2478
-  - -1.885
-  goal:
-  - 25.1467
-  - 6.7522
-  - -1.885
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 41.9931
-  - 61.5124
-  - -1.8535
-  goal:
-  - 26.0069
-  - 6.4876
-  - -1.8535
-  vel_max: *id001
-  vel_min: *id002
-  color: r
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 41.125
-  - 61.7499
-  - -1.8221
-  goal:
-  - 26.875
-  - 6.2501
-  - -1.8221
-  vel_max: *id001
-  vel_min: *id002
-  color: c
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 40.2498
-  - 61.96
-  - -1.7907
-  goal:
-  - 27.7502
-  - 6.04
-  - -1.7907
-  vel_max: *id001
-  vel_min: *id002
-  color: m
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 39.3685
-  - 62.1425
-  - -1.7593
-  goal:
-  - 28.6315
-  - 5.8575
-  - -1.7593
-  vel_max: *id001
-  vel_min: *id002
-  color: y
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 38.4818
-  - 62.2973
-  - -1.7279
-  goal:
-  - 29.5182
-  - 5.7027
-  - -1.7279
-  vel_max: *id001
-  vel_min: *id002
-  color: orange
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 37.5908
-  - 62.4241
-  - -1.6965
-  goal:
-  - 30.4092
-  - 5.5759
-  - -1.6965
-  vel_max: *id001
-  vel_min: *id002
-  color: purple
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 36.6962
-  - 62.5229
-  - -1.665
-  goal:
-  - 31.3038
-  - 5.4771
-  - -1.665
-  vel_max: *id001
-  vel_min: *id002
-  color: pink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 35.7989
-  - 62.5935
-  - -1.6336
-  goal:
-  - 32.2011
-  - 5.4065
-  - -1.6336
-  vel_max: *id001
-  vel_min: *id002
-  color: brown
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 34.8999
-  - 62.6359
-  - -1.6022
-  goal:
-  - 33.1001
-  - 5.3641
-  - -1.6022
-  vel_max: *id001
-  vel_min: *id002
-  color: gray
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 34.0
-  - 62.65
-  - -1.5708
-  goal:
-  - 34.0
-  - 5.35
-  - -1.5708
-  vel_max: *id001
-  vel_min: *id002
-  color: olive
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 33.1001
-  - 62.6359
-  - -1.5394
-  goal:
-  - 34.8999
-  - 5.3641
-  - -1.5394
-  vel_max: *id001
-  vel_min: *id002
-  color: cyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 32.2011
-  - 62.5935
-  - -1.508
-  goal:
-  - 35.7989
-  - 5.4065
-  - -1.508
-  vel_max: *id001
-  vel_min: *id002
-  color: darkblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 31.3038
-  - 62.5229
-  - -1.4765
-  goal:
-  - 36.6962
-  - 5.4771
-  - -1.4765
-  vel_max: *id001
-  vel_min: *id002
-  color: darkgreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 30.4092
-  - 62.4241
-  - -1.4451
-  goal:
-  - 37.5908
-  - 5.5759
-  - -1.4451
-  vel_max: *id001
-  vel_min: *id002
-  color: crimson
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 29.5182
-  - 62.2973
-  - -1.4137
-  goal:
-  - 38.4818
-  - 5.7027
-  - -1.4137
-  vel_max: *id001
-  vel_min: *id002
-  color: gold
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 28.6315
-  - 62.1425
-  - -1.3823
-  goal:
-  - 39.3685
-  - 5.8575
-  - -1.3823
-  vel_max: *id001
-  vel_min: *id002
-  color: violet
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 27.7502
-  - 61.96
-  - -1.3509
-  goal:
-  - 40.2498
-  - 6.04
-  - -1.3509
-  vel_max: *id001
-  vel_min: *id002
-  color: indigo
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 26.875
-  - 61.7499
-  - -1.3195
-  goal:
-  - 41.125
-  - 6.2501
-  - -1.3195
-  vel_max: *id001
-  vel_min: *id002
-  color: teal
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 26.0069
-  - 61.5124
-  - -1.2881
-  goal:
-  - 41.9931
-  - 6.4876
-  - -1.2881
-  vel_max: *id001
-  vel_min: *id002
-  color: lime
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 25.1467
-  - 61.2478
-  - -1.2566
-  goal:
-  - 42.8533
-  - 6.7522
-  - -1.2566
-  vel_max: *id001
-  vel_min: *id002
-  color: coral
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 24.2952
-  - 60.9562
-  - -1.2252
-  goal:
-  - 43.7048
-  - 7.0438
-  - -1.2252
-  vel_max: *id001
-  vel_min: *id002
-  color: khaki
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 23.4532
-  - 60.6381
-  - -1.1938
-  goal:
-  - 44.5468
-  - 7.3619
-  - -1.1938
-  vel_max: *id001
-  vel_min: *id002
-  color: magenta
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 22.6217
-  - 60.2937
-  - -1.1624
-  goal:
-  - 45.3783
-  - 7.7063
-  - -1.1624
-  vel_max: *id001
-  vel_min: *id002
-  color: navy
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 21.8014
-  - 59.9233
-  - -1.131
-  goal:
-  - 46.1986
-  - 8.0767
-  - -1.131
-  vel_max: *id001
-  vel_min: *id002
-  color: salmon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 20.9932
-  - 59.5273
-  - -1.0996
-  goal:
-  - 47.0068
-  - 8.4727
-  - -1.0996
-  vel_max: *id001
-  vel_min: *id002
-  color: turquoise
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 20.1978
-  - 59.1062
-  - -1.0681
-  goal:
-  - 47.8022
-  - 8.8938
-  - -1.0681
-  vel_max: *id001
-  vel_min: *id002
-  color: plum
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 19.416
-  - 58.6603
-  - -1.0367
-  goal:
-  - 48.584
-  - 9.3397
-  - -1.0367
-  vel_max: *id001
-  vel_min: *id002
-  color: maroon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 18.6486
-  - 58.19
-  - -1.0053
-  goal:
-  - 49.3514
-  - 9.81
-  - -1.0053
-  vel_max: *id001
-  vel_min: *id002
-  color: orchid
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 17.8963
-  - 57.6959
-  - -0.9739
-  goal:
-  - 50.1037
-  - 10.3041
-  - -0.9739
-  vel_max: *id001
-  vel_min: *id002
-  color: tan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 17.16
-  - 57.1783
-  - -0.9425
-  goal:
-  - 50.84
-  - 10.8217
-  - -0.9425
-  vel_max: *id001
-  vel_min: *id002
-  color: sienna
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 16.4402
-  - 56.6379
-  - -0.9111
-  goal:
-  - 51.5598
-  - 11.3621
-  - -0.9111
-  vel_max: *id001
-  vel_min: *id002
-  color: skyblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 15.7378
-  - 56.0752
-  - -0.8796
-  goal:
-  - 52.2622
-  - 11.9248
-  - -0.8796
-  vel_max: *id001
-  vel_min: *id002
-  color: chocolate
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 15.0534
-  - 55.4907
-  - -0.8482
-  goal:
-  - 52.9466
-  - 12.5093
-  - -0.8482
-  vel_max: *id001
-  vel_min: *id002
-  color: peru
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 14.3877
-  - 54.885
-  - -0.8168
-  goal:
-  - 53.6123
-  - 13.115
-  - -0.8168
-  vel_max: *id001
-  vel_min: *id002
-  color: darkred
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 13.7414
-  - 54.2586
-  - -0.7854
-  goal:
-  - 54.2586
-  - 13.7414
-  - -0.7854
-  vel_max: *id001
-  vel_min: *id002
-  color: darkcyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 13.115
-  - 53.6123
-  - -0.754
-  goal:
-  - 54.885
-  - 14.3877
-  - -0.754
-  vel_max: *id001
-  vel_min: *id002
-  color: lawngreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 12.5093
-  - 52.9466
-  - -0.7226
-  goal:
-  - 55.4907
-  - 15.0534
-  - -0.7226
-  vel_max: *id001
-  vel_min: *id002
-  color: deeppink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 11.9248
-  - 52.2622
-  - -0.6912
-  goal:
-  - 56.0752
-  - 15.7378
-  - -0.6912
-  vel_max: *id001
-  vel_min: *id002
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 11.3621
-  - 51.5598
-  - -0.6597
-  goal:
-  - 56.6379
-  - 16.4402
-  - -0.6597
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 10.8217
-  - 50.84
-  - -0.6283
-  goal:
-  - 57.1783
-  - 17.16
-  - -0.6283
-  vel_max: *id001
-  vel_min: *id002
-  color: r
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 10.3041
-  - 50.1037
-  - -0.5969
-  goal:
-  - 57.6959
-  - 17.8963
-  - -0.5969
-  vel_max: *id001
-  vel_min: *id002
-  color: c
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 9.81
-  - 49.3514
-  - -0.5655
-  goal:
-  - 58.19
-  - 18.6486
-  - -0.5655
-  vel_max: *id001
-  vel_min: *id002
-  color: m
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 9.3397
-  - 48.584
-  - -0.5341
-  goal:
-  - 58.6603
-  - 19.416
-  - -0.5341
-  vel_max: *id001
-  vel_min: *id002
-  color: y
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 8.8938
-  - 47.8022
-  - -0.5027
-  goal:
-  - 59.1062
-  - 20.1978
-  - -0.5027
-  vel_max: *id001
-  vel_min: *id002
-  color: orange
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 8.4727
-  - 47.0068
-  - -0.4712
-  goal:
-  - 59.5273
-  - 20.9932
-  - -0.4712
-  vel_max: *id001
-  vel_min: *id002
-  color: purple
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 8.0767
-  - 46.1986
-  - -0.4398
-  goal:
-  - 59.9233
-  - 21.8014
-  - -0.4398
-  vel_max: *id001
-  vel_min: *id002
-  color: pink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 7.7063
-  - 45.3783
-  - -0.4084
-  goal:
-  - 60.2937
-  - 22.6217
-  - -0.4084
-  vel_max: *id001
-  vel_min: *id002
-  color: brown
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 7.3619
-  - 44.5468
-  - -0.377
-  goal:
-  - 60.6381
-  - 23.4532
-  - -0.377
-  vel_max: *id001
-  vel_min: *id002
-  color: gray
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 7.0438
-  - 43.7048
-  - -0.3456
-  goal:
-  - 60.9562
-  - 24.2952
-  - -0.3456
-  vel_max: *id001
-  vel_min: *id002
-  color: olive
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.7522
-  - 42.8533
-  - -0.3142
-  goal:
-  - 61.2478
-  - 25.1467
-  - -0.3142
-  vel_max: *id001
-  vel_min: *id002
-  color: cyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.4876
-  - 41.9931
-  - -0.2827
-  goal:
-  - 61.5124
-  - 26.0069
-  - -0.2827
-  vel_max: *id001
-  vel_min: *id002
-  color: darkblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.2501
-  - 41.125
-  - -0.2513
-  goal:
-  - 61.7499
-  - 26.875
-  - -0.2513
-  vel_max: *id001
-  vel_min: *id002
-  color: darkgreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.04
-  - 40.2498
-  - -0.2199
-  goal:
-  - 61.96
-  - 27.7502
-  - -0.2199
-  vel_max: *id001
-  vel_min: *id002
-  color: crimson
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.8575
-  - 39.3685
-  - -0.1885
-  goal:
-  - 62.1425
-  - 28.6315
-  - -0.1885
-  vel_max: *id001
-  vel_min: *id002
-  color: gold
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.7027
-  - 38.4818
-  - -0.1571
-  goal:
-  - 62.2973
-  - 29.5182
-  - -0.1571
-  vel_max: *id001
-  vel_min: *id002
-  color: violet
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.5759
-  - 37.5908
-  - -0.1257
-  goal:
-  - 62.4241
-  - 30.4092
-  - -0.1257
-  vel_max: *id001
-  vel_min: *id002
-  color: indigo
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.4771
-  - 36.6962
-  - -0.0942
-  goal:
-  - 62.5229
-  - 31.3038
-  - -0.0942
-  vel_max: *id001
-  vel_min: *id002
-  color: teal
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.4065
-  - 35.7989
-  - -0.0628
-  goal:
-  - 62.5935
-  - 32.2011
-  - -0.0628
-  vel_max: *id001
-  vel_min: *id002
-  color: lime
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.3641
-  - 34.8999
-  - -0.0314
-  goal:
-  - 62.6359
-  - 33.1001
-  - -0.0314
-  vel_max: *id001
-  vel_min: *id002
-  color: coral
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.35
-  - 34.0
-  - 0.0
-  goal:
-  - 62.65
-  - 34.0
-  - 0.0
-  vel_max: *id001
-  vel_min: *id002
-  color: khaki
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.3641
-  - 33.1001
-  - 0.0314
-  goal:
-  - 62.6359
-  - 34.8999
-  - 0.0314
-  vel_max: *id001
-  vel_min: *id002
-  color: magenta
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.4065
-  - 32.2011
-  - 0.0628
-  goal:
-  - 62.5935
-  - 35.7989
-  - 0.0628
-  vel_max: *id001
-  vel_min: *id002
-  color: navy
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.4771
-  - 31.3038
-  - 0.0942
-  goal:
-  - 62.5229
-  - 36.6962
-  - 0.0942
-  vel_max: *id001
-  vel_min: *id002
-  color: salmon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.5759
-  - 30.4092
-  - 0.1257
-  goal:
-  - 62.4241
-  - 37.5908
-  - 0.1257
-  vel_max: *id001
-  vel_min: *id002
-  color: turquoise
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.7027
-  - 29.5182
-  - 0.1571
-  goal:
-  - 62.2973
-  - 38.4818
-  - 0.1571
-  vel_max: *id001
-  vel_min: *id002
-  color: plum
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.8575
-  - 28.6315
-  - 0.1885
-  goal:
-  - 62.1425
-  - 39.3685
-  - 0.1885
-  vel_max: *id001
-  vel_min: *id002
-  color: maroon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.04
-  - 27.7502
-  - 0.2199
-  goal:
-  - 61.96
-  - 40.2498
-  - 0.2199
-  vel_max: *id001
-  vel_min: *id002
-  color: orchid
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.2501
-  - 26.875
-  - 0.2513
-  goal:
-  - 61.7499
-  - 41.125
-  - 0.2513
-  vel_max: *id001
-  vel_min: *id002
-  color: tan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.4876
-  - 26.0069
-  - 0.2827
-  goal:
-  - 61.5124
-  - 41.9931
-  - 0.2827
-  vel_max: *id001
-  vel_min: *id002
-  color: sienna
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 6.7522
-  - 25.1467
-  - 0.3142
-  goal:
-  - 61.2478
-  - 42.8533
-  - 0.3142
-  vel_max: *id001
-  vel_min: *id002
-  color: skyblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 7.0438
-  - 24.2952
-  - 0.3456
-  goal:
-  - 60.9562
-  - 43.7048
-  - 0.3456
-  vel_max: *id001
-  vel_min: *id002
-  color: chocolate
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 7.3619
-  - 23.4532
-  - 0.377
-  goal:
-  - 60.6381
-  - 44.5468
-  - 0.377
-  vel_max: *id001
-  vel_min: *id002
-  color: peru
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 7.7063
-  - 22.6217
-  - 0.4084
-  goal:
-  - 60.2937
-  - 45.3783
-  - 0.4084
-  vel_max: *id001
-  vel_min: *id002
-  color: darkred
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 8.0767
-  - 21.8014
-  - 0.4398
-  goal:
-  - 59.9233
-  - 46.1986
-  - 0.4398
-  vel_max: *id001
-  vel_min: *id002
-  color: darkcyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 8.4727
-  - 20.9932
-  - 0.4712
-  goal:
-  - 59.5273
-  - 47.0068
-  - 0.4712
-  vel_max: *id001
-  vel_min: *id002
-  color: lawngreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 8.8938
-  - 20.1978
-  - 0.5027
-  goal:
-  - 59.1062
-  - 47.8022
-  - 0.5027
-  vel_max: *id001
-  vel_min: *id002
-  color: deeppink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 9.3397
-  - 19.416
-  - 0.5341
-  goal:
-  - 58.6603
-  - 48.584
-  - 0.5341
-  vel_max: *id001
-  vel_min: *id002
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 9.81
-  - 18.6486
-  - 0.5655
-  goal:
-  - 58.19
-  - 49.3514
-  - 0.5655
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 10.3041
-  - 17.8963
-  - 0.5969
-  goal:
-  - 57.6959
-  - 50.1037
-  - 0.5969
-  vel_max: *id001
-  vel_min: *id002
-  color: r
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 10.8217
-  - 17.16
-  - 0.6283
-  goal:
-  - 57.1783
-  - 50.84
-  - 0.6283
-  vel_max: *id001
-  vel_min: *id002
-  color: c
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 11.3621
-  - 16.4402
-  - 0.6597
-  goal:
-  - 56.6379
-  - 51.5598
-  - 0.6597
-  vel_max: *id001
-  vel_min: *id002
-  color: m
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 11.9248
-  - 15.7378
-  - 0.6912
-  goal:
-  - 56.0752
-  - 52.2622
-  - 0.6912
-  vel_max: *id001
-  vel_min: *id002
-  color: y
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 12.5093
-  - 15.0534
-  - 0.7226
-  goal:
-  - 55.4907
-  - 52.9466
-  - 0.7226
-  vel_max: *id001
-  vel_min: *id002
-  color: orange
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 13.115
-  - 14.3877
-  - 0.754
-  goal:
-  - 54.885
-  - 53.6123
-  - 0.754
-  vel_max: *id001
-  vel_min: *id002
-  color: purple
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 13.7414
-  - 13.7414
-  - 0.7854
-  goal:
-  - 54.2586
-  - 54.2586
-  - 0.7854
-  vel_max: *id001
-  vel_min: *id002
-  color: pink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 14.3877
-  - 13.115
-  - 0.8168
-  goal:
-  - 53.6123
-  - 54.885
-  - 0.8168
-  vel_max: *id001
-  vel_min: *id002
-  color: brown
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 15.0534
-  - 12.5093
-  - 0.8482
-  goal:
-  - 52.9466
-  - 55.4907
-  - 0.8482
-  vel_max: *id001
-  vel_min: *id002
-  color: gray
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 15.7378
-  - 11.9248
-  - 0.8796
-  goal:
-  - 52.2622
-  - 56.0752
-  - 0.8796
-  vel_max: *id001
-  vel_min: *id002
-  color: olive
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 16.4402
-  - 11.3621
-  - 0.9111
-  goal:
-  - 51.5598
-  - 56.6379
-  - 0.9111
-  vel_max: *id001
-  vel_min: *id002
-  color: cyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 17.16
-  - 10.8217
-  - 0.9425
-  goal:
-  - 50.84
-  - 57.1783
-  - 0.9425
-  vel_max: *id001
-  vel_min: *id002
-  color: darkblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 17.8963
-  - 10.3041
-  - 0.9739
-  goal:
-  - 50.1037
-  - 57.6959
-  - 0.9739
-  vel_max: *id001
-  vel_min: *id002
-  color: darkgreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 18.6486
-  - 9.81
-  - 1.0053
-  goal:
-  - 49.3514
-  - 58.19
-  - 1.0053
-  vel_max: *id001
-  vel_min: *id002
-  color: crimson
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 19.416
-  - 9.3397
-  - 1.0367
-  goal:
-  - 48.584
-  - 58.6603
-  - 1.0367
-  vel_max: *id001
-  vel_min: *id002
-  color: gold
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 20.1978
-  - 8.8938
-  - 1.0681
-  goal:
-  - 47.8022
-  - 59.1062
-  - 1.0681
-  vel_max: *id001
-  vel_min: *id002
-  color: violet
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 20.9932
-  - 8.4727
-  - 1.0996
-  goal:
-  - 47.0068
-  - 59.5273
-  - 1.0996
-  vel_max: *id001
-  vel_min: *id002
-  color: indigo
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 21.8014
-  - 8.0767
-  - 1.131
-  goal:
-  - 46.1986
-  - 59.9233
-  - 1.131
-  vel_max: *id001
-  vel_min: *id002
-  color: teal
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 22.6217
-  - 7.7063
-  - 1.1624
-  goal:
-  - 45.3783
-  - 60.2937
-  - 1.1624
-  vel_max: *id001
-  vel_min: *id002
-  color: lime
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 23.4532
-  - 7.3619
-  - 1.1938
-  goal:
-  - 44.5468
-  - 60.6381
-  - 1.1938
-  vel_max: *id001
-  vel_min: *id002
-  color: coral
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 24.2952
-  - 7.0438
-  - 1.2252
-  goal:
-  - 43.7048
-  - 60.9562
-  - 1.2252
-  vel_max: *id001
-  vel_min: *id002
-  color: khaki
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 25.1467
-  - 6.7522
-  - 1.2566
-  goal:
-  - 42.8533
-  - 61.2478
-  - 1.2566
-  vel_max: *id001
-  vel_min: *id002
-  color: magenta
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 26.0069
-  - 6.4876
-  - 1.2881
-  goal:
-  - 41.9931
-  - 61.5124
-  - 1.2881
-  vel_max: *id001
-  vel_min: *id002
-  color: navy
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 26.875
-  - 6.2501
-  - 1.3195
-  goal:
-  - 41.125
-  - 61.7499
-  - 1.3195
-  vel_max: *id001
-  vel_min: *id002
-  color: salmon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 27.7502
-  - 6.04
-  - 1.3509
-  goal:
-  - 40.2498
-  - 61.96
-  - 1.3509
-  vel_max: *id001
-  vel_min: *id002
-  color: turquoise
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 28.6315
-  - 5.8575
-  - 1.3823
-  goal:
-  - 39.3685
-  - 62.1425
-  - 1.3823
-  vel_max: *id001
-  vel_min: *id002
-  color: plum
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 29.5182
-  - 5.7027
-  - 1.4137
-  goal:
-  - 38.4818
-  - 62.2973
-  - 1.4137
-  vel_max: *id001
-  vel_min: *id002
-  color: maroon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 30.4092
-  - 5.5759
-  - 1.4451
-  goal:
-  - 37.5908
-  - 62.4241
-  - 1.4451
-  vel_max: *id001
-  vel_min: *id002
-  color: orchid
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 31.3038
-  - 5.4771
-  - 1.4765
-  goal:
-  - 36.6962
-  - 62.5229
-  - 1.4765
-  vel_max: *id001
-  vel_min: *id002
-  color: tan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 32.2011
-  - 5.4065
-  - 1.508
-  goal:
-  - 35.7989
-  - 62.5935
-  - 1.508
-  vel_max: *id001
-  vel_min: *id002
-  color: sienna
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 33.1001
-  - 5.3641
-  - 1.5394
-  goal:
-  - 34.8999
-  - 62.6359
-  - 1.5394
-  vel_max: *id001
-  vel_min: *id002
-  color: skyblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 34.0
-  - 5.35
-  - 1.5708
-  goal:
-  - 34.0
-  - 62.65
-  - 1.5708
-  vel_max: *id001
-  vel_min: *id002
-  color: chocolate
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 34.8999
-  - 5.3641
-  - 1.6022
-  goal:
-  - 33.1001
-  - 62.6359
-  - 1.6022
-  vel_max: *id001
-  vel_min: *id002
-  color: peru
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 35.7989
-  - 5.4065
-  - 1.6336
-  goal:
-  - 32.2011
-  - 62.5935
-  - 1.6336
-  vel_max: *id001
-  vel_min: *id002
-  color: darkred
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 36.6962
-  - 5.4771
-  - 1.665
-  goal:
-  - 31.3038
-  - 62.5229
-  - 1.665
-  vel_max: *id001
-  vel_min: *id002
-  color: darkcyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 37.5908
-  - 5.5759
-  - 1.6965
-  goal:
-  - 30.4092
-  - 62.4241
-  - 1.6965
-  vel_max: *id001
-  vel_min: *id002
-  color: lawngreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 38.4818
-  - 5.7027
-  - 1.7279
-  goal:
-  - 29.5182
-  - 62.2973
-  - 1.7279
-  vel_max: *id001
-  vel_min: *id002
-  color: deeppink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 39.3685
-  - 5.8575
-  - 1.7593
-  goal:
-  - 28.6315
-  - 62.1425
-  - 1.7593
-  vel_max: *id001
-  vel_min: *id002
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 40.2498
-  - 6.04
-  - 1.7907
-  goal:
-  - 27.7502
-  - 61.96
-  - 1.7907
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 41.125
-  - 6.2501
-  - 1.8221
-  goal:
-  - 26.875
-  - 61.7499
-  - 1.8221
-  vel_max: *id001
-  vel_min: *id002
-  color: r
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 41.9931
-  - 6.4876
-  - 1.8535
-  goal:
-  - 26.0069
-  - 61.5124
-  - 1.8535
-  vel_max: *id001
-  vel_min: *id002
-  color: c
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 42.8533
-  - 6.7522
-  - 1.885
-  goal:
-  - 25.1467
-  - 61.2478
-  - 1.885
-  vel_max: *id001
-  vel_min: *id002
-  color: m
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 43.7048
-  - 7.0438
-  - 1.9164
-  goal:
-  - 24.2952
-  - 60.9562
-  - 1.9164
-  vel_max: *id001
-  vel_min: *id002
-  color: y
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 44.5468
-  - 7.3619
-  - 1.9478
-  goal:
-  - 23.4532
-  - 60.6381
-  - 1.9478
-  vel_max: *id001
-  vel_min: *id002
-  color: orange
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 45.3783
-  - 7.7063
-  - 1.9792
-  goal:
-  - 22.6217
-  - 60.2937
-  - 1.9792
-  vel_max: *id001
-  vel_min: *id002
-  color: purple
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 46.1986
-  - 8.0767
-  - 2.0106
-  goal:
-  - 21.8014
-  - 59.9233
-  - 2.0106
-  vel_max: *id001
-  vel_min: *id002
-  color: pink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 47.0068
-  - 8.4727
-  - 2.042
-  goal:
-  - 20.9932
-  - 59.5273
-  - 2.042
-  vel_max: *id001
-  vel_min: *id002
-  color: brown
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 47.8022
-  - 8.8938
-  - 2.0734
-  goal:
-  - 20.1978
-  - 59.1062
-  - 2.0734
-  vel_max: *id001
-  vel_min: *id002
-  color: gray
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 48.584
-  - 9.3397
-  - 2.1049
-  goal:
-  - 19.416
-  - 58.6603
-  - 2.1049
-  vel_max: *id001
-  vel_min: *id002
-  color: olive
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 49.3514
-  - 9.81
-  - 2.1363
-  goal:
-  - 18.6486
-  - 58.19
-  - 2.1363
-  vel_max: *id001
-  vel_min: *id002
-  color: cyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 50.1037
-  - 10.3041
-  - 2.1677
-  goal:
-  - 17.8963
-  - 57.6959
-  - 2.1677
-  vel_max: *id001
-  vel_min: *id002
-  color: darkblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 50.84
-  - 10.8217
-  - 2.1991
-  goal:
-  - 17.16
-  - 57.1783
-  - 2.1991
-  vel_max: *id001
-  vel_min: *id002
-  color: darkgreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 51.5598
-  - 11.3621
-  - 2.2305
-  goal:
-  - 16.4402
-  - 56.6379
-  - 2.2305
-  vel_max: *id001
-  vel_min: *id002
-  color: crimson
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 52.2622
-  - 11.9248
-  - 2.2619
-  goal:
-  - 15.7378
-  - 56.0752
-  - 2.2619
-  vel_max: *id001
-  vel_min: *id002
-  color: gold
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 52.9466
-  - 12.5093
-  - 2.2934
-  goal:
-  - 15.0534
-  - 55.4907
-  - 2.2934
-  vel_max: *id001
-  vel_min: *id002
-  color: violet
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 53.6123
-  - 13.115
-  - 2.3248
-  goal:
-  - 14.3877
-  - 54.885
-  - 2.3248
-  vel_max: *id001
-  vel_min: *id002
-  color: indigo
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 54.2586
-  - 13.7414
-  - 2.3562
-  goal:
-  - 13.7414
-  - 54.2586
-  - 2.3562
-  vel_max: *id001
-  vel_min: *id002
-  color: teal
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 54.885
-  - 14.3877
-  - 2.3876
-  goal:
-  - 13.115
-  - 53.6123
-  - 2.3876
-  vel_max: *id001
-  vel_min: *id002
-  color: lime
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 55.4907
-  - 15.0534
-  - 2.419
-  goal:
-  - 12.5093
-  - 52.9466
-  - 2.419
-  vel_max: *id001
-  vel_min: *id002
-  color: coral
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 56.0752
-  - 15.7378
-  - 2.4504
-  goal:
-  - 11.9248
-  - 52.2622
-  - 2.4504
-  vel_max: *id001
-  vel_min: *id002
-  color: khaki
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 56.6379
-  - 16.4402
-  - 2.4819
-  goal:
-  - 11.3621
-  - 51.5598
-  - 2.4819
-  vel_max: *id001
-  vel_min: *id002
-  color: magenta
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 57.1783
-  - 17.16
-  - 2.5133
-  goal:
-  - 10.8217
-  - 50.84
-  - 2.5133
-  vel_max: *id001
-  vel_min: *id002
-  color: navy
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 57.6959
-  - 17.8963
-  - 2.5447
-  goal:
-  - 10.3041
-  - 50.1037
-  - 2.5447
-  vel_max: *id001
-  vel_min: *id002
-  color: salmon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 58.19
-  - 18.6486
-  - 2.5761
-  goal:
-  - 9.81
-  - 49.3514
-  - 2.5761
-  vel_max: *id001
-  vel_min: *id002
-  color: turquoise
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 58.6603
-  - 19.416
-  - 2.6075
-  goal:
-  - 9.3397
-  - 48.584
-  - 2.6075
-  vel_max: *id001
-  vel_min: *id002
-  color: plum
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 59.1062
-  - 20.1978
-  - 2.6389
-  goal:
-  - 8.8938
-  - 47.8022
-  - 2.6389
-  vel_max: *id001
-  vel_min: *id002
-  color: maroon
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 59.5273
-  - 20.9932
-  - 2.6704
-  goal:
-  - 8.4727
-  - 47.0068
-  - 2.6704
-  vel_max: *id001
-  vel_min: *id002
-  color: orchid
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 59.9233
-  - 21.8014
-  - 2.7018
-  goal:
-  - 8.0767
-  - 46.1986
-  - 2.7018
-  vel_max: *id001
-  vel_min: *id002
-  color: tan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 60.2937
-  - 22.6217
-  - 2.7332
-  goal:
-  - 7.7063
-  - 45.3783
-  - 2.7332
-  vel_max: *id001
-  vel_min: *id002
-  color: sienna
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 60.6381
-  - 23.4532
-  - 2.7646
-  goal:
-  - 7.3619
-  - 44.5468
-  - 2.7646
-  vel_max: *id001
-  vel_min: *id002
-  color: skyblue
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 60.9562
-  - 24.2952
-  - 2.796
-  goal:
-  - 7.0438
-  - 43.7048
-  - 2.796
-  vel_max: *id001
-  vel_min: *id002
-  color: chocolate
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.2478
-  - 25.1467
-  - 2.8274
-  goal:
-  - 6.7522
-  - 42.8533
-  - 2.8274
-  vel_max: *id001
-  vel_min: *id002
-  color: peru
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.5124
-  - 26.0069
-  - 2.8588
-  goal:
-  - 6.4876
-  - 41.9931
-  - 2.8588
-  vel_max: *id001
-  vel_min: *id002
-  color: darkred
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.7499
-  - 26.875
-  - 2.8903
-  goal:
-  - 6.2501
-  - 41.125
-  - 2.8903
-  vel_max: *id001
-  vel_min: *id002
-  color: darkcyan
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 61.96
-  - 27.7502
-  - 2.9217
-  goal:
-  - 6.04
-  - 40.2498
-  - 2.9217
-  vel_max: *id001
-  vel_min: *id002
-  color: lawngreen
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.1425
-  - 28.6315
-  - 2.9531
-  goal:
-  - 5.8575
-  - 39.3685
-  - 2.9531
-  vel_max: *id001
-  vel_min: *id002
-  color: deeppink
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.2973
-  - 29.5182
-  - 2.9845
-  goal:
-  - 5.7027
-  - 38.4818
-  - 2.9845
-  vel_max: *id001
-  vel_min: *id002
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.4241
-  - 30.4092
-  - 3.0159
-  goal:
-  - 5.5759
-  - 37.5908
-  - 3.0159
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.5229
-  - 31.3038
-  - 3.0473
-  goal:
-  - 5.4771
-  - 36.6962
-  - 3.0473
-  vel_max: *id001
-  vel_min: *id002
-  color: r
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.5935
-  - 32.2011
-  - 3.0788
-  goal:
-  - 5.4065
-  - 35.7989
-  - 3.0788
-  vel_max: *id001
-  vel_min: *id002
-  color: c
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 62.6359
-  - 33.1001
-  - 3.1102
-  goal:
-  - 5.3641
-  - 34.8999
-  - 3.1102
-  vel_max: *id001
-  vel_min: *id002
-  color: m
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.92, 35.5, 3.1416]
+    goal: [2.08, 35.5, 3.1416]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.9035, 36.5497, -3.1102]
+    goal: [2.0965, 34.4503, -3.1102]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.8541, 37.5985, -3.0788]
+    goal: [2.1459, 33.4015, -3.0788]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.7717, 38.6451, -3.0473]
+    goal: [2.2283, 32.3549, -3.0473]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.6565, 39.6886, -3.0159]
+    goal: [2.3435, 31.3114, -3.0159]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.5085, 40.728, -2.9845]
+    goal: [2.4915, 30.272, -2.9845]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.328, 41.7623, -2.9531]
+    goal: [2.672, 29.2377, -2.9531]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.1151, 42.7903, -2.9217]
+    goal: [2.8849, 28.2097, -2.9217]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [67.87, 43.8112, -2.8903]
+    goal: [3.13, 27.1888, -2.8903]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [67.593, 44.8239, -2.8588]
+    goal: [3.407, 26.1761, -2.8588]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [67.2843, 45.8273, -2.8274]
+    goal: [3.7157, 25.1727, -2.8274]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [66.9442, 46.8206, -2.796]
+    goal: [4.0558, 24.1794, -2.796]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [66.5731, 47.8027, -2.7646]
+    goal: [4.4269, 23.1973, -2.7646]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [66.1714, 48.7727, -2.7332]
+    goal: [4.8286, 22.2273, -2.7332]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [65.7393, 49.7295, -2.7018]
+    goal: [5.2607, 21.2705, -2.7018]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [65.2774, 50.6724, -2.6704]
+    goal: [5.7226, 20.3276, -2.6704]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [64.7862, 51.6002, -2.6389]
+    goal: [6.2138, 19.3998, -2.6389]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [64.266, 52.5122, -2.6075]
+    goal: [6.734, 18.4878, -2.6075]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [63.7174, 53.4073, -2.5761]
+    goal: [7.2826, 17.5927, -2.5761]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [63.141, 54.2848, -2.5447]
+    goal: [7.859, 16.7152, -2.5447]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [62.5373, 55.1438, -2.5133]
+    goal: [8.4627, 15.8562, -2.5133]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [61.907, 55.9834, -2.4819]
+    goal: [9.093, 15.0166, -2.4819]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [61.2506, 56.8027, -2.4504]
+    goal: [9.7494, 14.1973, -2.4504]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [60.5687, 57.601, -2.419]
+    goal: [10.4313, 13.399, -2.419]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [59.8621, 58.3776, -2.3876]
+    goal: [11.1379, 12.6224, -2.3876]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [59.1315, 59.1315, -2.3562]
+    goal: [11.8685, 11.8685, -2.3562]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [58.3776, 59.8621, -2.3248]
+    goal: [12.6224, 11.1379, -2.3248]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [57.601, 60.5687, -2.2934]
+    goal: [13.399, 10.4313, -2.2934]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [56.8027, 61.2506, -2.2619]
+    goal: [14.1973, 9.7494, -2.2619]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [55.9834, 61.907, -2.2305]
+    goal: [15.0166, 9.093, -2.2305]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [55.1438, 62.5373, -2.1991]
+    goal: [15.8562, 8.4627, -2.1991]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [54.2848, 63.141, -2.1677]
+    goal: [16.7152, 7.859, -2.1677]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [53.4073, 63.7174, -2.1363]
+    goal: [17.5927, 7.2826, -2.1363]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [52.5122, 64.266, -2.1049]
+    goal: [18.4878, 6.734, -2.1049]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [51.6002, 64.7862, -2.0735]
+    goal: [19.3998, 6.2138, -2.0735]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [50.6724, 65.2774, -2.042]
+    goal: [20.3276, 5.7226, -2.042]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [49.7295, 65.7393, -2.0106]
+    goal: [21.2705, 5.2607, -2.0106]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [48.7727, 66.1714, -1.9792]
+    goal: [22.2273, 4.8286, -1.9792]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [47.8027, 66.5731, -1.9478]
+    goal: [23.1973, 4.4269, -1.9478]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [46.8206, 66.9442, -1.9164]
+    goal: [24.1794, 4.0558, -1.9164]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [45.8273, 67.2843, -1.885]
+    goal: [25.1727, 3.7157, -1.885]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [44.8239, 67.593, -1.8535]
+    goal: [26.1761, 3.407, -1.8535]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [43.8112, 67.87, -1.8221]
+    goal: [27.1888, 3.13, -1.8221]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [42.7903, 68.1151, -1.7907]
+    goal: [28.2097, 2.8849, -1.7907]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [41.7623, 68.328, -1.7593]
+    goal: [29.2377, 2.672, -1.7593]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [40.728, 68.5085, -1.7279]
+    goal: [30.272, 2.4915, -1.7279]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [39.6886, 68.6565, -1.6965]
+    goal: [31.3114, 2.3435, -1.6965]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [38.6451, 68.7717, -1.665]
+    goal: [32.3549, 2.2283, -1.665]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [37.5985, 68.8541, -1.6336]
+    goal: [33.4015, 2.1459, -1.6336]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [36.5497, 68.9035, -1.6022]
+    goal: [34.4503, 2.0965, -1.6022]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [35.5, 68.92, -1.5708]
+    goal: [35.5, 2.08, -1.5708]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [34.4503, 68.9035, -1.5394]
+    goal: [36.5497, 2.0965, -1.5394]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [33.4015, 68.8541, -1.508]
+    goal: [37.5985, 2.1459, -1.508]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [32.3549, 68.7717, -1.4765]
+    goal: [38.6451, 2.2283, -1.4765]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [31.3114, 68.6565, -1.4451]
+    goal: [39.6886, 2.3435, -1.4451]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [30.272, 68.5085, -1.4137]
+    goal: [40.728, 2.4915, -1.4137]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [29.2377, 68.328, -1.3823]
+    goal: [41.7623, 2.672, -1.3823]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [28.2097, 68.1151, -1.3509]
+    goal: [42.7903, 2.8849, -1.3509]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [27.1888, 67.87, -1.3195]
+    goal: [43.8112, 3.13, -1.3195]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [26.1761, 67.593, -1.2881]
+    goal: [44.8239, 3.407, -1.2881]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [25.1727, 67.2843, -1.2566]
+    goal: [45.8273, 3.7157, -1.2566]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [24.1794, 66.9442, -1.2252]
+    goal: [46.8206, 4.0558, -1.2252]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [23.1973, 66.5731, -1.1938]
+    goal: [47.8027, 4.4269, -1.1938]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [22.2273, 66.1714, -1.1624]
+    goal: [48.7727, 4.8286, -1.1624]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [21.2705, 65.7393, -1.131]
+    goal: [49.7295, 5.2607, -1.131]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [20.3276, 65.2774, -1.0996]
+    goal: [50.6724, 5.7226, -1.0996]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [19.3998, 64.7862, -1.0681]
+    goal: [51.6002, 6.2138, -1.0681]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [18.4878, 64.266, -1.0367]
+    goal: [52.5122, 6.734, -1.0367]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [17.5927, 63.7174, -1.0053]
+    goal: [53.4073, 7.2826, -1.0053]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [16.7152, 63.141, -0.9739]
+    goal: [54.2848, 7.859, -0.9739]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [15.8562, 62.5373, -0.9425]
+    goal: [55.1438, 8.4627, -0.9425]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [15.0166, 61.907, -0.9111]
+    goal: [55.9834, 9.093, -0.9111]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [14.1973, 61.2506, -0.8796]
+    goal: [56.8027, 9.7494, -0.8796]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [13.399, 60.5687, -0.8482]
+    goal: [57.601, 10.4313, -0.8482]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [12.6224, 59.8621, -0.8168]
+    goal: [58.3776, 11.1379, -0.8168]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [11.8685, 59.1315, -0.7854]
+    goal: [59.1315, 11.8685, -0.7854]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [11.1379, 58.3776, -0.754]
+    goal: [59.8621, 12.6224, -0.754]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [10.4313, 57.601, -0.7226]
+    goal: [60.5687, 13.399, -0.7226]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [9.7494, 56.8027, -0.6911]
+    goal: [61.2506, 14.1973, -0.6911]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [9.093, 55.9834, -0.6597]
+    goal: [61.907, 15.0166, -0.6597]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [8.4627, 55.1438, -0.6283]
+    goal: [62.5373, 15.8562, -0.6283]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [7.859, 54.2848, -0.5969]
+    goal: [63.141, 16.7152, -0.5969]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [7.2826, 53.4073, -0.5655]
+    goal: [63.7174, 17.5927, -0.5655]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [6.734, 52.5122, -0.5341]
+    goal: [64.266, 18.4878, -0.5341]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [6.2138, 51.6002, -0.5027]
+    goal: [64.7862, 19.3998, -0.5027]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [5.7226, 50.6724, -0.4712]
+    goal: [65.2774, 20.3276, -0.4712]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [5.2607, 49.7295, -0.4398]
+    goal: [65.7393, 21.2705, -0.4398]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [4.8286, 48.7727, -0.4084]
+    goal: [66.1714, 22.2273, -0.4084]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [4.4269, 47.8027, -0.377]
+    goal: [66.5731, 23.1973, -0.377]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [4.0558, 46.8206, -0.3456]
+    goal: [66.9442, 24.1794, -0.3456]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [3.7157, 45.8273, -0.3142]
+    goal: [67.2843, 25.1727, -0.3142]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [3.407, 44.8239, -0.2827]
+    goal: [67.593, 26.1761, -0.2827]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [3.13, 43.8112, -0.2513]
+    goal: [67.87, 27.1888, -0.2513]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.8849, 42.7903, -0.2199]
+    goal: [68.1151, 28.2097, -0.2199]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.672, 41.7623, -0.1885]
+    goal: [68.328, 29.2377, -0.1885]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.4915, 40.728, -0.1571]
+    goal: [68.5085, 30.272, -0.1571]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.3435, 39.6886, -0.1257]
+    goal: [68.6565, 31.3114, -0.1257]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.2283, 38.6451, -0.0942]
+    goal: [68.7717, 32.3549, -0.0942]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.1459, 37.5985, -0.0628]
+    goal: [68.8541, 33.4015, -0.0628]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.0965, 36.5497, -0.0314]
+    goal: [68.9035, 34.4503, -0.0314]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.08, 35.5, 0.0]
+    goal: [68.92, 35.5, 0.0]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.0965, 34.4503, 0.0314]
+    goal: [68.9035, 36.5497, 0.0314]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.1459, 33.4015, 0.0628]
+    goal: [68.8541, 37.5985, 0.0628]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.2283, 32.3549, 0.0942]
+    goal: [68.7717, 38.6451, 0.0942]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.3435, 31.3114, 0.1257]
+    goal: [68.6565, 39.6886, 0.1257]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.4915, 30.272, 0.1571]
+    goal: [68.5085, 40.728, 0.1571]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.672, 29.2377, 0.1885]
+    goal: [68.328, 41.7623, 0.1885]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.8849, 28.2097, 0.2199]
+    goal: [68.1151, 42.7903, 0.2199]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [3.13, 27.1888, 0.2513]
+    goal: [67.87, 43.8112, 0.2513]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [3.407, 26.1761, 0.2827]
+    goal: [67.593, 44.8239, 0.2827]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [3.7157, 25.1727, 0.3142]
+    goal: [67.2843, 45.8273, 0.3142]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [4.0558, 24.1794, 0.3456]
+    goal: [66.9442, 46.8206, 0.3456]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [4.4269, 23.1973, 0.377]
+    goal: [66.5731, 47.8027, 0.377]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [4.8286, 22.2273, 0.4084]
+    goal: [66.1714, 48.7727, 0.4084]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [5.2607, 21.2705, 0.4398]
+    goal: [65.7393, 49.7295, 0.4398]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [5.7226, 20.3276, 0.4712]
+    goal: [65.2774, 50.6724, 0.4712]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [6.2138, 19.3998, 0.5027]
+    goal: [64.7862, 51.6002, 0.5027]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [6.734, 18.4878, 0.5341]
+    goal: [64.266, 52.5122, 0.5341]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [7.2826, 17.5927, 0.5655]
+    goal: [63.7174, 53.4073, 0.5655]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [7.859, 16.7152, 0.5969]
+    goal: [63.141, 54.2848, 0.5969]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [8.4627, 15.8562, 0.6283]
+    goal: [62.5373, 55.1438, 0.6283]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [9.093, 15.0166, 0.6597]
+    goal: [61.907, 55.9834, 0.6597]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [9.7494, 14.1973, 0.6911]
+    goal: [61.2506, 56.8027, 0.6911]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [10.4313, 13.399, 0.7226]
+    goal: [60.5687, 57.601, 0.7226]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [11.1379, 12.6224, 0.754]
+    goal: [59.8621, 58.3776, 0.754]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [11.8685, 11.8685, 0.7854]
+    goal: [59.1315, 59.1315, 0.7854]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [12.6224, 11.1379, 0.8168]
+    goal: [58.3776, 59.8621, 0.8168]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [13.399, 10.4313, 0.8482]
+    goal: [57.601, 60.5687, 0.8482]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [14.1973, 9.7494, 0.8796]
+    goal: [56.8027, 61.2506, 0.8796]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [15.0166, 9.093, 0.9111]
+    goal: [55.9834, 61.907, 0.9111]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [15.8562, 8.4627, 0.9425]
+    goal: [55.1438, 62.5373, 0.9425]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [16.7152, 7.859, 0.9739]
+    goal: [54.2848, 63.141, 0.9739]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [17.5927, 7.2826, 1.0053]
+    goal: [53.4073, 63.7174, 1.0053]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [18.4878, 6.734, 1.0367]
+    goal: [52.5122, 64.266, 1.0367]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [19.3998, 6.2138, 1.0681]
+    goal: [51.6002, 64.7862, 1.0681]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [20.3276, 5.7226, 1.0996]
+    goal: [50.6724, 65.2774, 1.0996]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [21.2705, 5.2607, 1.131]
+    goal: [49.7295, 65.7393, 1.131]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [22.2273, 4.8286, 1.1624]
+    goal: [48.7727, 66.1714, 1.1624]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [23.1973, 4.4269, 1.1938]
+    goal: [47.8027, 66.5731, 1.1938]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [24.1794, 4.0558, 1.2252]
+    goal: [46.8206, 66.9442, 1.2252]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [25.1727, 3.7157, 1.2566]
+    goal: [45.8273, 67.2843, 1.2566]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [26.1761, 3.407, 1.2881]
+    goal: [44.8239, 67.593, 1.2881]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [27.1888, 3.13, 1.3195]
+    goal: [43.8112, 67.87, 1.3195]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [28.2097, 2.8849, 1.3509]
+    goal: [42.7903, 68.1151, 1.3509]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [29.2377, 2.672, 1.3823]
+    goal: [41.7623, 68.328, 1.3823]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [30.272, 2.4915, 1.4137]
+    goal: [40.728, 68.5085, 1.4137]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [31.3114, 2.3435, 1.4451]
+    goal: [39.6886, 68.6565, 1.4451]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [32.3549, 2.2283, 1.4765]
+    goal: [38.6451, 68.7717, 1.4765]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [33.4015, 2.1459, 1.508]
+    goal: [37.5985, 68.8541, 1.508]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [34.4503, 2.0965, 1.5394]
+    goal: [36.5497, 68.9035, 1.5394]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [35.5, 2.08, 1.5708]
+    goal: [35.5, 68.92, 1.5708]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [36.5497, 2.0965, 1.6022]
+    goal: [34.4503, 68.9035, 1.6022]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [37.5985, 2.1459, 1.6336]
+    goal: [33.4015, 68.8541, 1.6336]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [38.6451, 2.2283, 1.665]
+    goal: [32.3549, 68.7717, 1.665]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [39.6886, 2.3435, 1.6965]
+    goal: [31.3114, 68.6565, 1.6965]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [40.728, 2.4915, 1.7279]
+    goal: [30.272, 68.5085, 1.7279]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [41.7623, 2.672, 1.7593]
+    goal: [29.2377, 68.328, 1.7593]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [42.7903, 2.8849, 1.7907]
+    goal: [28.2097, 68.1151, 1.7907]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [43.8112, 3.13, 1.8221]
+    goal: [27.1888, 67.87, 1.8221]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [44.8239, 3.407, 1.8535]
+    goal: [26.1761, 67.593, 1.8535]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [45.8273, 3.7157, 1.885]
+    goal: [25.1727, 67.2843, 1.885]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [46.8206, 4.0558, 1.9164]
+    goal: [24.1794, 66.9442, 1.9164]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [47.8027, 4.4269, 1.9478]
+    goal: [23.1973, 66.5731, 1.9478]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [48.7727, 4.8286, 1.9792]
+    goal: [22.2273, 66.1714, 1.9792]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [49.7295, 5.2607, 2.0106]
+    goal: [21.2705, 65.7393, 2.0106]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [50.6724, 5.7226, 2.042]
+    goal: [20.3276, 65.2774, 2.042]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [51.6002, 6.2138, 2.0735]
+    goal: [19.3998, 64.7862, 2.0735]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [52.5122, 6.734, 2.1049]
+    goal: [18.4878, 64.266, 2.1049]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [53.4073, 7.2826, 2.1363]
+    goal: [17.5927, 63.7174, 2.1363]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [54.2848, 7.859, 2.1677]
+    goal: [16.7152, 63.141, 2.1677]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [55.1438, 8.4627, 2.1991]
+    goal: [15.8562, 62.5373, 2.1991]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [55.9834, 9.093, 2.2305]
+    goal: [15.0166, 61.907, 2.2305]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [56.8027, 9.7494, 2.2619]
+    goal: [14.1973, 61.2506, 2.2619]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [57.601, 10.4313, 2.2934]
+    goal: [13.399, 60.5687, 2.2934]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [58.3776, 11.1379, 2.3248]
+    goal: [12.6224, 59.8621, 2.3248]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [59.1315, 11.8685, 2.3562]
+    goal: [11.8685, 59.1315, 2.3562]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [59.8621, 12.6224, 2.3876]
+    goal: [11.1379, 58.3776, 2.3876]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [60.5687, 13.399, 2.419]
+    goal: [10.4313, 57.601, 2.419]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [61.2506, 14.1973, 2.4504]
+    goal: [9.7494, 56.8027, 2.4504]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [61.907, 15.0166, 2.4819]
+    goal: [9.093, 55.9834, 2.4819]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [62.5373, 15.8562, 2.5133]
+    goal: [8.4627, 55.1438, 2.5133]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [63.141, 16.7152, 2.5447]
+    goal: [7.859, 54.2848, 2.5447]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [63.7174, 17.5927, 2.5761]
+    goal: [7.2826, 53.4073, 2.5761]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [64.266, 18.4878, 2.6075]
+    goal: [6.734, 52.5122, 2.6075]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [64.7862, 19.3998, 2.6389]
+    goal: [6.2138, 51.6002, 2.6389]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [65.2774, 20.3276, 2.6704]
+    goal: [5.7226, 50.6724, 2.6704]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [65.7393, 21.2705, 2.7018]
+    goal: [5.2607, 49.7295, 2.7018]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [66.1714, 22.2273, 2.7332]
+    goal: [4.8286, 48.7727, 2.7332]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [66.5731, 23.1973, 2.7646]
+    goal: [4.4269, 47.8027, 2.7646]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [66.9442, 24.1794, 2.796]
+    goal: [4.0558, 46.8206, 2.796]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [67.2843, 25.1727, 2.8274]
+    goal: [3.7157, 45.8273, 2.8274]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [67.593, 26.1761, 2.8588]
+    goal: [3.407, 44.8239, 2.8588]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [67.87, 27.1888, 2.8903]
+    goal: [3.13, 43.8112, 2.8903]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.1151, 28.2097, 2.9217]
+    goal: [2.8849, 42.7903, 2.9217]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.328, 29.2377, 2.9531]
+    goal: [2.672, 41.7623, 2.9531]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.5085, 30.272, 2.9845]
+    goal: [2.4915, 40.728, 2.9845]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.6565, 31.3114, 3.0159]
+    goal: [2.3435, 39.6886, 3.0159]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.7717, 32.3549, 3.0473]
+    goal: [2.2283, 38.6451, 3.0473]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.8541, 33.4015, 3.0788]
+    goal: [2.1459, 37.5985, 3.0788]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [68.9035, 34.4503, 3.1102]
+    goal: [2.0965, 36.5497, 3.1102]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true

@@ -1,56 +1,34 @@
 world:
-  height: 26
-  width: 26
+  height: 20
+  width: 20
   step_time: 0.1
   sample_time: 0.1
-  offset:
-  - 0
-  - 0
-  step_mode: internal
-  control_mode: manual
-  collision_mode: stop
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
 robot:
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 21.0
-  - 13.0
-  - 3.1416
-  goal:
-  - 5.0
-  - 13.0
-  - 3.1416
-  vel_max: &id001
-  - 1.5
-  - 3.14
-  vel_min: &id002
-  - 0.0
-  - -3.14
-  color: g
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
-- kinematics:
-    name: diff
-  shape:
-    name: circle
-    radius: 0.3
-  state:
-  - 5.0
-  - 13.0
-  - 0.0
-  goal:
-  - 21.0
-  - 13.0
-  - 0.0
-  vel_max: *id001
-  vel_min: *id002
-  color: b
-  plot:
-    show_trajectory: true
-    show_goal: true
-    show_arrow: true
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [18.0, 10.0, 3.1416]
+    goal: [2.0, 10.0, 3.1416]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: diff}
+    shape: {name: circle, radius: 0.3}
+    state: [2.0, 10.0, 0.0]
+    goal: [18.0, 10.0, 0.0]
+    vel_max: [1.5, 3.14]
+    vel_min: [0.0, -3.14]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true

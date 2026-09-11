@@ -1,0 +1,29 @@
+world:
+  height: 12  # Aumentado levemente para dar margem visual aos robôs
+  width: 12
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  collision_mode: 'stop'
+  control_mode: 'auto'
+
+robot:
+  - number: 20
+    # Raio ajustado para 4.5m ao redor do centro [6, 6] para caber perfeitamente na arena
+    distribution: {name: 'circle', radius: 4.5, center: [6, 6]}  
+    kinematics: {name: 'omni'}  # Alterado para omnidirecional (compatível com vetor [vx, vy] do RVO)
+    shape: 
+      - {name: 'circle', radius: 0.2}
+    behavior: {name: 'rvo', vxmax: 1.5, vymax: 1.5, acce: 3.5, factor: 2.0, neighbor_threshold: 5.0, loop: true}
+    vel_min: [-1.5, -1.5]
+    vel_max: [1.5, 1.5]
+    color: ['royalblue', 'red', 'green', 'orange', 'purple', 'yellow', 'cyan', 'magenta', 'lime', 'pink', 'brown'] 
+    arrive_mode: position
+    goal_threshold: 0.2
+    plot:
+      show_trail: true
+      show_goal: true
+      trail_fill: true
+      trail_alpha: 0.2
+      show_trajectory: false
+      keep_trail_length: 15

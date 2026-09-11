@@ -1,0 +1,106 @@
+world:
+  height: 10
+  width: 10
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
+robot:
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [9.0, 5.0, 0.0]
+    goal: [1.0, 5.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [7.8284, 7.8284, 0.0]
+    goal: [2.1716, 2.1716, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.0, 9.0, 0.0]
+    goal: [5.0, 1.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.1716, 7.8284, 0.0]
+    goal: [7.8284, 2.1716, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [1.0, 5.0, 0.0]
+    goal: [9.0, 5.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.1716, 2.1716, 0.0]
+    goal: [7.8284, 7.8284, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.0, 1.0, 0.0]
+    goal: [5.0, 9.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [7.8284, 2.1716, 0.0]
+    goal: [2.1716, 7.8284, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true

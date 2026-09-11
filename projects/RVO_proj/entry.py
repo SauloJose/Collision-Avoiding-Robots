@@ -7,16 +7,16 @@ ENV_NAME = "envs/rvo_env3.yaml"
 
 # Parâmetros Cinemáticos e do Planejador RVO
 DT = 0.1                 # Passo de tempo (s)
-A_MAX =25.5              # Aceleração máxima (m/s²)
+A_MAX =50.5              # Aceleração máxima (m/s²)
 V_MAX = 1.5              # Velocidade máxima (m/s)
 N_SAMPLES = 100           # Quantidade de amostras no espaço de velocidades
-T_H = 10.0                # Horizonte de tempo para evitar colisões (s)
-D_MAX = 5.0              # Distância máxima para considerar um obstáculo (m)
+T_H = 5.0                # Horizonte de tempo para evitar colisões (s)
+D_MAX = 20.0              # Distância máxima para considerar um obstáculo (m)
 
 # Parâmetros do Loop de Simulação
 MAX_STEPS = 1500         # Limite máximo de passos de simulação
-RENDER_TIME = 0.05       # Tempo de renderização por frame (s)
-ARRIVAL_THRESHOLD = 0.2  # Tolerância de distância para considerar chegada ao destino (m)
+RENDER_TIME = 0.1       # Tempo de renderização por frame (s)
+ARRIVAL_THRESHOLD = 0.1  # Tolerância de distância para considerar chegada ao destino (m)
 
 
 # Setup de caminhos
@@ -25,14 +25,14 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
 import irsim
-from src.rvo import ReciprocalVelocityObstacles
+from src.rvo import PyRVO
 
 # Criar ambiente
 env = irsim.make(ENV_NAME)
 env.set_title("RVO Simulation - Ambos os robôs usam RVO")
 
 # Instanciar planejador RVO
-rvo_planner = ReciprocalVelocityObstacles(
+rvo_planner = PyRVO(
     dt=DT,
     a_max=A_MAX,
     v_max=V_MAX,

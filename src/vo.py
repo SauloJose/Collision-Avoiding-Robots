@@ -1,11 +1,17 @@
+"""
+This code is a python version of the VO (Velocity Object) algorithm from Van den Berg et al (1998). It's just for understand the theory behind it and how it works. Feel free to improve the code and modify as you can.
+
+Last update: 10/09/2026
+"""
+
+
 import numpy as np
 from numba import njit
 
 @njit(fastmath=True)
 def select_velocity_jit(pos_a, v_a, radius_a, obs_pos, obs_v, obs_radii, pos_goal, dt, a_max, v_max, t_h, n_samples=30, d_max=10.0):
-    """
-    Seleção de velocidade VO otimizada com pré-filtragem e geometria algébrica livre de trigonometria.
-    """
+    """Calcula a velocidade livre de colisão via VO com otimizações algébricas."""
+    
     # 1. Velocidade preferida
     gx = pos_goal[0] - pos_a[0]
     gy = pos_goal[1] - pos_a[1]
@@ -15,11 +21,13 @@ def select_velocity_jit(pos_a, v_a, radius_a, obs_pos, obs_v, obs_radii, pos_goa
     d_decel = 1.5  
 
     if g_dist > 0.001:
+        # Clamp de chegada (Arrival Steering): reduz linearmente a velocidade dentro do raio d_decel
         speed_target = v_max * min(1.0, g_dist / d_decel)
+        # Normalização do vetor direção multiplicada pela velocidade alvo
         v_pref_x = (gx / g_dist) * speed_target
         v_pref_y = (gy / g_dist) * speed_target
 
-    # 2. Pré-filtragem de obstáculos fora do raio d_max e pré-cálculo de termos estáticos
+    # 2. Pré-filtragem de obstáculos
     num_obs = obs_pos.shape[0]
     d_max_sq = d_max * d_max if d_max > 0.0 else 1e18
 
@@ -39,6 +47,7 @@ def select_velocity_jit(pos_a, v_a, radius_a, obs_pos, obs_v, obs_radii, pos_goa
         if d_sq > d_max_sq:
             continue
 
+        # Soma de Minkowski: reduz o agente a 1 ponto e expande o obstáculo para R = r_A + r_B
         R = radius_a + obs_radii[k]
         R_sq = R * R
 
@@ -46,11 +55,13 @@ def select_velocity_jit(pos_a, v_a, radius_a, obs_pos, obs_v, obs_radii, pos_goa
         obs_dy[valid_count] = dy
         obs_vx[valid_count] = obs_v[k, 0]
         obs_vy[valid_count] = obs_v[k, 1]
-        obs_C[valid_count] = d_sq - R_sq
+        # Termo C estático da equação de colisão (C = ||dp||² - R²), calculado 1x para poupar CPU
+        obs_C[valid_count] = d_sq - R_sq  
         already_colliding[valid_count] = (d_sq <= R_sq)
         valid_count += 1
 
-    # 3. Janela dinâmica de velocidades
+    # 3. Janela Dinâmica (AABB no espaço de velocidades)
+    # Recorte (crop) das velocidades atingíveis no intervalo dt considerando a aceleração a_max
     vx_min = max(-v_max, v_a[0] - a_max * dt)
     vx_max = min(v_max, v_a[0] + a_max * dt)
     vy_min = max(-v_max, v_a[1] - a_max * dt)
@@ -58,12 +69,15 @@ def select_velocity_jit(pos_a, v_a, radius_a, obs_pos, obs_v, obs_radii, pos_goa
 
     best_vx, best_vy = 0.0, 0.0
     min_cost = 1e30
-    v_max_sq = v_max * v_max
 
+    best_fb_vx, best_fb_vy = 0.0, 0.0
+    min_fb_cost = 1e30
+
+    v_max_sq = v_max * v_max
     step_x = (vx_max - vx_min) / (n_samples - 1) if n_samples > 1 else 0.0
     step_y = (vy_max - vy_min) / (n_samples - 1) if n_samples > 1 else 0.0
 
-    # 4. Busca por amostragem
+    # 4. Amostragem e Raycasting Quadrático
     for i in range(n_samples):
         vx = vx_min + i * step_x
         for j in range(n_samples):
@@ -86,40 +100,46 @@ def select_velocity_jit(pos_a, v_a, radius_a, obs_pos, obs_v, obs_radii, pos_goa
                 if v_rel_sq < 1e-8:
                     continue
 
+                # Raycasting: produto escalar (v_rel · dp). Se <= 0, estão se afastando
                 dot = vx_rel * obs_dx[k] + vy_rel * obs_dy[k]
                 if dot <= 0.0:
                     continue
 
+                # Discriminante da interseção raio-esfera (A t² - 2Bt + C = 0). Se < 0, não há colisão
                 disc = dot * dot - v_rel_sq * obs_C[k]
                 if disc < 0.0:
                     continue
 
-                if t_h > 0.0:
-                    t_coll = (dot - np.sqrt(disc)) / v_rel_sq
-                    if 0.0 < t_coll <= t_h:
-                        in_collision = True
-                        break
-                else:
+                # Bhaskara: calcula o tempo exato (segundos) até o impacto na borda
+                t_coll = (dot - np.sqrt(disc)) / v_rel_sq
+                if t_h <= 0.0 or (0.0 < t_coll <= t_h):
                     in_collision = True
                     break
 
-            if not in_collision:
-                dx = vx - v_pref_x
-                dy = vy - v_pref_y
-                cost = dx * dx + dy * dy + 0.01 * (vx * vx + vy * vy)
+            # 5. Avaliação da função de custo
+            dx = vx - v_pref_x
+            dy = vy - v_pref_y
+            cost = dx * dx + dy * dy + 0.01 * (vx * vx + vy * vy)
 
+            if not in_collision:
                 if cost < min_cost:
                     min_cost = cost
                     best_vx = vx
                     best_vy = vy
+            else:
+                # Fallback de emergência: minimiza a velocidade dentro dos limites cinemáticos
+                fb_cost = vx * vx + vy * vy
+                if fb_cost < min_fb_cost:
+                    min_fb_cost = fb_cost
+                    best_fb_vx = vx
+                    best_fb_vy = vy
 
     if min_cost == 1e30:
-        return np.array([0.0, 0.0], dtype=np.float64)
+        return np.array([best_fb_vx, best_fb_vy], dtype=np.float64)
 
     return np.array([best_vx, best_vy], dtype=np.float64)
 
-
-class VelocityObstacles:
+class PyVO:
     def __init__(self, dt=0.1, a_max=2.0, v_max=3.0, n_samples=30):
         self.dt = dt
         self.a_max = a_max 

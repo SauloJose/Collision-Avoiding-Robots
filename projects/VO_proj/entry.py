@@ -10,8 +10,8 @@ DT = 0.1                 # Passo de tempo (s)
 A_MAX = 1.5              # Aceleração máxima (m/s²)
 V_MAX = 1.5              # Velocidade máxima (m/s)
 N_SAMPLES = 50           # Quantidade de amostras no espaço de velocidades
-T_H = 1.0                # Horizonte de tempo para evitar colisões (s)
-D_MAX = 1.5              # Distância máxima para considerar um obstáculo (m)
+T_H = 2.0                # Horizonte de tempo para evitar colisões (s)
+D_MAX = 3.0              # Distância máxima para considerar um obstáculo (m)
 
 # Parâmetros do Loop de Simulação
 MAX_STEPS = 1500         # Limite máximo de passos de simulação
@@ -25,14 +25,14 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
 import irsim
-from src.vo import VelocityObstacles
+from src.vo import PyVO
 
 # Criar ambiente
 env = irsim.make(ENV_NAME)
 env.set_title("VO Simulation - Robô usará VO para desviar de todos os obstáculos")
 
 # Instanciar planejador VO
-vo_planner = VelocityObstacles(
+vo_planner = PyVO(
     dt=DT,
     a_max=A_MAX,
     v_max=V_MAX,

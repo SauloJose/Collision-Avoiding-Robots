@@ -337,184 +337,86 @@ class PyORCA:
     def __init__(
         self,
         dt=0.1,
-        a_max=20.5,
         v_max=1.0,
+        a_max=20.5,
         t_h=1.5,
         d_max=6.0,
         max_neighbors=10,
         base_bias=0.25,
-        safety_margin=0.1,
-        arrival_threshold=0.1,
-        default_radius=0.3,
     ):
         self.dt = float(dt)
-        self.a_max = float(a_max)
         self.v_max = float(v_max)
+        self.a_max = float(a_max)
         self.t_h = float(t_h)
         self.d_max = float(d_max)
         self.max_neighbors = int(max_neighbors)
         self.base_bias = float(base_bias)
-        self.safety_margin = float(safety_margin)
-        self.arrival_threshold = float(arrival_threshold)
-        self.default_radius = float(default_radius)
 
-        # Caches internos
-        self.current_velocities = None
-        self.static_pos = np.empty((0, 2), dtype=np.float64)
-        self.static_v = np.empty((0, 2), dtype=np.float64)
-        self.static_r = np.empty(0, dtype=np.float64)
-        self.static_is_obs = np.empty(0, dtype=np.bool_)
-        self.num_obs = 0
-
-    @staticmethod
-    def _vec2(obj, attr="state", default=None):
-        val = getattr(obj, attr, None)
-        if val is None:
-            if default is None:
-                return np.zeros(2, dtype=np.float64)
-            return np.ascontiguousarray(
-                np.asarray(default, dtype=np.float64).flatten()[:2]
-            )
-        return np.ascontiguousarray(
-            np.asarray(val, dtype=np.float64).flatten()[:2]
-        )
-
-    def _get_radius(self, obj):
-        r = getattr(obj, "radius", None)
-        if r is not None:
-            r_val = float(np.asarray(r).flatten()[0])
-            if r_val > 0.0:
-                return r_val
-        verts = getattr(obj, "vertices", None)
-        if verts is not None:
-            verts = np.asarray(verts, dtype=np.float64).reshape(2, -1)
-            center = verts.mean(axis=1, keepdims=True)
-            return float(np.linalg.norm(verts - center, axis=0).max())
-        return float(self.default_radius)
-
-    def init_env(self, env):
-        """Inicializa e pré-processa caches de obstáculos estáticos e robôs."""
-        static_obstacles = getattr(env, "obstacle_list", [])
-        self.num_obs = len(static_obstacles)
-
-        if self.num_obs > 0:
-            self.static_pos = np.array(
-                [self._vec2(o, "state") for o in static_obstacles],
-                dtype=np.float64,
-            ).reshape(self.num_obs, 2)
-            self.static_v = np.zeros((self.num_obs, 2), dtype=np.float64)
-            self.static_r = np.array(
-                [self._get_radius(o) + self.safety_margin for o in static_obstacles],
-                dtype=np.float64,
-            )
-            self.static_is_obs = np.ones(self.num_obs, dtype=np.bool_)
-
-        # Cache de velocidades dos robôs
-        self.current_velocities = np.array(
-            [self._vec2(r, "velocity") for r in env.robot_list],
-            dtype=np.float64,
-        )
-
-    def step(self, env):
+    def compute_velocities(
+        self,
+        positions: np.ndarray,      # (N, 2)
+        velocities: np.ndarray,     # (N, 2)
+        goals: np.ndarray,          # (N, 2)
+        radii: np.ndarray,          # (N,)
+        static_pos: np.ndarray = None,   # (M, 2) opcional
+        static_radii: np.ndarray = None, # (M,) opcional
+    ) -> np.ndarray:
         """
-        Executa um ciclo do ORCA lidando com atualização de estados,
-        ajuste dinâmico de ângulo e formatação do vetor de ações.
-        Retorna: (actions_list, all_arrived)
+        Calcula as novas velocidades para qualquer aplicação baseada em matrizes NumPy.
+        Retorna: np.ndarray de formato (N, 2) com as velocidades calculadas.
         """
-        robot_list = env.robot_list
-        num_robots = len(robot_list)
+        num_robots = len(positions)
 
-        if self.current_velocities is None:
-            self.init_env(env)
-
-        # 1. Coleta de estados com margem de segurança
-        positions = np.array([self._vec2(r, "state") for r in robot_list], dtype=np.float64)
-        goals = np.array(
-            [self._vec2(r, "goal") if r.goal is not None else self._vec2(r, "state") for r in robot_list],
-            dtype=np.float64,
-        )
-        radii = np.array(
-            [self._get_radius(r) + self.safety_margin for r in robot_list],
-            dtype=np.float64,
-        )
-
-        # 2. Avaliação de parada individual
-        all_arrived = True
-        for i in range(num_robots):
-            dist_to_goal = np.linalg.norm(positions[i] - goals[i])
-            if dist_to_goal < self.arrival_threshold:
-                goals[i] = positions[i].copy()
-            else:
-                all_arrived = False
-
-        # 3. Ajuste dinâmico do Angle Bias proporcional à quantidade de robôs
+        # 1. Ajuste do Angle Bias dinâmico por densidade
         angle_bias = float(
             np.clip(self.base_bias / np.sqrt(num_robots / 10.0), 0.03, self.base_bias)
         )
 
-        # 4. Unificação de estruturas espaciais
-        if self.num_obs > 0:
-            all_pos = np.vstack([positions, self.static_pos])
-            all_v = np.vstack([self.current_velocities, self.static_v])
-            all_radii = np.concatenate([radii, self.static_r])
-            all_is_obs = np.concatenate([np.zeros(num_robots, dtype=np.bool_), self.static_is_obs])
+        # 2. Unificação de robôs com obstáculos estáticos (se existirem)
+        if static_pos is not None and len(static_pos) > 0:
+            num_obs = len(static_pos)
+            all_pos = np.vstack([positions, static_pos])
+            all_v = np.vstack([velocities, np.zeros((num_obs, 2), dtype=np.float64)])
+            all_radii = np.concatenate([radii, static_radii])
+            all_is_obs = np.concatenate([
+                np.zeros(num_robots, dtype=np.bool_),
+                np.ones(num_obs, dtype=np.bool_)
+            ])
         else:
-            all_pos, all_v, all_radii = positions, self.current_velocities, radii
+            all_pos, all_v, all_radii = positions, velocities, radii
             all_is_obs = np.zeros(num_robots, dtype=np.bool_)
 
-        # 5. Execução do algoritmo de planejamento
-        new_velocities = self.step_all_agents(
-            positions=all_pos,
-            velocities=all_v,
-            radii=all_radii,
-            is_obstacles=all_is_obs,
-            goals=goals,
-            t_h=self.t_h,
-            d_max=self.d_max,
-            max_neighbors=self.max_neighbors,
-            angle_bias=angle_bias,
-        )
-
-        self.current_velocities = new_velocities.copy()
-        actions_list = [np.array([[v[0]], [v[1]]]) for v in new_velocities]
-
-        return actions_list, all_arrived
-
-    def step_all_agents(
-        self, positions, velocities, radii, is_obstacles, goals,
-        t_h, d_max, max_neighbors, angle_bias
-    ):
-        tree = cKDTree(positions)
-        num_robots = len(goals)
-        new_velocities = np.empty((num_robots, 2), dtype=velocities.dtype)
+        # 3. Busca por vizinhos via KDTree e cálculo via JIT
+        tree = cKDTree(all_pos)
+        new_velocities = np.empty((num_robots, 2), dtype=np.float64)
 
         for i in range(num_robots):
-            neighbor_indices = tree.query_ball_point(positions[i], r=d_max)
+            neighbor_indices = tree.query_ball_point(positions[i], r=self.d_max)
             idx = [k for k in neighbor_indices if k != i]
 
-            if len(idx) > max_neighbors:
+            if len(idx) > self.max_neighbors:
                 idx_arr = np.array(idx, dtype=np.int64)
-                dists_sq = np.sum((positions[idx_arr] - positions[i]) ** 2, axis=1)
-                closest_k = np.argsort(dists_sq)[:max_neighbors]
+                dists_sq = np.sum((all_pos[idx_arr] - positions[i]) ** 2, axis=1)
+                closest_k = np.argsort(dists_sq)[:self.max_neighbors]
                 idx = [idx[k] for k in closest_k]
 
             if idx:
                 idx_arr = np.array(idx, dtype=np.int64)
-                obs_pos = positions[idx_arr]
-                obs_v = velocities[idx_arr]
-                obs_radii = radii[idx_arr]
-                obs_is_obs = is_obstacles[idx_arr]
+                obs_pos = all_pos[idx_arr]
+                obs_v = all_v[idx_arr]
+                obs_radii = all_radii[idx_arr]
+                obs_is_obs = all_is_obs[idx_arr]
             else:
-                obs_pos = np.empty((0, 2), dtype=positions.dtype)
-                obs_v = np.empty((0, 2), dtype=velocities.dtype)
-                obs_radii = np.empty(0, dtype=radii.dtype)
-                obs_is_obs = np.empty(0, dtype=is_obstacles.dtype)
+                obs_pos = np.empty((0, 2), dtype=np.float64)
+                obs_v = np.empty((0, 2), dtype=np.float64)
+                obs_radii = np.empty(0, dtype=np.float64)
+                obs_is_obs = np.empty(0, dtype=np.bool_)
 
             new_velocities[i] = select_velocity_jit(
                 positions[i], velocities[i], float(radii[i]),
                 obs_pos, obs_v, obs_radii, obs_is_obs,
                 goals[i], self.dt, self.a_max, self.v_max,
-                float(t_h), float(d_max), float(angle_bias),
+                float(self.t_h), float(self.d_max), float(angle_bias)
             )
 
         return new_velocities

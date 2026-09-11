@@ -11,31 +11,31 @@ world:
   collision_mode: stop
 robot:
 - kinematics:
-    name: omni
+    name: diff
   shape:
     name: circle
     radius: 0.3
   state:
   - 21.0
   - 13.0
-  - 0.0
+  - 3.1416
   goal:
   - 5.0
   - 13.0
+  - 3.1416
+  vel_max: &id001
+  - 1.5
+  - 3.14
+  vel_min: &id002
   - 0.0
-  vel_max:
-  - 1.5
-  - 1.5
-  vel_min:
-  - -1.5
-  - -1.5
+  - -3.14
   color: g
   plot:
     show_trajectory: true
     show_goal: true
     show_arrow: true
 - kinematics:
-    name: omni
+    name: diff
   shape:
     name: circle
     radius: 0.3
@@ -47,12 +47,8 @@ robot:
   - 21.0
   - 13.0
   - 0.0
-  vel_max:
-  - 1.5
-  - 1.5
-  vel_min:
-  - -1.5
-  - -1.5
+  vel_max: *id001
+  vel_min: *id002
   color: b
   plot:
     show_trajectory: true

@@ -1,6 +1,6 @@
 world:
-  height: 38
-  width: 38
+  height: 57
+  width: 57
   step_time: 0.1
   sample_time: 0.1
   offset: [0, 0]
@@ -11,1200 +11,1200 @@ world:
 robot:
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.71, 19.0, 3.1416]
-    goal: [2.29, 19.0, 3.1416]
+    state: [54.76, 28.5, 3.1416]
+    goal: [2.24, 28.5, 3.1416]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.677, 20.0492, -3.0788]
-    goal: [2.323, 17.9508, -3.0788]
+    state: [54.7082, 30.1489, -3.0788]
+    goal: [2.2918, 26.8511, -3.0788]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.5782, 21.0943, -3.0159]
-    goal: [2.4218, 16.9057, -3.0159]
+    state: [54.5529, 31.7913, -3.0159]
+    goal: [2.4471, 25.2087, -3.0159]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.414, 22.1311, -2.9531]
-    goal: [2.586, 15.8689, -2.9531]
+    state: [54.2949, 33.4206, -2.9531]
+    goal: [2.7051, 23.5794, -2.9531]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.185, 23.1556, -2.8903]
-    goal: [2.815, 14.8444, -2.8903]
+    state: [53.935, 35.0306, -2.8903]
+    goal: [3.065, 21.9694, -2.8903]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [34.8922, 24.1637, -2.8274]
-    goal: [3.1078, 13.8363, -2.8274]
+    state: [53.4747, 36.6148, -2.8274]
+    goal: [3.5253, 20.3852, -2.8274]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [34.5366, 25.1514, -2.7646]
-    goal: [3.4634, 12.8486, -2.7646]
+    state: [52.9159, 38.167, -2.7646]
+    goal: [4.0841, 18.833, -2.7646]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [34.1197, 26.1148, -2.7018]
-    goal: [3.8803, 11.8852, -2.7018]
+    state: [52.2608, 39.681, -2.7018]
+    goal: [4.7392, 17.319, -2.7018]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [33.6431, 27.0501, -2.6389]
-    goal: [4.3569, 10.9499, -2.6389]
+    state: [51.5118, 41.1509, -2.6389]
+    goal: [5.4882, 15.8491, -2.6389]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [33.1087, 27.9537, -2.5761]
-    goal: [4.8913, 10.0463, -2.5761]
+    state: [50.6721, 42.5708, -2.5761]
+    goal: [6.3279, 14.4292, -2.5761]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [32.5187, 28.8219, -2.5133]
-    goal: [5.4813, 9.1781, -2.5133]
+    state: [49.7448, 43.9352, -2.5133]
+    goal: [7.2552, 13.0648, -2.5133]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [31.8753, 29.6514, -2.4504]
-    goal: [6.1247, 8.3486, -2.4504]
+    state: [48.7337, 45.2388, -2.4504]
+    goal: [8.2663, 11.7612, -2.4504]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [31.1811, 30.4388, -2.3876]
-    goal: [6.8189, 7.5612, -2.3876]
+    state: [47.6427, 46.4762, -2.3876]
+    goal: [9.3573, 10.5238, -2.3876]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [30.4388, 31.1811, -2.3248]
-    goal: [7.5612, 6.8189, -2.3248]
+    state: [46.4762, 47.6427, -2.3248]
+    goal: [10.5238, 9.3573, -2.3248]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [29.6514, 31.8753, -2.2619]
-    goal: [8.3486, 6.1247, -2.2619]
+    state: [45.2388, 48.7337, -2.2619]
+    goal: [11.7612, 8.2663, -2.2619]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [28.8219, 32.5187, -2.1991]
-    goal: [9.1781, 5.4813, -2.1991]
+    state: [43.9352, 49.7448, -2.1991]
+    goal: [13.0648, 7.2552, -2.1991]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [27.9537, 33.1087, -2.1363]
-    goal: [10.0463, 4.8913, -2.1363]
+    state: [42.5708, 50.6721, -2.1363]
+    goal: [14.4292, 6.3279, -2.1363]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [27.0501, 33.6431, -2.0735]
-    goal: [10.9499, 4.3569, -2.0735]
+    state: [41.1509, 51.5118, -2.0735]
+    goal: [15.8491, 5.4882, -2.0735]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [26.1148, 34.1197, -2.0106]
-    goal: [11.8852, 3.8803, -2.0106]
+    state: [39.681, 52.2608, -2.0106]
+    goal: [17.319, 4.7392, -2.0106]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [25.1514, 34.5366, -1.9478]
-    goal: [12.8486, 3.4634, -1.9478]
+    state: [38.167, 52.9159, -1.9478]
+    goal: [18.833, 4.0841, -1.9478]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [24.1637, 34.8922, -1.885]
-    goal: [13.8363, 3.1078, -1.885]
+    state: [36.6148, 53.4747, -1.885]
+    goal: [20.3852, 3.5253, -1.885]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [23.1556, 35.185, -1.8221]
-    goal: [14.8444, 2.815, -1.8221]
+    state: [35.0306, 53.935, -1.8221]
+    goal: [21.9694, 3.065, -1.8221]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [22.1311, 35.414, -1.7593]
-    goal: [15.8689, 2.586, -1.7593]
+    state: [33.4206, 54.2949, -1.7593]
+    goal: [23.5794, 2.7051, -1.7593]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [21.0943, 35.5782, -1.6965]
-    goal: [16.9057, 2.4218, -1.6965]
+    state: [31.7913, 54.5529, -1.6965]
+    goal: [25.2087, 2.4471, -1.6965]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [20.0492, 35.677, -1.6336]
-    goal: [17.9508, 2.323, -1.6336]
+    state: [30.1489, 54.7082, -1.6336]
+    goal: [26.8511, 2.2918, -1.6336]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [19.0, 35.71, -1.5708]
-    goal: [19.0, 2.29, -1.5708]
+    state: [28.5, 54.76, -1.5708]
+    goal: [28.5, 2.24, -1.5708]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [17.9508, 35.677, -1.508]
-    goal: [20.0492, 2.323, -1.508]
+    state: [26.8511, 54.7082, -1.508]
+    goal: [30.1489, 2.2918, -1.508]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [16.9057, 35.5782, -1.4451]
-    goal: [21.0943, 2.4218, -1.4451]
+    state: [25.2087, 54.5529, -1.4451]
+    goal: [31.7913, 2.4471, -1.4451]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [15.8689, 35.414, -1.3823]
-    goal: [22.1311, 2.586, -1.3823]
+    state: [23.5794, 54.2949, -1.3823]
+    goal: [33.4206, 2.7051, -1.3823]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [14.8444, 35.185, -1.3195]
-    goal: [23.1556, 2.815, -1.3195]
+    state: [21.9694, 53.935, -1.3195]
+    goal: [35.0306, 3.065, -1.3195]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [13.8363, 34.8922, -1.2566]
-    goal: [24.1637, 3.1078, -1.2566]
+    state: [20.3852, 53.4747, -1.2566]
+    goal: [36.6148, 3.5253, -1.2566]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [12.8486, 34.5366, -1.1938]
-    goal: [25.1514, 3.4634, -1.1938]
+    state: [18.833, 52.9159, -1.1938]
+    goal: [38.167, 4.0841, -1.1938]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [11.8852, 34.1197, -1.131]
-    goal: [26.1148, 3.8803, -1.131]
+    state: [17.319, 52.2608, -1.131]
+    goal: [39.681, 4.7392, -1.131]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [10.9499, 33.6431, -1.0681]
-    goal: [27.0501, 4.3569, -1.0681]
+    state: [15.8491, 51.5118, -1.0681]
+    goal: [41.1509, 5.4882, -1.0681]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [10.0463, 33.1087, -1.0053]
-    goal: [27.9537, 4.8913, -1.0053]
+    state: [14.4292, 50.6721, -1.0053]
+    goal: [42.5708, 6.3279, -1.0053]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [9.1781, 32.5187, -0.9425]
-    goal: [28.8219, 5.4813, -0.9425]
+    state: [13.0648, 49.7448, -0.9425]
+    goal: [43.9352, 7.2552, -0.9425]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [8.3486, 31.8753, -0.8796]
-    goal: [29.6514, 6.1247, -0.8796]
+    state: [11.7612, 48.7337, -0.8796]
+    goal: [45.2388, 8.2663, -0.8796]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [7.5612, 31.1811, -0.8168]
-    goal: [30.4388, 6.8189, -0.8168]
+    state: [10.5238, 47.6427, -0.8168]
+    goal: [46.4762, 9.3573, -0.8168]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [6.8189, 30.4388, -0.754]
-    goal: [31.1811, 7.5612, -0.754]
+    state: [9.3573, 46.4762, -0.754]
+    goal: [47.6427, 10.5238, -0.754]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [6.1247, 29.6514, -0.6912]
-    goal: [31.8753, 8.3486, -0.6912]
+    state: [8.2663, 45.2388, -0.6912]
+    goal: [48.7337, 11.7612, -0.6912]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [5.4813, 28.8219, -0.6283]
-    goal: [32.5187, 9.1781, -0.6283]
+    state: [7.2552, 43.9352, -0.6283]
+    goal: [49.7448, 13.0648, -0.6283]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [4.8913, 27.9537, -0.5655]
-    goal: [33.1087, 10.0463, -0.5655]
+    state: [6.3279, 42.5708, -0.5655]
+    goal: [50.6721, 14.4292, -0.5655]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [4.3569, 27.0501, -0.5027]
-    goal: [33.6431, 10.9499, -0.5027]
+    state: [5.4882, 41.1509, -0.5027]
+    goal: [51.5118, 15.8491, -0.5027]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [3.8803, 26.1148, -0.4398]
-    goal: [34.1197, 11.8852, -0.4398]
+    state: [4.7392, 39.681, -0.4398]
+    goal: [52.2608, 17.319, -0.4398]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [3.4634, 25.1514, -0.377]
-    goal: [34.5366, 12.8486, -0.377]
+    state: [4.0841, 38.167, -0.377]
+    goal: [52.9159, 18.833, -0.377]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [3.1078, 24.1637, -0.3142]
-    goal: [34.8922, 13.8363, -0.3142]
+    state: [3.5253, 36.6148, -0.3142]
+    goal: [53.4747, 20.3852, -0.3142]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.815, 23.1556, -0.2513]
-    goal: [35.185, 14.8444, -0.2513]
+    state: [3.065, 35.0306, -0.2513]
+    goal: [53.935, 21.9694, -0.2513]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.586, 22.1311, -0.1885]
-    goal: [35.414, 15.8689, -0.1885]
+    state: [2.7051, 33.4206, -0.1885]
+    goal: [54.2949, 23.5794, -0.1885]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.4218, 21.0943, -0.1257]
-    goal: [35.5782, 16.9057, -0.1257]
+    state: [2.4471, 31.7913, -0.1257]
+    goal: [54.5529, 25.2087, -0.1257]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.323, 20.0492, -0.0628]
-    goal: [35.677, 17.9508, -0.0628]
+    state: [2.2918, 30.1489, -0.0628]
+    goal: [54.7082, 26.8511, -0.0628]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.29, 19.0, 0.0]
-    goal: [35.71, 19.0, 0.0]
+    state: [2.24, 28.5, 0.0]
+    goal: [54.76, 28.5, 0.0]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.323, 17.9508, 0.0628]
-    goal: [35.677, 20.0492, 0.0628]
+    state: [2.2918, 26.8511, 0.0628]
+    goal: [54.7082, 30.1489, 0.0628]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.4218, 16.9057, 0.1257]
-    goal: [35.5782, 21.0943, 0.1257]
+    state: [2.4471, 25.2087, 0.1257]
+    goal: [54.5529, 31.7913, 0.1257]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.586, 15.8689, 0.1885]
-    goal: [35.414, 22.1311, 0.1885]
+    state: [2.7051, 23.5794, 0.1885]
+    goal: [54.2949, 33.4206, 0.1885]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [2.815, 14.8444, 0.2513]
-    goal: [35.185, 23.1556, 0.2513]
+    state: [3.065, 21.9694, 0.2513]
+    goal: [53.935, 35.0306, 0.2513]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [3.1078, 13.8363, 0.3142]
-    goal: [34.8922, 24.1637, 0.3142]
+    state: [3.5253, 20.3852, 0.3142]
+    goal: [53.4747, 36.6148, 0.3142]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [3.4634, 12.8486, 0.377]
-    goal: [34.5366, 25.1514, 0.377]
+    state: [4.0841, 18.833, 0.377]
+    goal: [52.9159, 38.167, 0.377]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [3.8803, 11.8852, 0.4398]
-    goal: [34.1197, 26.1148, 0.4398]
+    state: [4.7392, 17.319, 0.4398]
+    goal: [52.2608, 39.681, 0.4398]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [4.3569, 10.9499, 0.5027]
-    goal: [33.6431, 27.0501, 0.5027]
+    state: [5.4882, 15.8491, 0.5027]
+    goal: [51.5118, 41.1509, 0.5027]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [4.8913, 10.0463, 0.5655]
-    goal: [33.1087, 27.9537, 0.5655]
+    state: [6.3279, 14.4292, 0.5655]
+    goal: [50.6721, 42.5708, 0.5655]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [5.4813, 9.1781, 0.6283]
-    goal: [32.5187, 28.8219, 0.6283]
+    state: [7.2552, 13.0648, 0.6283]
+    goal: [49.7448, 43.9352, 0.6283]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [6.1247, 8.3486, 0.6912]
-    goal: [31.8753, 29.6514, 0.6912]
+    state: [8.2663, 11.7612, 0.6912]
+    goal: [48.7337, 45.2388, 0.6912]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [6.8189, 7.5612, 0.754]
-    goal: [31.1811, 30.4388, 0.754]
+    state: [9.3573, 10.5238, 0.754]
+    goal: [47.6427, 46.4762, 0.754]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [7.5612, 6.8189, 0.8168]
-    goal: [30.4388, 31.1811, 0.8168]
+    state: [10.5238, 9.3573, 0.8168]
+    goal: [46.4762, 47.6427, 0.8168]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [8.3486, 6.1247, 0.8796]
-    goal: [29.6514, 31.8753, 0.8796]
+    state: [11.7612, 8.2663, 0.8796]
+    goal: [45.2388, 48.7337, 0.8796]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [9.1781, 5.4813, 0.9425]
-    goal: [28.8219, 32.5187, 0.9425]
+    state: [13.0648, 7.2552, 0.9425]
+    goal: [43.9352, 49.7448, 0.9425]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [10.0463, 4.8913, 1.0053]
-    goal: [27.9537, 33.1087, 1.0053]
+    state: [14.4292, 6.3279, 1.0053]
+    goal: [42.5708, 50.6721, 1.0053]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [10.9499, 4.3569, 1.0681]
-    goal: [27.0501, 33.6431, 1.0681]
+    state: [15.8491, 5.4882, 1.0681]
+    goal: [41.1509, 51.5118, 1.0681]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [11.8852, 3.8803, 1.131]
-    goal: [26.1148, 34.1197, 1.131]
+    state: [17.319, 4.7392, 1.131]
+    goal: [39.681, 52.2608, 1.131]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [12.8486, 3.4634, 1.1938]
-    goal: [25.1514, 34.5366, 1.1938]
+    state: [18.833, 4.0841, 1.1938]
+    goal: [38.167, 52.9159, 1.1938]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [13.8363, 3.1078, 1.2566]
-    goal: [24.1637, 34.8922, 1.2566]
+    state: [20.3852, 3.5253, 1.2566]
+    goal: [36.6148, 53.4747, 1.2566]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [14.8444, 2.815, 1.3195]
-    goal: [23.1556, 35.185, 1.3195]
+    state: [21.9694, 3.065, 1.3195]
+    goal: [35.0306, 53.935, 1.3195]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [15.8689, 2.586, 1.3823]
-    goal: [22.1311, 35.414, 1.3823]
+    state: [23.5794, 2.7051, 1.3823]
+    goal: [33.4206, 54.2949, 1.3823]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [16.9057, 2.4218, 1.4451]
-    goal: [21.0943, 35.5782, 1.4451]
+    state: [25.2087, 2.4471, 1.4451]
+    goal: [31.7913, 54.5529, 1.4451]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [17.9508, 2.323, 1.508]
-    goal: [20.0492, 35.677, 1.508]
+    state: [26.8511, 2.2918, 1.508]
+    goal: [30.1489, 54.7082, 1.508]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [19.0, 2.29, 1.5708]
-    goal: [19.0, 35.71, 1.5708]
+    state: [28.5, 2.24, 1.5708]
+    goal: [28.5, 54.76, 1.5708]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [20.0492, 2.323, 1.6336]
-    goal: [17.9508, 35.677, 1.6336]
+    state: [30.1489, 2.2918, 1.6336]
+    goal: [26.8511, 54.7082, 1.6336]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [21.0943, 2.4218, 1.6965]
-    goal: [16.9057, 35.5782, 1.6965]
+    state: [31.7913, 2.4471, 1.6965]
+    goal: [25.2087, 54.5529, 1.6965]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [22.1311, 2.586, 1.7593]
-    goal: [15.8689, 35.414, 1.7593]
+    state: [33.4206, 2.7051, 1.7593]
+    goal: [23.5794, 54.2949, 1.7593]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [23.1556, 2.815, 1.8221]
-    goal: [14.8444, 35.185, 1.8221]
+    state: [35.0306, 3.065, 1.8221]
+    goal: [21.9694, 53.935, 1.8221]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [24.1637, 3.1078, 1.885]
-    goal: [13.8363, 34.8922, 1.885]
+    state: [36.6148, 3.5253, 1.885]
+    goal: [20.3852, 53.4747, 1.885]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [25.1514, 3.4634, 1.9478]
-    goal: [12.8486, 34.5366, 1.9478]
+    state: [38.167, 4.0841, 1.9478]
+    goal: [18.833, 52.9159, 1.9478]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [26.1148, 3.8803, 2.0106]
-    goal: [11.8852, 34.1197, 2.0106]
+    state: [39.681, 4.7392, 2.0106]
+    goal: [17.319, 52.2608, 2.0106]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [27.0501, 4.3569, 2.0735]
-    goal: [10.9499, 33.6431, 2.0735]
+    state: [41.1509, 5.4882, 2.0735]
+    goal: [15.8491, 51.5118, 2.0735]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [27.9537, 4.8913, 2.1363]
-    goal: [10.0463, 33.1087, 2.1363]
+    state: [42.5708, 6.3279, 2.1363]
+    goal: [14.4292, 50.6721, 2.1363]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [28.8219, 5.4813, 2.1991]
-    goal: [9.1781, 32.5187, 2.1991]
+    state: [43.9352, 7.2552, 2.1991]
+    goal: [13.0648, 49.7448, 2.1991]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [29.6514, 6.1247, 2.2619]
-    goal: [8.3486, 31.8753, 2.2619]
+    state: [45.2388, 8.2663, 2.2619]
+    goal: [11.7612, 48.7337, 2.2619]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [30.4388, 6.8189, 2.3248]
-    goal: [7.5612, 31.1811, 2.3248]
+    state: [46.4762, 9.3573, 2.3248]
+    goal: [10.5238, 47.6427, 2.3248]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [31.1811, 7.5612, 2.3876]
-    goal: [6.8189, 30.4388, 2.3876]
+    state: [47.6427, 10.5238, 2.3876]
+    goal: [9.3573, 46.4762, 2.3876]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [31.8753, 8.3486, 2.4504]
-    goal: [6.1247, 29.6514, 2.4504]
+    state: [48.7337, 11.7612, 2.4504]
+    goal: [8.2663, 45.2388, 2.4504]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [32.5187, 9.1781, 2.5133]
-    goal: [5.4813, 28.8219, 2.5133]
+    state: [49.7448, 13.0648, 2.5133]
+    goal: [7.2552, 43.9352, 2.5133]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [33.1087, 10.0463, 2.5761]
-    goal: [4.8913, 27.9537, 2.5761]
+    state: [50.6721, 14.4292, 2.5761]
+    goal: [6.3279, 42.5708, 2.5761]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [33.6431, 10.9499, 2.6389]
-    goal: [4.3569, 27.0501, 2.6389]
+    state: [51.5118, 15.8491, 2.6389]
+    goal: [5.4882, 41.1509, 2.6389]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [34.1197, 11.8852, 2.7018]
-    goal: [3.8803, 26.1148, 2.7018]
+    state: [52.2608, 17.319, 2.7018]
+    goal: [4.7392, 39.681, 2.7018]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [34.5366, 12.8486, 2.7646]
-    goal: [3.4634, 25.1514, 2.7646]
+    state: [52.9159, 18.833, 2.7646]
+    goal: [4.0841, 38.167, 2.7646]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [34.8922, 13.8363, 2.8274]
-    goal: [3.1078, 24.1637, 2.8274]
+    state: [53.4747, 20.3852, 2.8274]
+    goal: [3.5253, 36.6148, 2.8274]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.185, 14.8444, 2.8903]
-    goal: [2.815, 23.1556, 2.8903]
+    state: [53.935, 21.9694, 2.8903]
+    goal: [3.065, 35.0306, 2.8903]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.414, 15.8689, 2.9531]
-    goal: [2.586, 22.1311, 2.9531]
+    state: [54.2949, 23.5794, 2.9531]
+    goal: [2.7051, 33.4206, 2.9531]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.5782, 16.9057, 3.0159]
-    goal: [2.4218, 21.0943, 3.0159]
+    state: [54.5529, 25.2087, 3.0159]
+    goal: [2.4471, 31.7913, 3.0159]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
   - kinematics: {name: diff}
     shape: {name: circle, radius: 0.3}
-    state: [35.677, 17.9508, 3.0788]
-    goal: [2.323, 20.0492, 3.0788]
+    state: [54.7082, 26.8511, 3.0788]
+    goal: [2.2918, 30.1489, 3.0788]
     vel_max: [1.5, 3.14]
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true

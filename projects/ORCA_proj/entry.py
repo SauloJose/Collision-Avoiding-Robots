@@ -9,7 +9,7 @@ import numpy as np
 # --- AMBIENTE E EXECUÇÃO ---
 NUM_ROBOTS        = 100
 ENV_NAME          = f"envs/orca_env_{NUM_ROBOTS}.yaml"  # Caminho do arquivo YAML do cenário
-MAX_STEPS         = 1500                      # Limite máximo de iterações da simulação
+MAX_STEPS         = 8000                      # Limite máximo de iterações da simulação
 RENDER_TIME       = 0.1                       # Intervalo de atualização do renderizador (s)
 
 # --- DINÂMICA DOS AGENTES ---
@@ -18,10 +18,10 @@ V_MAX             = 1.0                       # Velocidade linear máxima do rob
 A_MAX             = 20.5                      # Aceleração máxima por passo (m/s²)
 
 # --- PARÂMETROS DE NAVEGAÇÃO (ORCA) ---
-T_H               = 1.5                       # Horizonte temporal de prevenção de colisão (s)
-D_MAX             = T_H*V_MAX                       # Raio de busca espacial por vizinhos (m)
-MAX_NEIGHBORS     = 8                        # Máximo de vizinhos mais próximos avaliados no LP
-BASE_BIAS         = 0.25                      # Desvio angular na v_pref (~14°) para quebra de simetria
+T_H               = 1.5                         # Horizonte temporal de prevenção de colisão (s)
+D_MAX             = T_H*V_MAX                   # Raio de busca espacial por vizinhos (m)
+MAX_NEIGHBORS     = 8                           # Máximo de vizinhos mais próximos avaliados no LP
+BASE_BIAS         = 0.25                        # Desvio angular na v_pref (~14°) para quebra de simetria
 
 # --- GEOMETRIA E CRITÉRIOS DE SUCESSO ---
 DEFAULT_RADIUS    = 0.3                       # Raio fallback para robôs/obstáculos sem dimensão exata

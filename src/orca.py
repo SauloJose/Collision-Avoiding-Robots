@@ -12,12 +12,37 @@ from scipy.spatial import cKDTree
 
 # ============================================================================
 @njit(fastmath=True)
+def compute_orca_segment_jit(pos_a, v_opt_a, r_a, p1, p2, tau, dt):
+    """
+    Computes the ORCA line for a line segment P1-P2.
+    The robot assumes 100% of the avoidance responsibility (w_factor = 1.0).
+    """
+    seg = p2 - p1
+    seg_len_sq = seg[0]*seg[0] + seg[1]*seg[1]
+    
+    if seg_len_sq < 1e-9:
+        return compute_orca_line_jit(
+            pos_a, v_opt_a, r_a, p1, np.zeros(2, dtype=pos_a.dtype), 0.0, tau, dt, True
+        )
+
+    # Scalar projection of robot position onto the segment line bounded to [0, 1]
+    t = max(0.0, min(1.0, ((pos_a[0] - p1[0]) * seg[0] + (pos_a[1] - p1[1]) * seg[1]) / seg_len_sq))
+    p_near = p1 + t * seg
+
+    # Treat the nearest point on the segment as a static obstacle with radius 0 (w_factor = 1.0)
+    return compute_orca_line_jit(
+        pos_a, v_opt_a, r_a, p_near, np.zeros(2, dtype=pos_a.dtype), 0.0, tau, dt, True
+    )
+
+
+# ============================================================================
+@njit(fastmath=True)
 def compute_orca_line_jit(pos_a, v_opt_a, r_a, pos_b, v_opt_b, r_b, tau, dt, is_obstacle=False):
     """
     Computes the ORCA line (half-plane) that separates agent 'a's velocity
     from the collision cone with 'b'.
 
-    Convenções (RVO2):
+    Conventions (RVO2):
         rel_pos = pos_b - pos_a
         rel_vel = v_a - v_b
         r = r_a + r_b (Minkowski sum)
@@ -64,7 +89,7 @@ def compute_orca_line_jit(pos_a, v_opt_a, r_a, pos_b, v_opt_b, r_b, tau, dt, is_
         dot_w_pos = w_x * rel_pos[0] + w_y * rel_pos[1]
 
         # Projection onto the "cut-off circle" (head-on collision):
-        #   dot_w_pos < 0 and dot_w_pos^2 > r^2 |w|^2
+        #   dot_w_pos < 0 and dot_w_pos^2 > r^2 |w|^2 (equiv) dot_pos_w^ > (r_a+r_b)
         # u = (r/tau - |w|) * w/|w| ;  n = w/|w|
         if dot_w_pos < 0.0 and dot_w_pos*dot_w_pos > r*r*w_sq:
             w_len = np.sqrt(w_sq)
@@ -262,13 +287,14 @@ def linear_program_3d_jit(lines, num_lines, v_max, v_pref, result_v, begin_line=
 def select_velocity_jit(
     pos_a, v_a, radius_a,
     obs_pos, obs_v, obs_radii, obs_is_obstacle,
+    static_lines,
     pos_goal, dt, a_max, v_max,
     t_h, d_max, angle_bias
 ):
     """
     Selects the optimal velocity for an agent using ORCA.
 
-    obs_is_obstacle: array booleano (n_obs,) indicando quais vizinhos são
+    obs_is_obstacle: boolean array (n_obs,) indicating which neighbors are
                      static obstacles (full responsibility) versus
                      reciprocal agents (shared responsibility).
     """
@@ -277,7 +303,6 @@ def select_velocity_jit(
     goal_dir_y = pos_goal[1] - pos_a[1]
     dist_goal_sq = goal_dir_x*goal_dir_x + goal_dir_y*goal_dir_y
 
-    
     v_pref = np.zeros(2, dtype=pos_a.dtype)
     if dist_goal_sq > 1e-9:
         dist_goal = np.sqrt(dist_goal_sq)
@@ -291,12 +316,26 @@ def select_velocity_jit(
         v_pref[0] = vx_raw * cos_n - vy_raw * sin_n 
         v_pref[1] = vx_raw * sin_n + vy_raw * cos_n
 
-    # Collect ORCA lines for neighbors within d_max.
     num_obs = obs_pos.shape[0]
-    lines = np.empty((num_obs, 4), dtype=pos_a.dtype)
+    num_lines = static_lines.shape[0]
+    lines = np.empty((num_obs + num_lines, 4), dtype=pos_a.dtype)
     line_count = 0
     d_max_sq = d_max * d_max
 
+    # 1. Static Line Segments (ORCA line with 100% robot responsibility)
+    for i in range(num_lines):
+        p1 = static_lines[i, 0]
+        p2 = static_lines[i, 1]
+        p0_x, p0_y, n_x, n_y = compute_orca_segment_jit(
+            pos_a, v_a, radius_a, p1, p2, t_h, dt
+        )
+        lines[line_count, 0] = p0_x
+        lines[line_count, 1] = p0_y
+        lines[line_count, 2] = n_x
+        lines[line_count, 3] = n_y
+        line_count += 1
+
+    # 2. Circular agents and obstacles
     for i in range(num_obs):
         rel_x = obs_pos[i, 0] - pos_a[0]
         rel_y = obs_pos[i, 1] - pos_a[1]
@@ -360,6 +399,7 @@ class PyORCA:
         radii: np.ndarray,          # (N,)
         static_pos: np.ndarray = None,   # (M, 2), optional
         static_radii: np.ndarray = None, # (M,), optional
+        static_lines: np.ndarray = None, # (K, 2, 2), optional
     ) -> np.ndarray:
         """
         Computes new velocities for any application based on NumPy arrays.
@@ -385,6 +425,8 @@ class PyORCA:
         else:
             all_pos, all_v, all_radii = positions, velocities, radii
             all_is_obs = np.zeros(num_robots, dtype=np.bool_)
+
+        lines_arr = static_lines if static_lines is not None else np.empty((0, 2, 2), dtype=np.float64)
 
         # 3. Find neighbors using KDTree and perform the JIT computation.
         tree = cKDTree(all_pos)
@@ -415,6 +457,7 @@ class PyORCA:
             new_velocities[i] = select_velocity_jit(
                 positions[i], velocities[i], float(radii[i]),
                 obs_pos, obs_v, obs_radii, obs_is_obs,
+                lines_arr,
                 goals[i], self.dt, self.a_max, self.v_max,
                 float(self.t_h), float(self.d_max), float(angle_bias)
             )

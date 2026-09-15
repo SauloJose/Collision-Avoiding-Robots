@@ -6,27 +6,16 @@ from src.orca import *
 
 # ============================================================================
 # Enum-like class for adapter modes.
-# OMNI -> holonomic planner (PyORCA); actions = [[vx], [vy]]
-# DIFF -> differential-drive planner (PySORCA); actions = [[v], [omega]]
+#   OMNI -> holonomic planner (PyORCA);  actions = [[vx], [vy]]
+#   DIFF -> S-ORCA planner (PySORCA);    actions = [[v], [omega]]
+#   NH   -> NH-ORCA planner (PyNHORCA);  actions = [[v], [omega]]
 class Mode:
     OMNI = 1
     DIFF = 2
+    NH   = 3
 
 
 # ============================================================================
-# Adapter for use with the IRSim library.
-# It transparently supports two planner families:
-#   * PyORCA  (holonomic)     -> compute_velocities
-#   * PySORCA (differential)  -> compute_wheel_velocities
-#
-# The adapter is responsible for:
-#   1. Extracting the current state of every robot and static obstacle
-#      from the IR-Sim environment.
-#   2. Calling the appropriate planner method depending on `mode`.
-#   3. Converting the planner output into the action format expected by
-#      IR-Sim:
-#         - OMNI: [[vx], [vy]]
-#         - DIFF: [[v], [omega]]  (IR-Sim expects linear + angular)
 class IRSimAdapter:
     def __init__(
         self,
@@ -42,29 +31,26 @@ class IRSimAdapter:
         self.default_radius = default_radius
         self.mode = mode
 
-        # Internal state buffers (populated lazily by init_env).
-        self.current_velocities = None   # (N, 2) cartesian velocities (OMNI mode)
-        self.current_wheels = None       # (N, 2) wheel velocities  (DIFF mode)
+        self.current_velocities = None
+        self.current_wheels = None
 
-        # Static obstacles (empty by default).
         self.static_pos = np.empty((0, 2), dtype=np.float64)
         self.static_radii = np.empty(0, dtype=np.float64)
+        self.static_lines = np.empty((0, 2, 2), dtype=np.float64)
+
+        self._validated = False
 
     # ------------------------------------------------------------------
     # State extraction helpers
     # ------------------------------------------------------------------
     def _extract_vec2(self, obj, attr="state"):
-        """Return the first two components of `obj.<attr>` as a float64 array."""
+        """Return the first two components of `obj.` as a float64 array."""
         val = getattr(obj, attr, None)
         if val is None:
             return np.zeros(2, dtype=np.float64)
         return np.ascontiguousarray(np.asarray(val, dtype=np.float64).flatten()[:2])
 
     def _extract_theta(self, obj):
-        """
-        Return the orientation (radians) of a robot.
-        Tries `obj.theta` first; falls back to `obj.state[2]` if available.
-        """
         th = getattr(obj, "theta", None)
         if th is not None:
             return float(np.asarray(th).flatten()[0])
@@ -73,67 +59,205 @@ class IRSimAdapter:
             return float(np.asarray(st).flatten()[2])
         return 0.0
 
+    # ---------------------- NEW HELPERS -----------------------------
+    def _get_polygon_xy(self, obj):
+        """
+        Returns the polygon vertices in (N, 2) format or None.
+        Handles the two possible IR-Sim layouts:
+          * (2, N): row 0 = x, row 1 = y
+          * (N, 2): each row is a vertex
+        """
+        verts = getattr(obj, "vertices", None)
+        if verts is None:
+            verts = getattr(obj, "vertex", None)
+        if verts is None and hasattr(obj, "get_vertices"):
+            try:
+                verts = obj.get_vertices()
+            except Exception:
+                verts = None
+        if verts is None and hasattr(obj, "geometry"):
+            try:
+                geom = obj.geometry
+                if hasattr(geom, "exterior"):
+                    return np.array(geom.exterior.coords, dtype=np.float64)[:, :2]
+            except Exception:
+                pass
+
+        if verts is None:
+            return None
+
+        v = np.asarray(verts, dtype=np.float64)
+        if v.ndim != 2:
+            return None
+        if v.shape[0] == 2 and v.shape[1] >= 2:
+            return v.T
+        if v.shape[1] == 2:
+            return v
+        # last resort
+        return v.reshape(-1, 2)
+
+    def _extract_center(self, obj):
+        """
+        XY center of a robot/obstacle.
+        - Polygon: centroid of vertices (IR-Sim's `state` is not reliable for polygons).
+        - Circle/robot: `state`.
+        """
+        verts_xy = self._get_polygon_xy(obj)
+        if verts_xy is not None and verts_xy.shape[0] > 0:
+            return verts_xy.mean(axis=0)
+        return self._extract_vec2(obj, "state")
+
     def _extract_radius(self, obj):
         """
-        Return the collision radius of a robot/obstacle.
-        Priority: explicit `.radius`, else max distance from vertex centroid,
-        else the fallback `default_radius`.
+        Collision radius:
+        - Se `.radius > 0`, use directly (what IR-Sim exposes for polygons: bounding circle).
+        - Otherwise, calculate maximum distance from centroid to vertices.
+        - Otherwise, `default_radius`.
         """
         r = getattr(obj, "radius", None)
-        if r is not None and float(np.asarray(r).flatten()[0]) > 0:
-            return float(np.asarray(r).flatten()[0])
-        verts = getattr(obj, "vertices", None)
-        if verts is not None:
-            verts = np.asarray(verts, dtype=np.float64).reshape(2, -1)
-            center = verts.mean(axis=1, keepdims=True)
-            return float(np.linalg.norm(verts - center, axis=0).max())
+        if r is not None:
+            try:
+                rv = float(np.asarray(r).flatten()[0])
+                if rv > 0:
+                    return rv
+            except Exception:
+                pass
+
+        verts_xy = self._get_polygon_xy(obj)
+        if verts_xy is not None and verts_xy.shape[0] > 0:
+            center = verts_xy.mean(axis=0, keepdims=True)
+            return float(np.linalg.norm(verts_xy - center, axis=1).max())
+
         return self.default_radius
+
+    def _extract_polygon_lines(self, verts_xy):
+        """
+        Extracts line segments (P1, P2) forming the boundary of a polygon.
+        """
+        N = len(verts_xy)
+        if N < 2:
+            return np.empty((0, 2, 2), dtype=np.float64)
+
+        lines = []
+        for i in range(N):
+            p1 = verts_xy[i]
+            p2 = verts_xy[(i + 1) % N]
+            lines.append([p1, p2])
+        return np.array(lines, dtype=np.float64)
+    # ------------------------------------------------------------------
+
+    # ------------------------------------------------------------------
+    # Planner classification
+    # ------------------------------------------------------------------
+    def _is_sorca(self):
+        return hasattr(self.planner, "D_scale")
+
+    def _is_nhorca(self):
+        return (hasattr(self.planner, "E")
+                and hasattr(self.planner, "T_maneuver")
+                and not hasattr(self.planner, "D_scale"))
+
+    def _validate_mode(self):
+        if self.mode == Mode.DIFF and not self._is_sorca():
+            raise ValueError(
+                "Mode.DIFF requires an S-ORCA planner (attribute `D_scale`). "
+                f"Got planner type: {type(self.planner).__name__}"
+            )
+        if self.mode == Mode.NH and not self._is_nhorca():
+            raise ValueError(
+                "Mode.NH requires an NH-ORCA planner (attributes `E`, `T_maneuver`, "
+                "and no `D_scale`). "
+                f"Got planner type: {type(self.planner).__name__}"
+            )
+        if self.mode == Mode.OMNI and not hasattr(self.planner, "compute_velocities"):
+            raise ValueError(
+                "Mode.OMNI requires a holonomic planner with `compute_velocities`."
+            )
+        self._validated = True
 
     # ------------------------------------------------------------------
     # Environment initialization
     # ------------------------------------------------------------------
     def init_env(self, env):
         """
-        Cache static obstacles and initialize the internal velocity buffers
-        according to the selected mode.
+        Cache static obstacles (using vertex centroid for polygons or line segments)
+        and initialize velocity buffers.
         """
-        static_obs = getattr(env, "obstacle_list", [])
-        if static_obs:
-            self.static_pos = np.array(
-                [self._extract_vec2(o, "state") for o in static_obs],
-                dtype=np.float64,
-            )
-            self.static_radii = np.array(
-                [self._extract_radius(o) + self.safety_margin for o in static_obs],
-                dtype=np.float64,
-            )
+        static_obs = (
+            getattr(env, "obstacle_list", None)
+            or getattr(env, "obs_list", None)
+            or []
+        )
+
+        all_pos = []
+        all_radii = []
+        all_lines = []
+
+        for o in static_obs:
+            verts_xy = self._get_polygon_xy(o)
+            if verts_xy is not None and len(verts_xy) >= 3:
+                lines_sub = self._extract_polygon_lines(verts_xy)
+                all_lines.extend(lines_sub)
+            else:
+                all_pos.append(self._extract_center(o))
+                all_radii.append(self._extract_radius(o) + self.safety_margin)
+
+        if all_pos:
+            self.static_pos = np.array(all_pos, dtype=np.float64)
+            self.static_radii = np.array(all_radii, dtype=np.float64)
+        else:
+            self.static_pos = np.empty((0, 2), dtype=np.float64)
+            self.static_radii = np.empty(0, dtype=np.float64)
+
+        if all_lines:
+            self.static_lines = np.array(all_lines, dtype=np.float64)
+        else:
+            self.static_lines = np.empty((0, 2, 2), dtype=np.float64)
 
         if self.mode == Mode.OMNI:
-            # Holonomic planners operate on cartesian velocities.
             self.current_velocities = np.array(
                 [self._extract_vec2(r, "velocity") for r in env.robot_list],
                 dtype=np.float64,
             )
         else:
-            # Differential-drive planners operate on wheel velocities.
-            # We start from rest since IR-Sim does not expose wheel speeds
-            # directly; the next step will overwrite this with commanded values.
             N = len(env.robot_list)
             self.current_wheels = np.zeros((N, 2), dtype=np.float64)
+
+    # ------------------------------------------------------------------
+    # Read-back of real velocities (best effort)
+    # ------------------------------------------------------------------
+    def _read_back_wheels(self, robot_list, L):
+        N = len(robot_list)
+        ok = True
+        wheels = np.zeros((N, 2), dtype=np.float64)
+        for i, r in enumerate(robot_list):
+            v_real = getattr(r, "linear_velocity", None)
+            w_real = getattr(r, "angular_velocity", None)
+            if v_real is None or w_real is None:
+                ok = False
+                break
+            L_i = L if np.isscalar(L) else L[i]
+            v_r_i = float(v_real) + float(w_real) * L_i / 2.0
+            v_l_i = float(v_real) - float(w_real) * L_i / 2.0
+            wheels[i] = [v_l_i, v_r_i]
+        if ok:
+            self.current_wheels = wheels
+        return ok
 
     # ------------------------------------------------------------------
     # Main step
     # ------------------------------------------------------------------
     def step(self, env):
-        # Lazy initialization on first call.
+        if not self._validated:
+            self._validate_mode()
+
         if self.mode == Mode.OMNI and self.current_velocities is None:
             self.init_env(env)
-        if self.mode == Mode.DIFF and self.current_wheels is None:
+        if self.mode in (Mode.DIFF, Mode.NH) and self.current_wheels is None:
             self.init_env(env)
 
         robot_list = env.robot_list
 
-        # --- Common extractions -------------------------------------
         positions = np.array(
             [self._extract_vec2(r, "state") for r in robot_list],
             dtype=np.float64,
@@ -152,11 +276,6 @@ class IRSimAdapter:
         )
 
         # --- Arrival check -------------------------------------------
-        # OMNI: evaluate arrival on the real center (planner operates there).
-        # DIFF: the planner (PySORCA) operates on the EFFECTIVE center and
-        #       expects `goals` ALREADY expressed in the effective frame.
-        #       So we convert goals -> goal_eff here, once, and use that
-        #       same array for both the arrival test and the planner call.
         if self.mode == Mode.OMNI:
             all_arrived = True
             for i in range(len(robot_list)):
@@ -164,35 +283,44 @@ class IRSimAdapter:
                     goals[i] = positions[i].copy()
                 else:
                     all_arrived = False
-            goal_eff = None   # not used in OMNI
-        else:
+            goal_eff = goals
+
+        elif self.mode == Mode.DIFF:
             thetas = np.array(
                 [self._extract_theta(r) for r in robot_list],
                 dtype=np.float64,
             )
-            c, s = np.cos(thetas), np.sin(thetas)
             D_scale = getattr(self.planner, "D_scale", 1.0)
-            D = D_scale * radii                                   # (N,)
+            D = D_scale * radii
+            c, s = np.cos(thetas), np.sin(thetas)
 
-            # Effective centers
             eff_pos = positions + D[:, None] * np.stack([c, s], axis=1)
-
-            # Convert goals from REAL to EFFECTIVE frame:
-            #   goal_eff = goal_real - D * (cosθ, sinθ)
             goal_eff = goals - D[:, None] * np.stack([c, s], axis=1)
 
-            # Arrival test now compares consistent frames: eff_pos vs goal_eff.
-            # No need to inflate by D anymore.
             all_arrived = True
             for i in range(len(robot_list)):
                 if np.linalg.norm(eff_pos[i] - goal_eff[i]) < self.arrival_threshold:
-                    goal_eff[i] = eff_pos[i].copy()      # freeze in effective frame
+                    goal_eff[i] = eff_pos[i].copy()
+                else:
+                    all_arrived = False
+
+        else:  # Mode.NH
+            thetas = np.array(
+                [self._extract_theta(r) for r in robot_list],
+                dtype=np.float64,
+            )
+            eff_pos = positions
+            goal_eff = goals.copy()
+
+            all_arrived = True
+            for i in range(len(robot_list)):
+                if np.linalg.norm(eff_pos[i] - goal_eff[i]) < self.arrival_threshold:
+                    goal_eff[i] = eff_pos[i].copy()
                 else:
                     all_arrived = False
 
         # --- Dispatch by mode ---------------------------------------
         if self.mode == Mode.OMNI:
-            # ---- Holonomic path (PyORCA) ----
             new_velocities = self.planner.compute_velocities(
                 positions=positions,
                 velocities=self.current_velocities,
@@ -200,17 +328,13 @@ class IRSimAdapter:
                 radii=radii,
                 static_pos=self.static_pos,
                 static_radii=self.static_radii,
+                static_lines=self.static_lines,
             )
             self.current_velocities = new_velocities.copy()
-
-            # IR-Sim expects [[vx], [vy]] for holonomic robots.
             actions = [np.array([[v[0]], [v[1]]]) for v in new_velocities]
             return actions, all_arrived
 
         else:
-            # ---- Differential path (PySORCA) ----
-            # `thetas` was already extracted in the arrival check above.
-            # `goal_eff` is already in the effective frame, as PySORCA expects.
             wheel_cmds = self.planner.compute_wheel_velocities(
                 positions=positions,
                 thetas=thetas,
@@ -219,27 +343,20 @@ class IRSimAdapter:
                 radii=radii,
                 static_pos=self.static_pos,
                 static_radii=self.static_radii,
+                static_lines=self.static_lines,
             )
 
-            # Update the internal wheel state.
-            # NOTE: this assumes the simulator executes the commanded wheel
-            # speeds exactly. If IR-Sim exposes real wheel/linear/angular
-            # velocities, prefer reading them back for better accuracy.
-            self.current_wheels = wheel_cmds.copy()
-
-            # Convert (v_l, v_r) -> (v, omega) for IR-Sim.
-            # Use the same wheelbase L that S-ORCA used internally; otherwise
-            # the simulated rotation would not match the planner's prediction.
             L = getattr(self.planner, "wheel_base", None)
             if L is None:
-                # Fallback heuristic: same convention as S-ORCA (L = 2r).
                 L = 2.0 * radii
+
+            if not self._read_back_wheels(robot_list, L):
+                self.current_wheels = wheel_cmds.copy()
 
             v_l = wheel_cmds[:, 0]
             v_r = wheel_cmds[:, 1]
             v = 0.5 * (v_l + v_r)
             omega = (v_r - v_l) / L
 
-            # IR-Sim expects [[v], [omega]] for differential-drive robots.
             actions = [np.array([[vi], [wi]]) for vi, wi in zip(v, omega)]
             return actions, all_arrived

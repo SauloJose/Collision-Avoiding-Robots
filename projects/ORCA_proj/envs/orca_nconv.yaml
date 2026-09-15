@@ -1,0 +1,51 @@
+world:
+  height: 20
+  width: 20
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
+robot:
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [18.0, 10.0, 0.0]
+    goal: [2.0, 10.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    behavior: {name: 'orca'} # Aqui está o ponto: forçamos o ORCA
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.0, 10.0, 0.0]
+    goal: [18.0, 10.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    behavior: {name: 'orca'}
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+obstacle:
+  - kinematics: {name: static}
+    shape:
+      name: 'polygon'
+      vertices:
+        - [8.0, 7.0]   # Canto inferior esquerdo externo
+        - [8.0, 13.0]  # Canto superior esquerdo externo
+        - [12.0, 13.0] # Canto superior direito (borda superior do U)
+        - [12.0, 11.0] # Canto interno superior direito
+        - [10.0, 11.0] # Fundo interno do U (linha inferior do espaço interno)
+        - [10.0, 9.0]  # Canto interno inferior esquerdo
+        - [12.0, 9.0]  # Canto interno inferior direito
+        - [12.0, 7.0]  # Canto inferior direito externo
+    color: 'k'

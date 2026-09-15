@@ -1,37 +1,80 @@
-# Simulacao de navegacao multi-robos com IR-Sim
+# Simulação de navegação multiagente com IR-Sim
 
-Projeto de pesquisa pessoal da UFCG, desenvolvido em nivel de mestrado, para estudo e avaliacao de metodos de evitacao de colisao e navegacao de robos moveis em ambientes 2D. O [IR-Sim](https://github.com/hanruihua/ir_sim) fornece o ambiente, a dinamica e a visualizacao; este repositorio concentra os controladores, os cenarios e os experimentos.
+Este repositório reúne um conjunto de experimentos e implementações de planejadores de navegação para robôs móveis em ambientes 2D, integrados ao simulador [IR-Sim](https://github.com/hanruihua/ir_sim). O foco do projeto é comparar métodos de evasão de colisão e dinâmica de planejamento em cenários com múltiplos agentes e obstáculos.
 
-O projeto implementa e compara **Velocity Obstacles (VO)**, **Reciprocal Velocity Obstacles (RVO)** e **Optimal Reciprocal Collision Avoidance (ORCA)**. Os resultados ainda devem ser interpretados como experimentais, e nao como um produto ou uma biblioteca de uso industrial.
+A estrutura do projeto separa:
 
-## Objetivos
+- o núcleo dos planejadores em `src/`
+- os cenários e entrypoints em `projects/`
+- utilitários para geração de ambientes em `utils/`
+- o adaptador que converte estados do IR-Sim para as APIs dos planejadores
 
-- Simular navegacao de um ou mais robos em ambientes 2D.
-- Avaliar selecao de velocidades em cenarios com robos e obstaculos.
-- Comparar VO, RVO e ORCA usando ambientes configurados em YAML.
-- Manter um nucleo de planejamento reutilizavel fora do IR-Sim.
+## Visão geral
 
-## Metodos e estado atual
+O código implementa e testa os métodos:
+
+- `VO` (Velocity Obstacles)
+- `RVO` (Reciprocal Velocity Obstacles)
+- `ORCA` (Optimal Reciprocal Collision Avoidance)
+- `S-ORCA` (versão de robôs diferenciais com transformações efetivas)
+- `NH-ORCA` (versão não holonômica baseada em erro de rastreio e região viável)
+
+O núcleo principal está em `src/orca.py`, com a classe `PyORCA`, e a conversão entre o ambiente IR-Sim e o planejador é feita por `src/adapter.py`.
+
+## Estrutura do projeto
+
+```text
+.
+├── README.md
+├── requirements.txt
+├── src/
+│   ├── adapter.py      # adaptador entre IR-Sim e os planejadores
+│   ├── orca.py         # núcleo ORCA / PyORCA
+│   ├── rvo.py          # implementação de RVO
+│   ├── vo.py           # implementação de VO
+│   ├── sorca.py        # extensão S-ORCA
+│   ├── nhorca.py       # extensão NH-ORCA
+│   └── ...
+├── projects/
+│   ├── basic_proj/
+│   ├── VO_proj/
+│   ├── RVO_proj/
+│   ├── ORCA_proj/
+│   ├── S-ORCA_proj/
+│   ├── NH-ORCA_proj/
+│   └── test/
+├── utils/
+│   └── gerador_yaml.py
+└── ...
+```
+
+## Implementações atuais
 
 ### VO
 
-`src/vo.py` seleciona, por amostragem, uma velocidade proxima da velocidade preferida e fora da regiao de colisao com os vizinhos. Referencia: Fiorini e Shiller, *Motion Planning in Dynamic Environments Using Velocity Obstacles* (1998).
+O módulo `src/vo.py` aplica uma busca por velocidades amostradas em torno da velocidade preferida, escolhendo uma alternativa que minimize o risco de colisão com agentes e obstáculos.
 
 ### RVO
 
-`src/rvo.py` considera a responsabilidade reciproca entre agentes e escolhe a velocidade por busca amostrada. Referencia: van den Berg et al., *Reciprocal n-Body Collision Avoidance* (2011).
+`src/rvo.py` implementa uma seleção de velocidade baseada em abordagem recíproca, com evitamento orientado por vizinhos e pelo vetor de objetivo do robô.
 
 ### ORCA
 
-`src/orca.py` calcula restricoes lineares ORCA e resolve um problema linear 2D para obter a velocidade mais proxima da preferencia dentro do limite cinematico. A busca de vizinhos usa `cKDTree` e as rotinas numericas sao compiladas com `numba`.
+`src/orca.py` contém a implementação principal do método ORCA, incluindo:
 
-O `src/adapter.py` traduz estados e comandos do IR-Sim para o nucleo `PyORCA`, incluindo obstaculos estaticos, margem de seguranca e criterio de chegada.
+- cálculo de restrições ORCA
+- resolução de LP (programação linear) em 2D
+- uso de `cKDTree` para busca de vizinhos
+- suporte a obstáculos estáticos e dinâmicos
+- integração com NumPy, SciPy e `numba`
 
-Os modulos `src/sorca.py` e `src/nhorca.py` atualmente reexportam `PyORCA` para manter entradas experimentais separadas. Eles sao pontos de extensao para variantes S-ORCA e NH-ORCA, ainda sem implementacoes numericamente distintas neste estado do repositorio.
+### S-ORCA e NH-ORCA
 
-## Instalacao
+Os módulos `src/sorca.py` e `src/nhorca.py` estendem a base ORCA para robôs diferenciais e não holonômicos. A lógica foi organizada para manter uma interface separada em relação ao núcleo holonômico, permitindo estudos e experimentos específicos.
 
-Na raiz do repositorio, crie ou ative um ambiente virtual e instale as dependencias:
+## Configuração do ambiente
+
+Recomendado usar um ambiente virtual Python e instalar as dependências do projeto:
 
 ```bash
 python -m venv .venv
@@ -44,88 +87,59 @@ No Windows PowerShell:
 pip install -r requirements.txt
 ```
 
-O arquivo `requirements.txt` fixa `ir_sim==2.11.0`. As dependencias numericas usadas pelos controladores, como NumPy, SciPy e Numba, sao utilizadas pelo IR-Sim e pelo codigo do projeto.
+Se o ambiente estiver configurado corretamente, as simulações podem ser executadas a partir da raiz do repositório ou dentro de cada projeto.
 
-## Estrutura atual
+## Execução das simulações
 
-```text
-src/
-  adapter.py        Adaptador entre IR-Sim e o planejador ORCA
-  vo.py             Implementacao do metodo VO
-  rvo.py            Implementacao do metodo RVO
-  orca.py           Nucleo PyORCA e resolvedor de restricoes
-  sorca.py          Entrada para a variante S-ORCA
-  nhorca.py         Entrada para a variante NH-ORCA
-  utils.py          Funcoes auxiliares
+Os scripts de execução ficam dentro de cada pasta de projeto. Em geral, os arquivos YAML são referenciados por caminho relativo ao diretório do projeto, então a execução costuma ser feita entrando na pasta correspondente.
 
-projects/
-  basic_proj/       Exemplo minimo do IR-Sim
-  VO_proj/          Entrada e cenarios VO
-  RVO_proj/         Entrada e cenarios RVO
-  ORCA_proj/        Entrada e cenarios ORCA
-  S-ORCA_proj/      Entrada e cenarios S-ORCA
-  NH-ORCA_proj/     Entrada e cenarios NH-ORCA
-  test/             Cenario de teste comportamental
-
-utils/               Gerador de cenarios circulares em YAML
-requirements.txt      Dependencias Python
-```
-
-## Executando as simulacoes
-
-Os caminhos dos YAMLs nos arquivos `entry.py` sao relativos ao diretorio do projeto. Por isso, entre na pasta correspondente antes de executar:
+### Exemplo mínimo
 
 ```powershell
 cd projects/basic_proj
 python basic.py
 ```
 
-Exemplos de controladores:
+### VO
 
 ```powershell
 cd projects/VO_proj
 python entry.py
-
-cd ../RVO_proj
-python entry.py
-
-cd ../ORCA_proj
-python entry.py
 ```
 
-Para S-ORCA e NH-ORCA, selecione primeiro um `NUM_ROBOTS` que possua YAML em `envs/` e depois execute:
+### RVO
 
 ```powershell
-cd ../S-ORCA_proj
-python entry.py
-
-cd ../NH-ORCA_proj
+cd projects/RVO_proj
 python entry.py
 ```
 
-As entradas permitem ajustar `DT`, `V_MAX`, `A_MAX`, `T_H`, `D_MAX`, `MAX_NEIGHBORS`, `BASE_BIAS`, `SAFETY_MARGIN`, `ARRIVAL_THRESHOLD` e `MAX_STEPS`. O arquivo YAML define a geometria do mundo, a quantidade de robos, estados iniciais, metas, raios e cores.
+### ORCA
 
-Configuracao atual dos experimentos ORCA, S-ORCA e NH-ORCA:
+```powershell
+cd projects/ORCA_proj
+python entry.py
+```
 
-| Parametro | Valor | Funcao |
-| --- | ---: | --- |
-| `NUM_ROBOTS` | 50 | Quantidade de robos no entrypoint ORCA |
-| `DT` | 0.1 s | Passo de simulacao |
-| `V_MAX` | 1.0 m/s | Velocidade maxima do planejador |
-| `A_MAX` | 20.5 m/s2 | Aceleracao maxima por passo |
-| `T_H` | 1.5 s | Horizonte de previsao de colisao |
-| `D_MAX` | 6.0 m | Distancia maxima para vizinhos |
-| `MAX_NEIGHBORS` | 10 | Quantidade maxima de vizinhos no LP |
-| `BASE_BIAS` | 0.25 rad | Desvio angular para quebrar simetria |
-| `SAFETY_MARGIN` | 0.1 m | Margem adicionada aos raios |
-| `ARRIVAL_THRESHOLD` | 0.1 m | Tolerancia para considerar chegada |
-| `MAX_STEPS` | 1500 | Limite de iteracoes |
+### S-ORCA
 
-Os experimentos VO e RVO possuem parametros proprios em seus respectivos `entry.py`, incluindo quantidade de amostras, horizonte temporal e distancia de deteccao.
+```powershell
+cd projects/S-ORCA_proj
+python entry.py
+```
 
-## Exemplo de ambiente YAML
+### NH-ORCA
 
-Um ambiente minimo pode declarar o mundo e um robo assim:
+```powershell
+cd projects/NH-ORCA_proj
+python entry.py
+```
+
+Os entrypoints costumam definir parâmetros como `DT`, `V_MAX`, `A_MAX`, `T_H`, `D_MAX`, `MAX_NEIGHBORS`, `BASE_BIAS`, `SAFETY_MARGIN`, `ARRIVAL_THRESHOLD` e `MAX_STEPS` no próprio arquivo.
+
+## Estrutura dos cenários YAML
+
+Os cenários em `projects/*/envs/*.yaml` descrevem um mundo 2D com robôs, metas, velocidades máximas e opções visuais. A estrutura típica é:
 
 ```yaml
 world:
@@ -135,6 +149,7 @@ world:
   sample_time: 0.1
   control_mode: manual
   collision_mode: stop
+
 robot:
   - kinematics: {name: omni}
     shape: {name: circle, radius: 0.3}
@@ -142,17 +157,20 @@ robot:
     goal: [18.0, 18.0, 0.0]
     vel_max: [1.5, 1.5]
     vel_min: [-1.5, -1.5]
+    color: 'blue'
 ```
 
-Para gerar familias de cenarios circulares, ajuste a lista de quantidades em `utils/gerador_yaml.py` e execute a partir da raiz:
+A geração em massa de ambientes pode ser feita com o utilitário:
 
 ```powershell
 python utils/gerador_yaml.py
 ```
 
-## Uso direto do PyORCA
+Esse script gera arquivos YAML em pastas de projetos, como `projects/NH-ORCA_proj/envs/` e `projects/ORCA_proj/envs/`.
 
-O nucleo pode ser usado sem criar um ambiente IR-Sim. As entradas sao matrizes NumPy com posicoes e velocidades 2D:
+## Uso direto do núcleo `PyORCA`
+
+Além de rodar com IR-Sim, o núcleo dos planejadores pode ser usado diretamente em Python:
 
 ```python
 import numpy as np
@@ -166,20 +184,27 @@ velocities = planner.compute_velocities(
     goals=np.array([[9.0, 9.0], [1.0, 1.0]]),
     radii=np.array([0.3, 0.3]),
 )
-print(velocities)  # formato: (numero_de_robos, 2)
+
+print(velocities)
 ```
 
-Tambem e possivel informar obstaculos estaticos usando `static_pos` com formato `(M, 2)` e `static_radii` com formato `(M,)`. O retorno sao as novas velocidades, que podem ser convertidas para a acao do simulador pelo `IRSimAdapter`.
+O adaptador `src/adapter.py` encapsula a lógica para transformar estados do IR-Sim em entradas compatíveis com esse núcleo.
 
-## Observacoes de pesquisa
+## Observações do estado atual
 
-- Os resultados dependem dos parametros cinematicos, do YAML e da configuracao do experimento.
-- VO e RVO usam busca amostrada; ORCA usa restricoes lineares e solucionadores LP compilados com `numba`.
-- A primeira execucao pode ser mais lenta devido a compilacao JIT.
-- Para comparacoes academicas, registre o cenario, os parametros, a quantidade de robos, o numero de passos e as metricas de chegada e colisao.
+- O projeto é uma base experimental e de pesquisa.
+- O foco principal é comparar arquiteturas de evasão e comportamento em múltiplos robôs.
+- O núcleo ORCA e os variantes de extensão estão ativos e integrados ao pipeline de simulação.
+- A primeira execução pode demorar mais devido à compilação Just-In-Time do `numba`.
+- Parâmetros e cenários devem ser registrados junto com cada experimento para permitir comparação reprodutível.
 
-## Referencias principais
+## Referências principais
 
-- Fiorini, P.; Shiller, Z. *Motion Planning in Dynamic Environments Using Velocity Obstacles* (1998).
-- van den Berg, J. et al. *Reciprocal n-Body Collision Avoidance* (2011).
-- van den Berg, J. et al. *Optimal Reciprocal Collision Avoidance* (2011/2013).
+- Fiorini, P.; Shiller, Z. Motion Planning in Dynamic Environments Using Velocity Obstacles. 1998.
+- van den Berg, J. et al. Reciprocal n-Body Collision Avoidance. 2011.
+- van den Berg, J. et al. Optimal Reciprocal Collision Avoidance. 2011/2013.
+- Alonso-Mora, J. et al. Optimal Reciprocal Collision Avoidance for Multiple Non-Holonomic Robots. 2013.
+
+## Observação
+
+Este repositório foi estruturado como ambiente acadêmico de experimentação e não como uma biblioteca pública finalizada para uso industrial.

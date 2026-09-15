@@ -17,7 +17,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -29,7 +29,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -41,7 +41,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -53,7 +53,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -65,7 +65,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -77,7 +77,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -89,7 +89,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -101,7 +101,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -113,7 +113,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -125,7 +125,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -137,7 +137,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -149,7 +149,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -161,7 +161,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -173,7 +173,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -185,7 +185,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -197,7 +197,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -209,7 +209,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -221,7 +221,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -233,7 +233,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -245,7 +245,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -257,7 +257,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -269,7 +269,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -281,7 +281,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -293,7 +293,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -305,7 +305,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -317,7 +317,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -329,7 +329,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -341,7 +341,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -353,7 +353,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -365,7 +365,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -377,7 +377,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -389,7 +389,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -401,7 +401,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -413,7 +413,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -425,7 +425,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -437,7 +437,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -449,7 +449,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -461,7 +461,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -473,7 +473,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -485,7 +485,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -497,7 +497,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -509,7 +509,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -521,7 +521,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -533,7 +533,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -545,7 +545,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -557,7 +557,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -569,7 +569,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -581,7 +581,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -593,7 +593,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -605,7 +605,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -617,7 +617,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -629,7 +629,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -641,7 +641,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -653,7 +653,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -665,7 +665,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -677,7 +677,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -689,7 +689,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -701,7 +701,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -713,7 +713,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -725,7 +725,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -737,7 +737,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -749,7 +749,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -761,7 +761,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -773,7 +773,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -785,7 +785,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -797,7 +797,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -809,7 +809,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -821,7 +821,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -833,7 +833,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -845,7 +845,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -857,7 +857,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -869,7 +869,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -881,7 +881,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -893,7 +893,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -905,7 +905,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -917,7 +917,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -929,7 +929,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -941,7 +941,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -953,7 +953,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -965,7 +965,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -977,7 +977,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -989,7 +989,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1001,7 +1001,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1013,7 +1013,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1025,7 +1025,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1037,7 +1037,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1049,7 +1049,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1061,7 +1061,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1073,7 +1073,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1085,7 +1085,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1097,7 +1097,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1109,7 +1109,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1121,7 +1121,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1133,7 +1133,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1145,7 +1145,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1157,7 +1157,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1169,7 +1169,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1181,7 +1181,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1193,7 +1193,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1205,7 +1205,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1217,7 +1217,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1229,7 +1229,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1241,7 +1241,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1253,7 +1253,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1265,7 +1265,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1277,7 +1277,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1289,7 +1289,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1301,7 +1301,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1313,7 +1313,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1325,7 +1325,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1337,7 +1337,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1349,7 +1349,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1361,7 +1361,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1373,7 +1373,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1385,7 +1385,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1397,7 +1397,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1409,7 +1409,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1421,7 +1421,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1433,7 +1433,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1445,7 +1445,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1457,7 +1457,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1469,7 +1469,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1481,7 +1481,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1493,7 +1493,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1505,7 +1505,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1517,7 +1517,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1529,7 +1529,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1541,7 +1541,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1553,7 +1553,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1565,7 +1565,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1577,7 +1577,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1589,7 +1589,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1601,7 +1601,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1613,7 +1613,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1625,7 +1625,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1637,7 +1637,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1649,7 +1649,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1661,7 +1661,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1673,7 +1673,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1685,7 +1685,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1697,7 +1697,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1709,7 +1709,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1721,7 +1721,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1733,7 +1733,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1745,7 +1745,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1757,7 +1757,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1769,7 +1769,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1781,7 +1781,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1793,7 +1793,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1805,7 +1805,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1817,7 +1817,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1829,7 +1829,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1841,7 +1841,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1853,7 +1853,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1865,7 +1865,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1877,7 +1877,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1889,7 +1889,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1901,7 +1901,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1913,7 +1913,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1925,7 +1925,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1937,7 +1937,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1949,7 +1949,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1961,7 +1961,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1973,7 +1973,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1985,7 +1985,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -1997,7 +1997,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2009,7 +2009,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2021,7 +2021,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2033,7 +2033,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2045,7 +2045,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2057,7 +2057,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2069,7 +2069,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2081,7 +2081,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2093,7 +2093,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2105,7 +2105,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2117,7 +2117,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2129,7 +2129,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2141,7 +2141,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2153,7 +2153,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2165,7 +2165,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2177,7 +2177,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2189,7 +2189,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2201,7 +2201,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2213,7 +2213,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2225,7 +2225,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2237,7 +2237,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2249,7 +2249,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2261,7 +2261,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2273,7 +2273,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2285,7 +2285,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2297,7 +2297,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2309,7 +2309,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2321,7 +2321,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2333,7 +2333,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2345,7 +2345,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2357,7 +2357,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2369,7 +2369,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2381,7 +2381,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2393,7 +2393,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2405,7 +2405,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2417,7 +2417,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2429,7 +2429,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2441,7 +2441,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2453,7 +2453,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2465,7 +2465,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2477,7 +2477,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2489,7 +2489,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2501,7 +2501,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2513,7 +2513,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2525,7 +2525,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2537,7 +2537,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2549,7 +2549,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2561,7 +2561,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2573,7 +2573,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2585,7 +2585,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2597,7 +2597,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2609,7 +2609,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2621,7 +2621,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2633,7 +2633,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2645,7 +2645,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2657,7 +2657,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2669,7 +2669,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2681,7 +2681,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2693,7 +2693,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2705,7 +2705,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2717,7 +2717,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2729,7 +2729,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2741,7 +2741,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2753,7 +2753,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2765,7 +2765,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2777,7 +2777,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2789,7 +2789,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2801,7 +2801,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2813,7 +2813,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2825,7 +2825,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2837,7 +2837,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2849,7 +2849,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2861,7 +2861,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2873,7 +2873,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2885,7 +2885,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2897,7 +2897,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2909,7 +2909,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2921,7 +2921,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2933,7 +2933,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2945,7 +2945,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2957,7 +2957,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2969,7 +2969,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2981,7 +2981,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -2993,7 +2993,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3005,7 +3005,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3017,7 +3017,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3029,7 +3029,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3041,7 +3041,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3053,7 +3053,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3065,7 +3065,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3077,7 +3077,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3089,7 +3089,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3101,7 +3101,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3113,7 +3113,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3125,7 +3125,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3137,7 +3137,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3149,7 +3149,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3161,7 +3161,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3173,7 +3173,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3185,7 +3185,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3197,7 +3197,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3209,7 +3209,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3221,7 +3221,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3233,7 +3233,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3245,7 +3245,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3257,7 +3257,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3269,7 +3269,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3281,7 +3281,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3293,7 +3293,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3305,7 +3305,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3317,7 +3317,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3329,7 +3329,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3341,7 +3341,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3353,7 +3353,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3365,7 +3365,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3377,7 +3377,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3389,7 +3389,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3401,7 +3401,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3413,7 +3413,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3425,7 +3425,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3437,7 +3437,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3449,7 +3449,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3461,7 +3461,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3473,7 +3473,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3485,7 +3485,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3497,7 +3497,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3509,7 +3509,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3521,7 +3521,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3533,7 +3533,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3545,7 +3545,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3557,7 +3557,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3569,7 +3569,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3581,7 +3581,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3593,7 +3593,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3605,7 +3605,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3617,7 +3617,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3629,7 +3629,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3641,7 +3641,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3653,7 +3653,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3665,7 +3665,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3677,7 +3677,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3689,7 +3689,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3701,7 +3701,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3713,7 +3713,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3725,7 +3725,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3737,7 +3737,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3749,7 +3749,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3761,7 +3761,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3773,7 +3773,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3785,7 +3785,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3797,7 +3797,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3809,7 +3809,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3821,7 +3821,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3833,7 +3833,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3845,7 +3845,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3857,7 +3857,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3869,7 +3869,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3881,7 +3881,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3893,7 +3893,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3905,7 +3905,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3917,7 +3917,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3929,7 +3929,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3941,7 +3941,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3953,7 +3953,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3965,7 +3965,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3977,7 +3977,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -3989,7 +3989,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4001,7 +4001,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4013,7 +4013,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4025,7 +4025,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4037,7 +4037,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4049,7 +4049,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4061,7 +4061,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4073,7 +4073,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4085,7 +4085,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4097,7 +4097,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4109,7 +4109,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4121,7 +4121,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4133,7 +4133,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4145,7 +4145,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4157,7 +4157,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4169,7 +4169,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4181,7 +4181,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4193,7 +4193,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4205,7 +4205,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4217,7 +4217,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4229,7 +4229,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4241,7 +4241,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4253,7 +4253,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4265,7 +4265,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4277,7 +4277,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4289,7 +4289,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4301,7 +4301,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4313,7 +4313,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4325,7 +4325,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4337,7 +4337,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4349,7 +4349,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4361,7 +4361,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4373,7 +4373,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4385,7 +4385,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4397,7 +4397,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4409,7 +4409,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4421,7 +4421,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4433,7 +4433,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4445,7 +4445,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4457,7 +4457,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4469,7 +4469,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4481,7 +4481,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4493,7 +4493,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4505,7 +4505,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4517,7 +4517,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4529,7 +4529,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4541,7 +4541,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4553,7 +4553,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4565,7 +4565,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4577,7 +4577,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4589,7 +4589,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4601,7 +4601,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4613,7 +4613,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4625,7 +4625,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4637,7 +4637,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4649,7 +4649,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4661,7 +4661,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4673,7 +4673,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4685,7 +4685,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4697,7 +4697,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4709,7 +4709,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4721,7 +4721,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4733,7 +4733,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4745,7 +4745,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4757,7 +4757,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4769,7 +4769,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4781,7 +4781,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4793,7 +4793,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4805,7 +4805,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4817,7 +4817,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4829,7 +4829,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4841,7 +4841,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4853,7 +4853,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4865,7 +4865,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4877,7 +4877,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4889,7 +4889,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4901,7 +4901,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4913,7 +4913,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4925,7 +4925,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4937,7 +4937,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4949,7 +4949,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4961,7 +4961,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4973,7 +4973,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4985,7 +4985,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -4997,7 +4997,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5009,7 +5009,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5021,7 +5021,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5033,7 +5033,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5045,7 +5045,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5057,7 +5057,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5069,7 +5069,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5081,7 +5081,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5093,7 +5093,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5105,7 +5105,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5117,7 +5117,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5129,7 +5129,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5141,7 +5141,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5153,7 +5153,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5165,7 +5165,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5177,7 +5177,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5189,7 +5189,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5201,7 +5201,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5213,7 +5213,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5225,7 +5225,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5237,7 +5237,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5249,7 +5249,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5261,7 +5261,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5273,7 +5273,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5285,7 +5285,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5297,7 +5297,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5309,7 +5309,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5321,7 +5321,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5333,7 +5333,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5345,7 +5345,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5357,7 +5357,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5369,7 +5369,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5381,7 +5381,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5393,7 +5393,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5405,7 +5405,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5417,7 +5417,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5429,7 +5429,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5441,7 +5441,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5453,7 +5453,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5465,7 +5465,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5477,7 +5477,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5489,7 +5489,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5501,7 +5501,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5513,7 +5513,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5525,7 +5525,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5537,7 +5537,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5549,7 +5549,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5561,7 +5561,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5573,7 +5573,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5585,7 +5585,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5597,7 +5597,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5609,7 +5609,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5621,7 +5621,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5633,7 +5633,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5645,7 +5645,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5657,7 +5657,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5669,7 +5669,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5681,7 +5681,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5693,7 +5693,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5705,7 +5705,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5717,7 +5717,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5729,7 +5729,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5741,7 +5741,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5753,7 +5753,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5765,7 +5765,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5777,7 +5777,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5789,7 +5789,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5801,7 +5801,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5813,7 +5813,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5825,7 +5825,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5837,7 +5837,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5849,7 +5849,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5861,7 +5861,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5873,7 +5873,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5885,7 +5885,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5897,7 +5897,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5909,7 +5909,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5921,7 +5921,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5933,7 +5933,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5945,7 +5945,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5957,7 +5957,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5969,7 +5969,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5981,7 +5981,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -5993,7 +5993,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6005,7 +6005,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6017,7 +6017,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6029,7 +6029,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6041,7 +6041,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6053,7 +6053,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6065,7 +6065,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6077,7 +6077,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6089,7 +6089,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6101,7 +6101,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6113,7 +6113,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6125,7 +6125,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6137,7 +6137,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6149,7 +6149,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6161,7 +6161,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6173,7 +6173,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6185,7 +6185,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6197,7 +6197,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6209,7 +6209,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6221,7 +6221,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6233,7 +6233,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6245,7 +6245,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6257,7 +6257,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6269,7 +6269,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6281,7 +6281,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6293,7 +6293,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6305,7 +6305,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6317,7 +6317,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6329,7 +6329,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6341,7 +6341,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6353,7 +6353,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6365,7 +6365,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6377,7 +6377,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6389,7 +6389,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6401,7 +6401,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6413,7 +6413,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6425,7 +6425,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6437,7 +6437,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6449,7 +6449,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6461,7 +6461,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6473,7 +6473,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6485,7 +6485,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6497,7 +6497,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6509,7 +6509,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6521,7 +6521,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6533,7 +6533,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6545,7 +6545,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6557,7 +6557,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6569,7 +6569,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6581,7 +6581,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6593,7 +6593,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6605,7 +6605,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6617,7 +6617,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6629,7 +6629,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6641,7 +6641,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6653,7 +6653,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6665,7 +6665,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6677,7 +6677,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6689,7 +6689,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6701,7 +6701,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6713,7 +6713,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6725,7 +6725,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6737,7 +6737,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6749,7 +6749,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6761,7 +6761,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6773,7 +6773,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6785,7 +6785,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6797,7 +6797,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6809,7 +6809,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6821,7 +6821,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6833,7 +6833,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6845,7 +6845,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6857,7 +6857,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6869,7 +6869,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6881,7 +6881,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6893,7 +6893,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6905,7 +6905,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6917,7 +6917,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6929,7 +6929,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6941,7 +6941,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6953,7 +6953,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6965,7 +6965,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6977,7 +6977,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -6989,7 +6989,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7001,7 +7001,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7013,7 +7013,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7025,7 +7025,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7037,7 +7037,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7049,7 +7049,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7061,7 +7061,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7073,7 +7073,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7085,7 +7085,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7097,7 +7097,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7109,7 +7109,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7121,7 +7121,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7133,7 +7133,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7145,7 +7145,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7157,7 +7157,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7169,7 +7169,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7181,7 +7181,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7193,7 +7193,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7205,7 +7205,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7217,7 +7217,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7229,7 +7229,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7241,7 +7241,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7253,7 +7253,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7265,7 +7265,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7277,7 +7277,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7289,7 +7289,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7301,7 +7301,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7313,7 +7313,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7325,7 +7325,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7337,7 +7337,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7349,7 +7349,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7361,7 +7361,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7373,7 +7373,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7385,7 +7385,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7397,7 +7397,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7409,7 +7409,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7421,7 +7421,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7433,7 +7433,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7445,7 +7445,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7457,7 +7457,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7469,7 +7469,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7481,7 +7481,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7493,7 +7493,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7505,7 +7505,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7517,7 +7517,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7529,7 +7529,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7541,7 +7541,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7553,7 +7553,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7565,7 +7565,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7577,7 +7577,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7589,7 +7589,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7601,7 +7601,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7613,7 +7613,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7625,7 +7625,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7637,7 +7637,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7649,7 +7649,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7661,7 +7661,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7673,7 +7673,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7685,7 +7685,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7697,7 +7697,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7709,7 +7709,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7721,7 +7721,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7733,7 +7733,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7745,7 +7745,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7757,7 +7757,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7769,7 +7769,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7781,7 +7781,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7793,7 +7793,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7805,7 +7805,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7817,7 +7817,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7829,7 +7829,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7841,7 +7841,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7853,7 +7853,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7865,7 +7865,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7877,7 +7877,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7889,7 +7889,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7901,7 +7901,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7913,7 +7913,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7925,7 +7925,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7937,7 +7937,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7949,7 +7949,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7961,7 +7961,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7973,7 +7973,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7985,7 +7985,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -7997,7 +7997,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8009,7 +8009,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8021,7 +8021,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8033,7 +8033,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8045,7 +8045,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8057,7 +8057,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8069,7 +8069,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8081,7 +8081,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8093,7 +8093,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8105,7 +8105,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8117,7 +8117,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8129,7 +8129,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8141,7 +8141,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8153,7 +8153,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8165,7 +8165,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8177,7 +8177,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8189,7 +8189,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8201,7 +8201,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8213,7 +8213,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8225,7 +8225,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8237,7 +8237,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8249,7 +8249,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8261,7 +8261,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8273,7 +8273,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8285,7 +8285,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8297,7 +8297,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8309,7 +8309,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8321,7 +8321,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8333,7 +8333,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8345,7 +8345,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8357,7 +8357,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8369,7 +8369,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8381,7 +8381,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8393,7 +8393,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8405,7 +8405,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8417,7 +8417,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8429,7 +8429,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8441,7 +8441,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8453,7 +8453,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8465,7 +8465,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8477,7 +8477,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8489,7 +8489,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8501,7 +8501,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8513,7 +8513,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8525,7 +8525,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8537,7 +8537,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8549,7 +8549,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8561,7 +8561,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8573,7 +8573,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8585,7 +8585,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8597,7 +8597,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8609,7 +8609,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8621,7 +8621,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8633,7 +8633,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8645,7 +8645,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8657,7 +8657,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8669,7 +8669,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8681,7 +8681,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8693,7 +8693,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8705,7 +8705,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8717,7 +8717,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8729,7 +8729,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8741,7 +8741,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8753,7 +8753,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8765,7 +8765,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8777,7 +8777,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8789,7 +8789,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8801,7 +8801,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8813,7 +8813,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8825,7 +8825,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8837,7 +8837,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8849,7 +8849,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8861,7 +8861,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8873,7 +8873,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8885,7 +8885,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8897,7 +8897,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8909,7 +8909,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8921,7 +8921,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8933,7 +8933,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8945,7 +8945,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8957,7 +8957,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8969,7 +8969,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8981,7 +8981,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -8993,7 +8993,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9005,7 +9005,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9017,7 +9017,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9029,7 +9029,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9041,7 +9041,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9053,7 +9053,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9065,7 +9065,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9077,7 +9077,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9089,7 +9089,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9101,7 +9101,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9113,7 +9113,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9125,7 +9125,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9137,7 +9137,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9149,7 +9149,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9161,7 +9161,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9173,7 +9173,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9185,7 +9185,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9197,7 +9197,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9209,7 +9209,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9221,7 +9221,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9233,7 +9233,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9245,7 +9245,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9257,7 +9257,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9269,7 +9269,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9281,7 +9281,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9293,7 +9293,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9305,7 +9305,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9317,7 +9317,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9329,7 +9329,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9341,7 +9341,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9353,7 +9353,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9365,7 +9365,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9377,7 +9377,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9389,7 +9389,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9401,7 +9401,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9413,7 +9413,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9425,7 +9425,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9437,7 +9437,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9449,7 +9449,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9461,7 +9461,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9473,7 +9473,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9485,7 +9485,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9497,7 +9497,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9509,7 +9509,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9521,7 +9521,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9533,7 +9533,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9545,7 +9545,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9557,7 +9557,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9569,7 +9569,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9581,7 +9581,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9593,7 +9593,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9605,7 +9605,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9617,7 +9617,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9629,7 +9629,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9641,7 +9641,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9653,7 +9653,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9665,7 +9665,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9677,7 +9677,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9689,7 +9689,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9701,7 +9701,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9713,7 +9713,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9725,7 +9725,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9737,7 +9737,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9749,7 +9749,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9761,7 +9761,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9773,7 +9773,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9785,7 +9785,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9797,7 +9797,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9809,7 +9809,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9821,7 +9821,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9833,7 +9833,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9845,7 +9845,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9857,7 +9857,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9869,7 +9869,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9881,7 +9881,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9893,7 +9893,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9905,7 +9905,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9917,7 +9917,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9929,7 +9929,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9941,7 +9941,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9953,7 +9953,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9965,7 +9965,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9977,7 +9977,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -9989,7 +9989,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10001,7 +10001,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10013,7 +10013,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10025,7 +10025,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10037,7 +10037,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10049,7 +10049,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10061,7 +10061,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10073,7 +10073,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10085,7 +10085,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10097,7 +10097,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10109,7 +10109,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10121,7 +10121,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10133,7 +10133,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10145,7 +10145,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10157,7 +10157,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10169,7 +10169,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10181,7 +10181,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10193,7 +10193,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10205,7 +10205,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10217,7 +10217,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10229,7 +10229,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10241,7 +10241,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10253,7 +10253,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10265,7 +10265,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10277,7 +10277,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10289,7 +10289,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10301,7 +10301,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10313,7 +10313,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10325,7 +10325,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10337,7 +10337,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10349,7 +10349,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10361,7 +10361,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10373,7 +10373,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10385,7 +10385,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10397,7 +10397,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10409,7 +10409,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10421,7 +10421,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10433,7 +10433,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10445,7 +10445,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10457,7 +10457,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10469,7 +10469,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10481,7 +10481,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10493,7 +10493,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10505,7 +10505,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10517,7 +10517,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10529,7 +10529,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10541,7 +10541,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10553,7 +10553,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10565,7 +10565,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10577,7 +10577,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10589,7 +10589,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10601,7 +10601,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10613,7 +10613,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10625,7 +10625,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10637,7 +10637,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10649,7 +10649,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10661,7 +10661,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10673,7 +10673,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10685,7 +10685,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10697,7 +10697,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10709,7 +10709,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10721,7 +10721,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10733,7 +10733,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10745,7 +10745,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10757,7 +10757,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10769,7 +10769,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10781,7 +10781,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10793,7 +10793,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10805,7 +10805,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10817,7 +10817,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10829,7 +10829,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10841,7 +10841,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10853,7 +10853,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10865,7 +10865,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10877,7 +10877,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10889,7 +10889,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10901,7 +10901,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10913,7 +10913,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10925,7 +10925,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10937,7 +10937,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10949,7 +10949,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10961,7 +10961,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10973,7 +10973,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10985,7 +10985,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -10997,7 +10997,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11009,7 +11009,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11021,7 +11021,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11033,7 +11033,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11045,7 +11045,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11057,7 +11057,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11069,7 +11069,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11081,7 +11081,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11093,7 +11093,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11105,7 +11105,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11117,7 +11117,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11129,7 +11129,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11141,7 +11141,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11153,7 +11153,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11165,7 +11165,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11177,7 +11177,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11189,7 +11189,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11201,7 +11201,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11213,7 +11213,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11225,7 +11225,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11237,7 +11237,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11249,7 +11249,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11261,7 +11261,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11273,7 +11273,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11285,7 +11285,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11297,7 +11297,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11309,7 +11309,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11321,7 +11321,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11333,7 +11333,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11345,7 +11345,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11357,7 +11357,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11369,7 +11369,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11381,7 +11381,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11393,7 +11393,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11405,7 +11405,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11417,7 +11417,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11429,7 +11429,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11441,7 +11441,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11453,7 +11453,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11465,7 +11465,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11477,7 +11477,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11489,7 +11489,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11501,7 +11501,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11513,7 +11513,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11525,7 +11525,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11537,7 +11537,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'g'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11549,7 +11549,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'b'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11561,7 +11561,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'r'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11573,7 +11573,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'c'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11585,7 +11585,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'm'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11597,7 +11597,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'y'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11609,7 +11609,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orange'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11621,7 +11621,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'purple'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11633,7 +11633,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'black'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11645,7 +11645,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'pink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11657,7 +11657,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'brown'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11669,7 +11669,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gray'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11681,7 +11681,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'olive'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11693,7 +11693,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'cyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11705,7 +11705,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11717,7 +11717,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkgreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11729,7 +11729,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'crimson'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11741,7 +11741,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'gold'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11753,7 +11753,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'violet'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11765,7 +11765,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'indigo'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11777,7 +11777,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'teal'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11789,7 +11789,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lime'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11801,7 +11801,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'coral'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11813,7 +11813,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'khaki'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11825,7 +11825,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'magenta'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11837,7 +11837,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'navy'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11849,7 +11849,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'salmon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11861,7 +11861,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'turquoise'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11873,7 +11873,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'plum'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11885,7 +11885,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'maroon'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11897,7 +11897,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'orchid'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11909,7 +11909,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'tan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11921,7 +11921,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'sienna'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11933,7 +11933,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'skyblue'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11945,7 +11945,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'chocolate'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11957,7 +11957,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'peru'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11969,7 +11969,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkred'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11981,7 +11981,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'darkcyan'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -11993,7 +11993,7 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'lawngreen'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true
 
@@ -12005,6 +12005,6 @@ robot:
     vel_min: [0.0, -3.14]
     color: 'deeppink'
     plot:
-      show_trajectory: false
+      show_trajectory: true
       show_goal: true
       show_arrow: true

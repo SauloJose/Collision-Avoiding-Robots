@@ -1,0 +1,47 @@
+world:
+  height: 20
+  width: 20
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
+robot:
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [18.0, 10.0, 0.0]
+    goal: [2.0, 10.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    behavior: {name: 'orca'}
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.0, 10.0, 0.0]
+    goal: [18.0, 10.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    behavior: {name: 'orca'}
+    plot:
+      show_trajectory: true
+      show_goal: true
+      show_arrow: true
+
+obstacle:
+  - kinematics: {name: static}
+    shape:
+      name: 'polygon'
+      vertices:
+        - [9.0, 9.0]   # Canto inferior esquerdo
+        - [9.0, 11.0]  # Canto superior esquerdo
+        - [11.0, 11.0] # Canto superior direito
+        - [11.0, 9.0]  # Canto inferior direito
+    color: 'k'

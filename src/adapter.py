@@ -360,3 +360,113 @@ class IRSimAdapter:
 
             actions = [np.array([[vi], [wi]]) for vi, wi in zip(v, omega)]
             return actions, all_arrived
+
+
+class IRSimRVOAdapter:
+
+    def __init__(
+        self,
+        planner,
+        safety_margin: float = 0.1,
+        arrival_threshold: float = 0.1,
+        default_radius: float = 0.3,
+        t_h: float = 5.0,
+        d_max: float = 8.0,
+    ):
+        self.planner = planner
+        self.safety_margin = float(safety_margin)
+        self.arrival_threshold = float(arrival_threshold)
+        self.default_radius = float(default_radius)
+        self.t_h = float(t_h)
+        self.d_max = float(d_max)
+
+    # ---------- helpers ----------
+
+    @staticmethod
+    def _pos(robot) -> np.ndarray:
+        return np.asarray(robot.state[0:2], dtype=np.float64).flatten()[:2]
+
+    @staticmethod
+    def _vel(robot) -> np.ndarray:
+        return np.asarray(robot.velocity_xy, dtype=np.float64).flatten()[:2]
+
+    @staticmethod
+    def _goal(robot) -> np.ndarray:
+        return np.asarray(robot.goal, dtype=np.float64).flatten()[:2]
+
+    def _radius(self, robot) -> float:
+        r = getattr(robot, "radius", None)
+        return float(r) if r is not None else self.default_radius
+
+    # ---------- API principal ----------
+
+    def step(self, env):
+        robot_list = env.robot_list
+        n = len(robot_list)
+
+        positions = [self._pos(r) for r in robot_list]
+        velocities = [self._vel(r) for r in robot_list]
+        goals = [self._goal(r) for r in robot_list]
+        radii = [self._radius(r) + self.safety_margin for r in robot_list]
+
+        # Prioridade: menor distância à meta decide primeiro.
+        dists = [np.linalg.norm(goals[i] - positions[i]) for i in range(n)]
+        priority_order = sorted(range(n), key=lambda i: dists[i])
+
+        decided = {}          # idx -> velocidade já decidida
+        new_velocities = {}
+
+        for idx in priority_order:
+            pos_a = positions[idx]
+            goal_a = goals[idx]
+            radius_a = radii[idx]
+            v_a = velocities[idx]
+
+            obstacles = []
+            for other in range(n):
+                if other == idx:
+                    continue
+
+                if other in decided:
+                    # Maior prioridade: já decidiu, trato como VO puro.
+                    obstacles.append({
+                        "pos": positions[other],
+                        "v": decided[other],
+                        "radius": radii[other],
+                        "reciprocal": False,
+                    })
+                else:
+                    # Ainda vai decidir: RVO recíproco.
+                    obstacles.append({
+                        "pos": positions[other],
+                        "v": velocities[other],
+                        "radius": radii[other],
+                        "reciprocal": True,
+                    })
+
+            v_new = self.planner.select_velocity(
+                pos_a=pos_a,
+                v_a=v_a,
+                radius_a=radius_a,
+                obstacles=obstacles,
+                pos_goal=goal_a,
+                t_h=self.t_h,
+                d_max=self.d_max,
+            )
+
+            if v_new is None or np.any(~np.isfinite(v_new)):
+                v_new = np.zeros(2, dtype=np.float64)
+
+            v_new = np.asarray(v_new, dtype=np.float64).flatten()[:2]
+            new_velocities[idx] = v_new
+            decided[idx] = v_new
+
+        actions = [new_velocities[i].reshape(2, 1) for i in range(n)]
+
+        arrived = [
+            float(np.linalg.norm(positions[i] - goals[i])) < self.arrival_threshold
+            for i in range(n)
+        ]
+        all_arrived = bool(all(arrived))
+
+        return actions, all_arrived

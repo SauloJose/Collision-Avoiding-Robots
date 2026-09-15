@@ -1,107 +1,72 @@
+"""
+Entrypoint para a simulação com RVO (Reciprocal Velocity Obstacle).
+Estrutura espelhada em entry_orca.py: planner puro + adapter IR-Sim + loop limpo.
+"""
+
 import sys
 from pathlib import Path
 import numpy as np
 
-# PARÂMETROS GLOBAIS DE CONTROLE E SIMULAÇÃO
-ENV_NAME = "envs/rvo_env4.yaml"
+# --- AMBIENTE E EXECUÇÃO ---
+NUM_ROBOTS        = 100
+ENV_NAME          = f"envs/rvo_env_{NUM_ROBOTS}.yaml"
+MAX_STEPS         = 1500
+RENDER_TIME       = 0.05
 
-# Parâmetros Cinemáticos e do Planejador RVO
-DT = 0.1                 # Passo de tempo (s)
-A_MAX =50.5              # Aceleração máxima (m/s²)
-V_MAX = 1.5              # Velocidade máxima (m/s)
-N_SAMPLES = 100           # Quantidade de amostras no espaço de velocidades
-T_H = 5.0                # Horizonte de tempo para evitar colisões (s)
-D_MAX = 20.0              # Distância máxima para considerar um obstáculo (m)
+# --- DINÂMICA DOS AGENTES ---
+DT                = 0.1
+V_MAX             = 1.0
+A_MAX             = 3.0
 
-# Parâmetros do Loop de Simulação
-MAX_STEPS = 1500         # Limite máximo de passos de simulação
-RENDER_TIME = 0.1       # Tempo de renderização por frame (s)
-ARRIVAL_THRESHOLD = 0.1  # Tolerância de distância para considerar chegada ao destino (m)
+# --- PARÂMETROS DE NAVEGAÇÃO (RVO) ---
+T_H               = 8.0
+D_MAX             = 4.0
+N_SAMPLES         = 40     # 40x40 = 1600 amostras de velocidade por robô
 
+# --- GEOMETRIA E CRITÉRIOS DE SUCESSO ---
+DEFAULT_RADIUS    = 0.3
+SAFETY_MARGIN     = 0.1
+ARRIVAL_THRESHOLD = 0.1
 
-# Setup de caminhos
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
 import irsim
 from src.rvo import PyRVO
+from src.adapter import IRSimRVOAdapter
 
-# Criar ambiente
+# --- EXECUÇÃO ---
 env = irsim.make(ENV_NAME)
-env.set_title("RVO Simulation - Ambos os robôs usam RVO")
+env.set_title(f"RVO Simulation - {NUM_ROBOTS} ROBOTS")
 
-# Instanciar planejador RVO
-rvo_planner = PyRVO(
+# 1. Núcleo puro do RVO (independente de simulador)
+planner = PyRVO(
     dt=DT,
     a_max=A_MAX,
     v_max=V_MAX,
-    n_samples=N_SAMPLES
+    n_samples=N_SAMPLES,
 )
 
-# Inicializar dicionário de velocidades dinamicamente
-num_robots = len(env.robot_list)
-current_velocities = {idx: np.zeros(2) for idx in range(num_robots)}
+# 2. Adaptador IR-Sim -> PyRVO
+adapter = IRSimRVOAdapter(
+    planner=planner,
+    safety_margin=SAFETY_MARGIN,
+    arrival_threshold=ARRIVAL_THRESHOLD,
+    default_radius=DEFAULT_RADIUS,
+    t_h=T_H,
+    d_max=D_MAX,
+)
 
-for i in range(MAX_STEPS):
-    robot_list = env.robot_list
-    new_velocities = {}
-    
-    # 1. Calcular novas velocidades para cada robô
-    for idx, robot in enumerate(robot_list):
-        pos_a = robot.state[0:2].flatten()
-        goal_a = robot.goal[0:2].flatten()
-        radius_a = robot.radius
-        v_a = current_velocities[idx]
-        
-        # Montar lista de obstáculos
-        obstacles = [
-            {
-                'pos': other.state[0:2].flatten(),
-                'v': current_velocities[other_idx],
-                'radius': other.radius
-            }
-            for other_idx, other in enumerate(robot_list) if other_idx != idx
-        ]
-        
-        # O RVO calcula a velocidade livre de colisão
-        v_new = rvo_planner.select_velocity(
-            pos_a=pos_a,
-            v_a=v_a,
-            radius_a=radius_a,
-            obstacles=obstacles,
-            pos_goal=goal_a,
-            t_h=T_H,
-            d_max=D_MAX
-        )
-        
-        # Tratar casos numéricos inválidos
-        if np.any(np.isnan(v_new)) or np.any(np.isinf(v_new)):
-            v_new = np.zeros(2)
-            
-        new_velocities[idx] = v_new
-    
-    # 2. Aplicar velocidades calculadas
-    actions = []
-    for idx in range(num_robots):
-        current_velocities[idx] = new_velocities[idx]
-        actions.append(new_velocities[idx].reshape(2, 1))
-    
+# 3. Loop principal
+for step in range(MAX_STEPS):
+    actions, all_arrived = adapter.step(env)
+
     env.step(action=actions)
     env.render(RENDER_TIME)
-    
-    # 3. Verificação real de chegada e colisão
-    arrived = [
-        np.linalg.norm(r.state[0:2].flatten() - r.goal[0:2].flatten()) < ARRIVAL_THRESHOLD
-        for r in env.robot_list
-    ]
-    
-    if all(arrived):
-        print(f"Todos chegaram ao destino em {i} passos!")
-        break
-        
-    if env.done():
-        print(f"Colisão detectada no passo {i}!")
+
+    if all_arrived:
+        print(f"Todos os robôs chegaram com sucesso em {step} passos!")
         break
 
 env.end()

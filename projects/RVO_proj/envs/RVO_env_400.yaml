@@ -1,0 +1,4810 @@
+world:
+  height: 138
+  width: 138
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  step_mode: 'internal'
+  control_mode: 'manual'
+  collision_mode: 'stop'
+
+robot:
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.85, 69.0, 0.0]
+    goal: [2.15, 69.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.8418, 70.05, 0.0]
+    goal: [2.1582, 67.95, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.817, 71.0998, 0.0]
+    goal: [2.183, 66.9002, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.7758, 72.1491, 0.0]
+    goal: [2.2242, 65.8509, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.7181, 73.1975, 0.0]
+    goal: [2.2819, 64.8025, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.6439, 74.245, 0.0]
+    goal: [2.3561, 63.755, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.5533, 75.2911, 0.0]
+    goal: [2.4467, 62.7089, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.4463, 76.3357, 0.0]
+    goal: [2.5537, 61.6643, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.3229, 77.3785, 0.0]
+    goal: [2.6771, 60.6215, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.1831, 78.4192, 0.0]
+    goal: [2.8169, 59.5808, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.027, 79.4576, 0.0]
+    goal: [2.973, 58.5424, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.8546, 80.4935, 0.0]
+    goal: [3.1454, 57.5065, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.6659, 81.5264, 0.0]
+    goal: [3.3341, 56.4736, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.461, 82.5563, 0.0]
+    goal: [3.539, 55.4437, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.24, 83.5829, 0.0]
+    goal: [3.76, 54.4171, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.0029, 84.6058, 0.0]
+    goal: [3.9971, 53.3942, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [133.7498, 85.6249, 0.0]
+    goal: [4.2502, 52.3751, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [133.4807, 86.6399, 0.0]
+    goal: [4.5193, 51.3601, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [133.1956, 87.6506, 0.0]
+    goal: [4.8044, 50.3494, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [132.8948, 88.6566, 0.0]
+    goal: [5.1052, 49.3434, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [132.5781, 89.6578, 0.0]
+    goal: [5.4219, 48.3422, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [132.2458, 90.6539, 0.0]
+    goal: [5.7542, 47.3461, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [131.8979, 91.6446, 0.0]
+    goal: [6.1021, 46.3554, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [131.5344, 92.6298, 0.0]
+    goal: [6.4656, 45.3702, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [131.1556, 93.6091, 0.0]
+    goal: [6.8444, 44.3909, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [130.7613, 94.5824, 0.0]
+    goal: [7.2387, 43.4176, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [130.3519, 95.5493, 0.0]
+    goal: [7.6481, 42.4507, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [129.9273, 96.5097, 0.0]
+    goal: [8.0727, 41.4903, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [129.4877, 97.4633, 0.0]
+    goal: [8.5123, 40.5367, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [129.0331, 98.4099, 0.0]
+    goal: [8.9669, 39.5901, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [128.5638, 99.3493, 0.0]
+    goal: [9.4362, 38.6507, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [128.0797, 100.2811, 0.0]
+    goal: [9.9203, 37.7189, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [127.5811, 101.2052, 0.0]
+    goal: [10.4189, 36.7948, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [127.068, 102.1214, 0.0]
+    goal: [10.932, 35.8786, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [126.5406, 103.0294, 0.0]
+    goal: [11.4594, 34.9706, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [125.999, 103.929, 0.0]
+    goal: [12.001, 34.071, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [125.4433, 104.82, 0.0]
+    goal: [12.5567, 33.18, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [124.8737, 105.7022, 0.0]
+    goal: [13.1263, 32.2978, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [124.2903, 106.5753, 0.0]
+    goal: [13.7097, 31.4247, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [123.6933, 107.4391, 0.0]
+    goal: [14.3067, 30.5609, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [123.0828, 108.2934, 0.0]
+    goal: [14.9172, 29.7066, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [122.4589, 109.1381, 0.0]
+    goal: [15.5411, 28.8619, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [121.8219, 109.9728, 0.0]
+    goal: [16.1781, 28.0272, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [121.1718, 110.7975, 0.0]
+    goal: [16.8282, 27.2025, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [120.5088, 111.6118, 0.0]
+    goal: [17.4912, 26.3882, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [119.8331, 112.4156, 0.0]
+    goal: [18.1669, 25.5844, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [119.1449, 113.2087, 0.0]
+    goal: [18.8551, 24.7913, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [118.4443, 113.9909, 0.0]
+    goal: [19.5557, 24.0091, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [117.7316, 114.762, 0.0]
+    goal: [20.2684, 23.238, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [117.0067, 115.5218, 0.0]
+    goal: [20.9933, 22.4782, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [116.2701, 116.2701, 0.0]
+    goal: [21.7299, 21.7299, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [115.5218, 117.0067, 0.0]
+    goal: [22.4782, 20.9933, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [114.762, 117.7316, 0.0]
+    goal: [23.238, 20.2684, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [113.9909, 118.4443, 0.0]
+    goal: [24.0091, 19.5557, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [113.2087, 119.1449, 0.0]
+    goal: [24.7913, 18.8551, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [112.4156, 119.8331, 0.0]
+    goal: [25.5844, 18.1669, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [111.6118, 120.5088, 0.0]
+    goal: [26.3882, 17.4912, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [110.7975, 121.1718, 0.0]
+    goal: [27.2025, 16.8282, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [109.9728, 121.8219, 0.0]
+    goal: [28.0272, 16.1781, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [109.1381, 122.4589, 0.0]
+    goal: [28.8619, 15.5411, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [108.2934, 123.0828, 0.0]
+    goal: [29.7066, 14.9172, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [107.4391, 123.6933, 0.0]
+    goal: [30.5609, 14.3067, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [106.5753, 124.2903, 0.0]
+    goal: [31.4247, 13.7097, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [105.7022, 124.8737, 0.0]
+    goal: [32.2978, 13.1263, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [104.82, 125.4433, 0.0]
+    goal: [33.18, 12.5567, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [103.929, 125.999, 0.0]
+    goal: [34.071, 12.001, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [103.0294, 126.5406, 0.0]
+    goal: [34.9706, 11.4594, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [102.1214, 127.068, 0.0]
+    goal: [35.8786, 10.932, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [101.2052, 127.5811, 0.0]
+    goal: [36.7948, 10.4189, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [100.2811, 128.0797, 0.0]
+    goal: [37.7189, 9.9203, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [99.3493, 128.5638, 0.0]
+    goal: [38.6507, 9.4362, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [98.4099, 129.0331, 0.0]
+    goal: [39.5901, 8.9669, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [97.4633, 129.4877, 0.0]
+    goal: [40.5367, 8.5123, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [96.5097, 129.9273, 0.0]
+    goal: [41.4903, 8.0727, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [95.5493, 130.3519, 0.0]
+    goal: [42.4507, 7.6481, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [94.5824, 130.7613, 0.0]
+    goal: [43.4176, 7.2387, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [93.6091, 131.1556, 0.0]
+    goal: [44.3909, 6.8444, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [92.6298, 131.5344, 0.0]
+    goal: [45.3702, 6.4656, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [91.6446, 131.8979, 0.0]
+    goal: [46.3554, 6.1021, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [90.6539, 132.2458, 0.0]
+    goal: [47.3461, 5.7542, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [89.6578, 132.5781, 0.0]
+    goal: [48.3422, 5.4219, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [88.6566, 132.8948, 0.0]
+    goal: [49.3434, 5.1052, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [87.6506, 133.1956, 0.0]
+    goal: [50.3494, 4.8044, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [86.6399, 133.4807, 0.0]
+    goal: [51.3601, 4.5193, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [85.6249, 133.7498, 0.0]
+    goal: [52.3751, 4.2502, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [84.6058, 134.0029, 0.0]
+    goal: [53.3942, 3.9971, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [83.5829, 134.24, 0.0]
+    goal: [54.4171, 3.76, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [82.5563, 134.461, 0.0]
+    goal: [55.4437, 3.539, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [81.5264, 134.6659, 0.0]
+    goal: [56.4736, 3.3341, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [80.4935, 134.8546, 0.0]
+    goal: [57.5065, 3.1454, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [79.4576, 135.027, 0.0]
+    goal: [58.5424, 2.973, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [78.4192, 135.1831, 0.0]
+    goal: [59.5808, 2.8169, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [77.3785, 135.3229, 0.0]
+    goal: [60.6215, 2.6771, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [76.3357, 135.4463, 0.0]
+    goal: [61.6643, 2.5537, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [75.2911, 135.5533, 0.0]
+    goal: [62.7089, 2.4467, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [74.245, 135.6439, 0.0]
+    goal: [63.755, 2.3561, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [73.1975, 135.7181, 0.0]
+    goal: [64.8025, 2.2819, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [72.1491, 135.7758, 0.0]
+    goal: [65.8509, 2.2242, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [71.0998, 135.817, 0.0]
+    goal: [66.9002, 2.183, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [70.05, 135.8418, 0.0]
+    goal: [67.95, 2.1582, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [69.0, 135.85, 0.0]
+    goal: [69.0, 2.15, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [67.95, 135.8418, 0.0]
+    goal: [70.05, 2.1582, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [66.9002, 135.817, 0.0]
+    goal: [71.0998, 2.183, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [65.8509, 135.7758, 0.0]
+    goal: [72.1491, 2.2242, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [64.8025, 135.7181, 0.0]
+    goal: [73.1975, 2.2819, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [63.755, 135.6439, 0.0]
+    goal: [74.245, 2.3561, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [62.7089, 135.5533, 0.0]
+    goal: [75.2911, 2.4467, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [61.6643, 135.4463, 0.0]
+    goal: [76.3357, 2.5537, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [60.6215, 135.3229, 0.0]
+    goal: [77.3785, 2.6771, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [59.5808, 135.1831, 0.0]
+    goal: [78.4192, 2.8169, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [58.5424, 135.027, 0.0]
+    goal: [79.4576, 2.973, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [57.5065, 134.8546, 0.0]
+    goal: [80.4935, 3.1454, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [56.4736, 134.6659, 0.0]
+    goal: [81.5264, 3.3341, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [55.4437, 134.461, 0.0]
+    goal: [82.5563, 3.539, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [54.4171, 134.24, 0.0]
+    goal: [83.5829, 3.76, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [53.3942, 134.0029, 0.0]
+    goal: [84.6058, 3.9971, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [52.3751, 133.7498, 0.0]
+    goal: [85.6249, 4.2502, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [51.3601, 133.4807, 0.0]
+    goal: [86.6399, 4.5193, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [50.3494, 133.1956, 0.0]
+    goal: [87.6506, 4.8044, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [49.3434, 132.8948, 0.0]
+    goal: [88.6566, 5.1052, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [48.3422, 132.5781, 0.0]
+    goal: [89.6578, 5.4219, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [47.3461, 132.2458, 0.0]
+    goal: [90.6539, 5.7542, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [46.3554, 131.8979, 0.0]
+    goal: [91.6446, 6.1021, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [45.3702, 131.5344, 0.0]
+    goal: [92.6298, 6.4656, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [44.3909, 131.1556, 0.0]
+    goal: [93.6091, 6.8444, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [43.4176, 130.7613, 0.0]
+    goal: [94.5824, 7.2387, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [42.4507, 130.3519, 0.0]
+    goal: [95.5493, 7.6481, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [41.4903, 129.9273, 0.0]
+    goal: [96.5097, 8.0727, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [40.5367, 129.4877, 0.0]
+    goal: [97.4633, 8.5123, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [39.5901, 129.0331, 0.0]
+    goal: [98.4099, 8.9669, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [38.6507, 128.5638, 0.0]
+    goal: [99.3493, 9.4362, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [37.7189, 128.0797, 0.0]
+    goal: [100.2811, 9.9203, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [36.7948, 127.5811, 0.0]
+    goal: [101.2052, 10.4189, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [35.8786, 127.068, 0.0]
+    goal: [102.1214, 10.932, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [34.9706, 126.5406, 0.0]
+    goal: [103.0294, 11.4594, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [34.071, 125.999, 0.0]
+    goal: [103.929, 12.001, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [33.18, 125.4433, 0.0]
+    goal: [104.82, 12.5567, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [32.2978, 124.8737, 0.0]
+    goal: [105.7022, 13.1263, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [31.4247, 124.2903, 0.0]
+    goal: [106.5753, 13.7097, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [30.5609, 123.6933, 0.0]
+    goal: [107.4391, 14.3067, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [29.7066, 123.0828, 0.0]
+    goal: [108.2934, 14.9172, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [28.8619, 122.4589, 0.0]
+    goal: [109.1381, 15.5411, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [28.0272, 121.8219, 0.0]
+    goal: [109.9728, 16.1781, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [27.2025, 121.1718, 0.0]
+    goal: [110.7975, 16.8282, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [26.3882, 120.5088, 0.0]
+    goal: [111.6118, 17.4912, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [25.5844, 119.8331, 0.0]
+    goal: [112.4156, 18.1669, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [24.7913, 119.1449, 0.0]
+    goal: [113.2087, 18.8551, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [24.0091, 118.4443, 0.0]
+    goal: [113.9909, 19.5557, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [23.238, 117.7316, 0.0]
+    goal: [114.762, 20.2684, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [22.4782, 117.0067, 0.0]
+    goal: [115.5218, 20.9933, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [21.7299, 116.2701, 0.0]
+    goal: [116.2701, 21.7299, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [20.9933, 115.5218, 0.0]
+    goal: [117.0067, 22.4782, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [20.2684, 114.762, 0.0]
+    goal: [117.7316, 23.238, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [19.5557, 113.9909, 0.0]
+    goal: [118.4443, 24.0091, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [18.8551, 113.2087, 0.0]
+    goal: [119.1449, 24.7913, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [18.1669, 112.4156, 0.0]
+    goal: [119.8331, 25.5844, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [17.4912, 111.6118, 0.0]
+    goal: [120.5088, 26.3882, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [16.8282, 110.7975, 0.0]
+    goal: [121.1718, 27.2025, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [16.1781, 109.9728, 0.0]
+    goal: [121.8219, 28.0272, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [15.5411, 109.1381, 0.0]
+    goal: [122.4589, 28.8619, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [14.9172, 108.2934, 0.0]
+    goal: [123.0828, 29.7066, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [14.3067, 107.4391, 0.0]
+    goal: [123.6933, 30.5609, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [13.7097, 106.5753, 0.0]
+    goal: [124.2903, 31.4247, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [13.1263, 105.7022, 0.0]
+    goal: [124.8737, 32.2978, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [12.5567, 104.82, 0.0]
+    goal: [125.4433, 33.18, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [12.001, 103.929, 0.0]
+    goal: [125.999, 34.071, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [11.4594, 103.0294, 0.0]
+    goal: [126.5406, 34.9706, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [10.932, 102.1214, 0.0]
+    goal: [127.068, 35.8786, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [10.4189, 101.2052, 0.0]
+    goal: [127.5811, 36.7948, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [9.9203, 100.2811, 0.0]
+    goal: [128.0797, 37.7189, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [9.4362, 99.3493, 0.0]
+    goal: [128.5638, 38.6507, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [8.9669, 98.4099, 0.0]
+    goal: [129.0331, 39.5901, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [8.5123, 97.4633, 0.0]
+    goal: [129.4877, 40.5367, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [8.0727, 96.5097, 0.0]
+    goal: [129.9273, 41.4903, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [7.6481, 95.5493, 0.0]
+    goal: [130.3519, 42.4507, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [7.2387, 94.5824, 0.0]
+    goal: [130.7613, 43.4176, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [6.8444, 93.6091, 0.0]
+    goal: [131.1556, 44.3909, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [6.4656, 92.6298, 0.0]
+    goal: [131.5344, 45.3702, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [6.1021, 91.6446, 0.0]
+    goal: [131.8979, 46.3554, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.7542, 90.6539, 0.0]
+    goal: [132.2458, 47.3461, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.4219, 89.6578, 0.0]
+    goal: [132.5781, 48.3422, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.1052, 88.6566, 0.0]
+    goal: [132.8948, 49.3434, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [4.8044, 87.6506, 0.0]
+    goal: [133.1956, 50.3494, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [4.5193, 86.6399, 0.0]
+    goal: [133.4807, 51.3601, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [4.2502, 85.6249, 0.0]
+    goal: [133.7498, 52.3751, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.9971, 84.6058, 0.0]
+    goal: [134.0029, 53.3942, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.76, 83.5829, 0.0]
+    goal: [134.24, 54.4171, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.539, 82.5563, 0.0]
+    goal: [134.461, 55.4437, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.3341, 81.5264, 0.0]
+    goal: [134.6659, 56.4736, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.1454, 80.4935, 0.0]
+    goal: [134.8546, 57.5065, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.973, 79.4576, 0.0]
+    goal: [135.027, 58.5424, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.8169, 78.4192, 0.0]
+    goal: [135.1831, 59.5808, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.6771, 77.3785, 0.0]
+    goal: [135.3229, 60.6215, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.5537, 76.3357, 0.0]
+    goal: [135.4463, 61.6643, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.4467, 75.2911, 0.0]
+    goal: [135.5533, 62.7089, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.3561, 74.245, 0.0]
+    goal: [135.6439, 63.755, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.2819, 73.1975, 0.0]
+    goal: [135.7181, 64.8025, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.2242, 72.1491, 0.0]
+    goal: [135.7758, 65.8509, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.183, 71.0998, 0.0]
+    goal: [135.817, 66.9002, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.1582, 70.05, 0.0]
+    goal: [135.8418, 67.95, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.15, 69.0, 0.0]
+    goal: [135.85, 69.0, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.1582, 67.95, 0.0]
+    goal: [135.8418, 70.05, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.183, 66.9002, 0.0]
+    goal: [135.817, 71.0998, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.2242, 65.8509, 0.0]
+    goal: [135.7758, 72.1491, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.2819, 64.8025, 0.0]
+    goal: [135.7181, 73.1975, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.3561, 63.755, 0.0]
+    goal: [135.6439, 74.245, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.4467, 62.7089, 0.0]
+    goal: [135.5533, 75.2911, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.5537, 61.6643, 0.0]
+    goal: [135.4463, 76.3357, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.6771, 60.6215, 0.0]
+    goal: [135.3229, 77.3785, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.8169, 59.5808, 0.0]
+    goal: [135.1831, 78.4192, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [2.973, 58.5424, 0.0]
+    goal: [135.027, 79.4576, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.1454, 57.5065, 0.0]
+    goal: [134.8546, 80.4935, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.3341, 56.4736, 0.0]
+    goal: [134.6659, 81.5264, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.539, 55.4437, 0.0]
+    goal: [134.461, 82.5563, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.76, 54.4171, 0.0]
+    goal: [134.24, 83.5829, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [3.9971, 53.3942, 0.0]
+    goal: [134.0029, 84.6058, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [4.2502, 52.3751, 0.0]
+    goal: [133.7498, 85.6249, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [4.5193, 51.3601, 0.0]
+    goal: [133.4807, 86.6399, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [4.8044, 50.3494, 0.0]
+    goal: [133.1956, 87.6506, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.1052, 49.3434, 0.0]
+    goal: [132.8948, 88.6566, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.4219, 48.3422, 0.0]
+    goal: [132.5781, 89.6578, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [5.7542, 47.3461, 0.0]
+    goal: [132.2458, 90.6539, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [6.1021, 46.3554, 0.0]
+    goal: [131.8979, 91.6446, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [6.4656, 45.3702, 0.0]
+    goal: [131.5344, 92.6298, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [6.8444, 44.3909, 0.0]
+    goal: [131.1556, 93.6091, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [7.2387, 43.4176, 0.0]
+    goal: [130.7613, 94.5824, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [7.6481, 42.4507, 0.0]
+    goal: [130.3519, 95.5493, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [8.0727, 41.4903, 0.0]
+    goal: [129.9273, 96.5097, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [8.5123, 40.5367, 0.0]
+    goal: [129.4877, 97.4633, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [8.9669, 39.5901, 0.0]
+    goal: [129.0331, 98.4099, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [9.4362, 38.6507, 0.0]
+    goal: [128.5638, 99.3493, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [9.9203, 37.7189, 0.0]
+    goal: [128.0797, 100.2811, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [10.4189, 36.7948, 0.0]
+    goal: [127.5811, 101.2052, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [10.932, 35.8786, 0.0]
+    goal: [127.068, 102.1214, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [11.4594, 34.9706, 0.0]
+    goal: [126.5406, 103.0294, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [12.001, 34.071, 0.0]
+    goal: [125.999, 103.929, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [12.5567, 33.18, 0.0]
+    goal: [125.4433, 104.82, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [13.1263, 32.2978, 0.0]
+    goal: [124.8737, 105.7022, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [13.7097, 31.4247, 0.0]
+    goal: [124.2903, 106.5753, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [14.3067, 30.5609, 0.0]
+    goal: [123.6933, 107.4391, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [14.9172, 29.7066, 0.0]
+    goal: [123.0828, 108.2934, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [15.5411, 28.8619, 0.0]
+    goal: [122.4589, 109.1381, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [16.1781, 28.0272, 0.0]
+    goal: [121.8219, 109.9728, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [16.8282, 27.2025, 0.0]
+    goal: [121.1718, 110.7975, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [17.4912, 26.3882, 0.0]
+    goal: [120.5088, 111.6118, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [18.1669, 25.5844, 0.0]
+    goal: [119.8331, 112.4156, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [18.8551, 24.7913, 0.0]
+    goal: [119.1449, 113.2087, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [19.5557, 24.0091, 0.0]
+    goal: [118.4443, 113.9909, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [20.2684, 23.238, 0.0]
+    goal: [117.7316, 114.762, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [20.9933, 22.4782, 0.0]
+    goal: [117.0067, 115.5218, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [21.7299, 21.7299, 0.0]
+    goal: [116.2701, 116.2701, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [22.4782, 20.9933, 0.0]
+    goal: [115.5218, 117.0067, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [23.238, 20.2684, 0.0]
+    goal: [114.762, 117.7316, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [24.0091, 19.5557, 0.0]
+    goal: [113.9909, 118.4443, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [24.7913, 18.8551, 0.0]
+    goal: [113.2087, 119.1449, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [25.5844, 18.1669, 0.0]
+    goal: [112.4156, 119.8331, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [26.3882, 17.4912, 0.0]
+    goal: [111.6118, 120.5088, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [27.2025, 16.8282, 0.0]
+    goal: [110.7975, 121.1718, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [28.0272, 16.1781, 0.0]
+    goal: [109.9728, 121.8219, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [28.8619, 15.5411, 0.0]
+    goal: [109.1381, 122.4589, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [29.7066, 14.9172, 0.0]
+    goal: [108.2934, 123.0828, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [30.5609, 14.3067, 0.0]
+    goal: [107.4391, 123.6933, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [31.4247, 13.7097, 0.0]
+    goal: [106.5753, 124.2903, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [32.2978, 13.1263, 0.0]
+    goal: [105.7022, 124.8737, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [33.18, 12.5567, 0.0]
+    goal: [104.82, 125.4433, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [34.071, 12.001, 0.0]
+    goal: [103.929, 125.999, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [34.9706, 11.4594, 0.0]
+    goal: [103.0294, 126.5406, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [35.8786, 10.932, 0.0]
+    goal: [102.1214, 127.068, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [36.7948, 10.4189, 0.0]
+    goal: [101.2052, 127.5811, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [37.7189, 9.9203, 0.0]
+    goal: [100.2811, 128.0797, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [38.6507, 9.4362, 0.0]
+    goal: [99.3493, 128.5638, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [39.5901, 8.9669, 0.0]
+    goal: [98.4099, 129.0331, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [40.5367, 8.5123, 0.0]
+    goal: [97.4633, 129.4877, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [41.4903, 8.0727, 0.0]
+    goal: [96.5097, 129.9273, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [42.4507, 7.6481, 0.0]
+    goal: [95.5493, 130.3519, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [43.4176, 7.2387, 0.0]
+    goal: [94.5824, 130.7613, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [44.3909, 6.8444, 0.0]
+    goal: [93.6091, 131.1556, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [45.3702, 6.4656, 0.0]
+    goal: [92.6298, 131.5344, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [46.3554, 6.1021, 0.0]
+    goal: [91.6446, 131.8979, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [47.3461, 5.7542, 0.0]
+    goal: [90.6539, 132.2458, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [48.3422, 5.4219, 0.0]
+    goal: [89.6578, 132.5781, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [49.3434, 5.1052, 0.0]
+    goal: [88.6566, 132.8948, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [50.3494, 4.8044, 0.0]
+    goal: [87.6506, 133.1956, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [51.3601, 4.5193, 0.0]
+    goal: [86.6399, 133.4807, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [52.3751, 4.2502, 0.0]
+    goal: [85.6249, 133.7498, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [53.3942, 3.9971, 0.0]
+    goal: [84.6058, 134.0029, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [54.4171, 3.76, 0.0]
+    goal: [83.5829, 134.24, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [55.4437, 3.539, 0.0]
+    goal: [82.5563, 134.461, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [56.4736, 3.3341, 0.0]
+    goal: [81.5264, 134.6659, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [57.5065, 3.1454, 0.0]
+    goal: [80.4935, 134.8546, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [58.5424, 2.973, 0.0]
+    goal: [79.4576, 135.027, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [59.5808, 2.8169, 0.0]
+    goal: [78.4192, 135.1831, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [60.6215, 2.6771, 0.0]
+    goal: [77.3785, 135.3229, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [61.6643, 2.5537, 0.0]
+    goal: [76.3357, 135.4463, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [62.7089, 2.4467, 0.0]
+    goal: [75.2911, 135.5533, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [63.755, 2.3561, 0.0]
+    goal: [74.245, 135.6439, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [64.8025, 2.2819, 0.0]
+    goal: [73.1975, 135.7181, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [65.8509, 2.2242, 0.0]
+    goal: [72.1491, 135.7758, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [66.9002, 2.183, 0.0]
+    goal: [71.0998, 135.817, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [67.95, 2.1582, 0.0]
+    goal: [70.05, 135.8418, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [69.0, 2.15, 0.0]
+    goal: [69.0, 135.85, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [70.05, 2.1582, 0.0]
+    goal: [67.95, 135.8418, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [71.0998, 2.183, 0.0]
+    goal: [66.9002, 135.817, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [72.1491, 2.2242, 0.0]
+    goal: [65.8509, 135.7758, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [73.1975, 2.2819, 0.0]
+    goal: [64.8025, 135.7181, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [74.245, 2.3561, 0.0]
+    goal: [63.755, 135.6439, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [75.2911, 2.4467, 0.0]
+    goal: [62.7089, 135.5533, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [76.3357, 2.5537, 0.0]
+    goal: [61.6643, 135.4463, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [77.3785, 2.6771, 0.0]
+    goal: [60.6215, 135.3229, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [78.4192, 2.8169, 0.0]
+    goal: [59.5808, 135.1831, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [79.4576, 2.973, 0.0]
+    goal: [58.5424, 135.027, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [80.4935, 3.1454, 0.0]
+    goal: [57.5065, 134.8546, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [81.5264, 3.3341, 0.0]
+    goal: [56.4736, 134.6659, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [82.5563, 3.539, 0.0]
+    goal: [55.4437, 134.461, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [83.5829, 3.76, 0.0]
+    goal: [54.4171, 134.24, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [84.6058, 3.9971, 0.0]
+    goal: [53.3942, 134.0029, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [85.6249, 4.2502, 0.0]
+    goal: [52.3751, 133.7498, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [86.6399, 4.5193, 0.0]
+    goal: [51.3601, 133.4807, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [87.6506, 4.8044, 0.0]
+    goal: [50.3494, 133.1956, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [88.6566, 5.1052, 0.0]
+    goal: [49.3434, 132.8948, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [89.6578, 5.4219, 0.0]
+    goal: [48.3422, 132.5781, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [90.6539, 5.7542, 0.0]
+    goal: [47.3461, 132.2458, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [91.6446, 6.1021, 0.0]
+    goal: [46.3554, 131.8979, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [92.6298, 6.4656, 0.0]
+    goal: [45.3702, 131.5344, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [93.6091, 6.8444, 0.0]
+    goal: [44.3909, 131.1556, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [94.5824, 7.2387, 0.0]
+    goal: [43.4176, 130.7613, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [95.5493, 7.6481, 0.0]
+    goal: [42.4507, 130.3519, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [96.5097, 8.0727, 0.0]
+    goal: [41.4903, 129.9273, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [97.4633, 8.5123, 0.0]
+    goal: [40.5367, 129.4877, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [98.4099, 8.9669, 0.0]
+    goal: [39.5901, 129.0331, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [99.3493, 9.4362, 0.0]
+    goal: [38.6507, 128.5638, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [100.2811, 9.9203, 0.0]
+    goal: [37.7189, 128.0797, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [101.2052, 10.4189, 0.0]
+    goal: [36.7948, 127.5811, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [102.1214, 10.932, 0.0]
+    goal: [35.8786, 127.068, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [103.0294, 11.4594, 0.0]
+    goal: [34.9706, 126.5406, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [103.929, 12.001, 0.0]
+    goal: [34.071, 125.999, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [104.82, 12.5567, 0.0]
+    goal: [33.18, 125.4433, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [105.7022, 13.1263, 0.0]
+    goal: [32.2978, 124.8737, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [106.5753, 13.7097, 0.0]
+    goal: [31.4247, 124.2903, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [107.4391, 14.3067, 0.0]
+    goal: [30.5609, 123.6933, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [108.2934, 14.9172, 0.0]
+    goal: [29.7066, 123.0828, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [109.1381, 15.5411, 0.0]
+    goal: [28.8619, 122.4589, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [109.9728, 16.1781, 0.0]
+    goal: [28.0272, 121.8219, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [110.7975, 16.8282, 0.0]
+    goal: [27.2025, 121.1718, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [111.6118, 17.4912, 0.0]
+    goal: [26.3882, 120.5088, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [112.4156, 18.1669, 0.0]
+    goal: [25.5844, 119.8331, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [113.2087, 18.8551, 0.0]
+    goal: [24.7913, 119.1449, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [113.9909, 19.5557, 0.0]
+    goal: [24.0091, 118.4443, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [114.762, 20.2684, 0.0]
+    goal: [23.238, 117.7316, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [115.5218, 20.9933, 0.0]
+    goal: [22.4782, 117.0067, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [116.2701, 21.7299, 0.0]
+    goal: [21.7299, 116.2701, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [117.0067, 22.4782, 0.0]
+    goal: [20.9933, 115.5218, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [117.7316, 23.238, 0.0]
+    goal: [20.2684, 114.762, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [118.4443, 24.0091, 0.0]
+    goal: [19.5557, 113.9909, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [119.1449, 24.7913, 0.0]
+    goal: [18.8551, 113.2087, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [119.8331, 25.5844, 0.0]
+    goal: [18.1669, 112.4156, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [120.5088, 26.3882, 0.0]
+    goal: [17.4912, 111.6118, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [121.1718, 27.2025, 0.0]
+    goal: [16.8282, 110.7975, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [121.8219, 28.0272, 0.0]
+    goal: [16.1781, 109.9728, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [122.4589, 28.8619, 0.0]
+    goal: [15.5411, 109.1381, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [123.0828, 29.7066, 0.0]
+    goal: [14.9172, 108.2934, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'g'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [123.6933, 30.5609, 0.0]
+    goal: [14.3067, 107.4391, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'b'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [124.2903, 31.4247, 0.0]
+    goal: [13.7097, 106.5753, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'r'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [124.8737, 32.2978, 0.0]
+    goal: [13.1263, 105.7022, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'c'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [125.4433, 33.18, 0.0]
+    goal: [12.5567, 104.82, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'm'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [125.999, 34.071, 0.0]
+    goal: [12.001, 103.929, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'y'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [126.5406, 34.9706, 0.0]
+    goal: [11.4594, 103.0294, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orange'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [127.068, 35.8786, 0.0]
+    goal: [10.932, 102.1214, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'purple'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [127.5811, 36.7948, 0.0]
+    goal: [10.4189, 101.2052, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'black'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [128.0797, 37.7189, 0.0]
+    goal: [9.9203, 100.2811, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'pink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [128.5638, 38.6507, 0.0]
+    goal: [9.4362, 99.3493, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'brown'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [129.0331, 39.5901, 0.0]
+    goal: [8.9669, 98.4099, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gray'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [129.4877, 40.5367, 0.0]
+    goal: [8.5123, 97.4633, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'olive'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [129.9273, 41.4903, 0.0]
+    goal: [8.0727, 96.5097, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'cyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [130.3519, 42.4507, 0.0]
+    goal: [7.6481, 95.5493, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [130.7613, 43.4176, 0.0]
+    goal: [7.2387, 94.5824, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkgreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [131.1556, 44.3909, 0.0]
+    goal: [6.8444, 93.6091, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'crimson'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [131.5344, 45.3702, 0.0]
+    goal: [6.4656, 92.6298, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'gold'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [131.8979, 46.3554, 0.0]
+    goal: [6.1021, 91.6446, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'violet'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [132.2458, 47.3461, 0.0]
+    goal: [5.7542, 90.6539, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'indigo'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [132.5781, 48.3422, 0.0]
+    goal: [5.4219, 89.6578, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'teal'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [132.8948, 49.3434, 0.0]
+    goal: [5.1052, 88.6566, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lime'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [133.1956, 50.3494, 0.0]
+    goal: [4.8044, 87.6506, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'coral'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [133.4807, 51.3601, 0.0]
+    goal: [4.5193, 86.6399, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'khaki'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [133.7498, 52.3751, 0.0]
+    goal: [4.2502, 85.6249, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'magenta'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.0029, 53.3942, 0.0]
+    goal: [3.9971, 84.6058, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'navy'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.24, 54.4171, 0.0]
+    goal: [3.76, 83.5829, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'salmon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.461, 55.4437, 0.0]
+    goal: [3.539, 82.5563, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'turquoise'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.6659, 56.4736, 0.0]
+    goal: [3.3341, 81.5264, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'plum'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [134.8546, 57.5065, 0.0]
+    goal: [3.1454, 80.4935, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'maroon'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.027, 58.5424, 0.0]
+    goal: [2.973, 79.4576, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'orchid'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.1831, 59.5808, 0.0]
+    goal: [2.8169, 78.4192, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'tan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.3229, 60.6215, 0.0]
+    goal: [2.6771, 77.3785, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'sienna'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.4463, 61.6643, 0.0]
+    goal: [2.5537, 76.3357, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'skyblue'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.5533, 62.7089, 0.0]
+    goal: [2.4467, 75.2911, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'chocolate'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.6439, 63.755, 0.0]
+    goal: [2.3561, 74.245, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'peru'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.7181, 64.8025, 0.0]
+    goal: [2.2819, 73.1975, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkred'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.7758, 65.8509, 0.0]
+    goal: [2.2242, 72.1491, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'darkcyan'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.817, 66.9002, 0.0]
+    goal: [2.183, 71.0998, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'lawngreen'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true
+
+  - kinematics: {name: omni}
+    shape: {name: circle, radius: 0.3}
+    state: [135.8418, 67.95, 0.0]
+    goal: [2.1582, 70.05, 0.0]
+    vel_max: [1.5, 1.5]
+    vel_min: [-1.5, -1.5]
+    color: 'deeppink'
+    plot:
+      show_trajectory: false
+      show_goal: true
+      show_arrow: true

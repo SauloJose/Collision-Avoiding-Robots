@@ -109,11 +109,11 @@ if __name__ == "__main__":
     for i in n_robots:
         generate_env_yaml(
             num_robots=i,
-            output_path=f"projects/NH-ORCA_proj/envs/NHORCA_env_{i}.yaml",
-            robot_type="diff",         # Alterne para "diff" quando necessário
+            output_path=f"projects/RVO_proj/envs/RVO_env_{i}.yaml",
+            robot_type="omni",         # Alterne para "diff" quando necessário
             robot_radius=0.3,
             min_clearance_factor=1.5,
-            show_trajectory=True,     # Define se desenha a trajetória (True/False)
+            show_trajectory=False,     # Define se desenha a trajetória (True/False)
             show_goal=True,            # Define se desenha apenas o objetivo (True/False)
             show_arrow=True,           # Define se desenha a seta (True/False)
         )

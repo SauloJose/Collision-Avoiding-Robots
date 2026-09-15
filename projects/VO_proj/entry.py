@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 
 # PARÂMETROS GLOBAIS DE CONTROLE E SIMULAÇÃO
-ENV_NAME = "envs/vo_env1.yaml"
+ENV_NAME = "envs/vo_env2.yaml"
 
 # Parâmetros Cinemáticos e do Planejador VO
 DT = 0.1                 # Passo de tempo (s)

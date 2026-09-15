@@ -9,10 +9,12 @@ from src.orca import *
 #   OMNI -> holonomic planner (PyORCA);  actions = [[vx], [vy]]
 #   DIFF -> S-ORCA planner (PySORCA);    actions = [[v], [omega]]
 #   NH   -> NH-ORCA planner (PyNHORCA);  actions = [[v], [omega]]
+#   RVO  -> holonomic RVO planner (PyRVO); actions = [[vx], [vy]]
 class Mode:
     OMNI = 1
     DIFF = 2
     NH   = 3
+    RVO  = 4
 
 
 # ============================================================================
@@ -59,7 +61,6 @@ class IRSimAdapter:
             return float(np.asarray(st).flatten()[2])
         return 0.0
 
-    # ---------------------- NEW HELPERS -----------------------------
     def _get_polygon_xy(self, obj):
         """
         Returns the polygon vertices in (N, 2) format or None.
@@ -110,8 +111,8 @@ class IRSimAdapter:
     def _extract_radius(self, obj):
         """
         Collision radius:
-        - Se `.radius > 0`, use directly (what IR-Sim exposes for polygons: bounding circle).
-        - Otherwise, calculate maximum distance from centroid to vertices.
+        - If `radius > 0`, use directly (what IR-Sim exposes for polygons: bounding circle).
+        - Otherwise, compute maximum distance from centroid to vertices.
         - Otherwise, `default_radius`.
         """
         r = getattr(obj, "radius", None)
@@ -144,7 +145,6 @@ class IRSimAdapter:
             p2 = verts_xy[(i + 1) % N]
             lines.append([p1, p2])
         return np.array(lines, dtype=np.float64)
-    # ------------------------------------------------------------------
 
     # ------------------------------------------------------------------
     # Planner classification
@@ -156,6 +156,21 @@ class IRSimAdapter:
         return (hasattr(self.planner, "E")
                 and hasattr(self.planner, "T_maneuver")
                 and not hasattr(self.planner, "D_scale"))
+
+    def _is_rvo(self):
+        """
+        Detect an RVO-style planner (PyRVO).
+        Uses the explicit `planner_type == "rvo"` marker when available,
+        otherwise falls back to duck-typing (has `select_velocity`, but is
+        neither S-ORCA nor NH-ORCA).
+        """
+        if getattr(self.planner, "planner_type", None) == "rvo":
+            return True
+        return (
+            hasattr(self.planner, "select_velocity")
+            and not self._is_sorca()
+            and not self._is_nhorca()
+        )
 
     def _validate_mode(self):
         if self.mode == Mode.DIFF and not self._is_sorca():
@@ -173,6 +188,17 @@ class IRSimAdapter:
             raise ValueError(
                 "Mode.OMNI requires a holonomic planner with `compute_velocities`."
             )
+        if self.mode == Mode.RVO:
+            if not self._is_rvo():
+                raise ValueError(
+                    "Mode.RVO requires an RVO planner (`planner_type == 'rvo'` or a "
+                    "`select_velocity` method). "
+                    f"Got planner type: {type(self.planner).__name__}"
+                )
+            if not hasattr(self.planner, "compute_velocities"):
+                raise ValueError(
+                    "Mode.RVO requires the planner to expose `compute_velocities`."
+                )
         self._validated = True
 
     # ------------------------------------------------------------------
@@ -214,7 +240,7 @@ class IRSimAdapter:
         else:
             self.static_lines = np.empty((0, 2, 2), dtype=np.float64)
 
-        if self.mode == Mode.OMNI:
+        if self.mode in (Mode.OMNI, Mode.RVO):
             self.current_velocities = np.array(
                 [self._extract_vec2(r, "velocity") for r in env.robot_list],
                 dtype=np.float64,
@@ -251,7 +277,7 @@ class IRSimAdapter:
         if not self._validated:
             self._validate_mode()
 
-        if self.mode == Mode.OMNI and self.current_velocities is None:
+        if self.mode in (Mode.OMNI, Mode.RVO) and self.current_velocities is None:
             self.init_env(env)
         if self.mode in (Mode.DIFF, Mode.NH) and self.current_wheels is None:
             self.init_env(env)
@@ -276,7 +302,7 @@ class IRSimAdapter:
         )
 
         # --- Arrival check -------------------------------------------
-        if self.mode == Mode.OMNI:
+        if self.mode in (Mode.OMNI, Mode.RVO):
             all_arrived = True
             for i in range(len(robot_list)):
                 if np.linalg.norm(positions[i] - goals[i]) < self.arrival_threshold:
@@ -320,7 +346,7 @@ class IRSimAdapter:
                     all_arrived = False
 
         # --- Dispatch by mode ---------------------------------------
-        if self.mode == Mode.OMNI:
+        if self.mode in (Mode.OMNI, Mode.RVO):
             new_velocities = self.planner.compute_velocities(
                 positions=positions,
                 velocities=self.current_velocities,
@@ -360,113 +386,3 @@ class IRSimAdapter:
 
             actions = [np.array([[vi], [wi]]) for vi, wi in zip(v, omega)]
             return actions, all_arrived
-
-
-class IRSimRVOAdapter:
-
-    def __init__(
-        self,
-        planner,
-        safety_margin: float = 0.1,
-        arrival_threshold: float = 0.1,
-        default_radius: float = 0.3,
-        t_h: float = 5.0,
-        d_max: float = 8.0,
-    ):
-        self.planner = planner
-        self.safety_margin = float(safety_margin)
-        self.arrival_threshold = float(arrival_threshold)
-        self.default_radius = float(default_radius)
-        self.t_h = float(t_h)
-        self.d_max = float(d_max)
-
-    # ---------- helpers ----------
-
-    @staticmethod
-    def _pos(robot) -> np.ndarray:
-        return np.asarray(robot.state[0:2], dtype=np.float64).flatten()[:2]
-
-    @staticmethod
-    def _vel(robot) -> np.ndarray:
-        return np.asarray(robot.velocity_xy, dtype=np.float64).flatten()[:2]
-
-    @staticmethod
-    def _goal(robot) -> np.ndarray:
-        return np.asarray(robot.goal, dtype=np.float64).flatten()[:2]
-
-    def _radius(self, robot) -> float:
-        r = getattr(robot, "radius", None)
-        return float(r) if r is not None else self.default_radius
-
-    # ---------- API principal ----------
-
-    def step(self, env):
-        robot_list = env.robot_list
-        n = len(robot_list)
-
-        positions = [self._pos(r) for r in robot_list]
-        velocities = [self._vel(r) for r in robot_list]
-        goals = [self._goal(r) for r in robot_list]
-        radii = [self._radius(r) + self.safety_margin for r in robot_list]
-
-        # Prioridade: menor distância à meta decide primeiro.
-        dists = [np.linalg.norm(goals[i] - positions[i]) for i in range(n)]
-        priority_order = sorted(range(n), key=lambda i: dists[i])
-
-        decided = {}          # idx -> velocidade já decidida
-        new_velocities = {}
-
-        for idx in priority_order:
-            pos_a = positions[idx]
-            goal_a = goals[idx]
-            radius_a = radii[idx]
-            v_a = velocities[idx]
-
-            obstacles = []
-            for other in range(n):
-                if other == idx:
-                    continue
-
-                if other in decided:
-                    # Maior prioridade: já decidiu, trato como VO puro.
-                    obstacles.append({
-                        "pos": positions[other],
-                        "v": decided[other],
-                        "radius": radii[other],
-                        "reciprocal": False,
-                    })
-                else:
-                    # Ainda vai decidir: RVO recíproco.
-                    obstacles.append({
-                        "pos": positions[other],
-                        "v": velocities[other],
-                        "radius": radii[other],
-                        "reciprocal": True,
-                    })
-
-            v_new = self.planner.select_velocity(
-                pos_a=pos_a,
-                v_a=v_a,
-                radius_a=radius_a,
-                obstacles=obstacles,
-                pos_goal=goal_a,
-                t_h=self.t_h,
-                d_max=self.d_max,
-            )
-
-            if v_new is None or np.any(~np.isfinite(v_new)):
-                v_new = np.zeros(2, dtype=np.float64)
-
-            v_new = np.asarray(v_new, dtype=np.float64).flatten()[:2]
-            new_velocities[idx] = v_new
-            decided[idx] = v_new
-
-        actions = [new_velocities[i].reshape(2, 1) for i in range(n)]
-
-        arrived = [
-            float(np.linalg.norm(positions[i] - goals[i])) < self.arrival_threshold
-            for i in range(n)
-        ]
-        all_arrived = bool(all(arrived))
-
-        return actions, all_arrived

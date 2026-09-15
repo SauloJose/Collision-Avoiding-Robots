@@ -1,6 +1,6 @@
 """
-Entrypoint para a simulação com RVO (Reciprocal Velocity Obstacle).
-Estrutura espelhada em entry_orca.py: planner puro + adapter IR-Sim + loop limpo.
+Entrypoint para a simulação com RVO (Reciprocal Velocity Obstacle),
+agora usando o mesmo IRSimAdapter dos outros planners (modo Mode.RVO).
 """
 
 import sys
@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 
 # --- AMBIENTE E EXECUÇÃO ---
-NUM_ROBOTS        = 100
+NUM_ROBOTS        = 400
 ENV_NAME          = f"envs/rvo_env_{NUM_ROBOTS}.yaml"
 MAX_STEPS         = 1500
 RENDER_TIME       = 0.05
@@ -34,7 +34,8 @@ if str(ROOT_DIR) not in sys.path:
 
 import irsim
 from src.rvo import PyRVO
-from src.adapter import IRSimRVOAdapter
+from src.adapter import IRSimAdapter, Mode
+
 
 # --- EXECUÇÃO ---
 env = irsim.make(ENV_NAME)
@@ -46,16 +47,17 @@ planner = PyRVO(
     a_max=A_MAX,
     v_max=V_MAX,
     n_samples=N_SAMPLES,
+    t_h=T_H,
+    d_max=D_MAX,
 )
 
-# 2. Adaptador IR-Sim -> PyRVO
-adapter = IRSimRVOAdapter(
+# 2. Adaptador unificado IR-Sim -> planner (modo RVO)
+adapter = IRSimAdapter(
     planner=planner,
     safety_margin=SAFETY_MARGIN,
     arrival_threshold=ARRIVAL_THRESHOLD,
     default_radius=DEFAULT_RADIUS,
-    t_h=T_H,
-    d_max=D_MAX,
+    mode=Mode.RVO,
 )
 
 # 3. Loop principal

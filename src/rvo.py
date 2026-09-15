@@ -97,7 +97,6 @@ def select_velocity_jit(
             active_apex_y[num_active] = 0.5 * (v_a_y + vy_o)
         else:
             # VO apex: v_other (the other agent is assumed non-cooperative).
-            # This is the critical fix: NOT v_a.
             active_apex_x[num_active] = vx_o
             active_apex_y[num_active] = vy_o
 
@@ -230,13 +229,36 @@ def select_velocity_jit(
 
 
 class PyRVO:
+    """
+    Reciprocal Velocity Obstacle planner.
 
-    def __init__(self, dt=0.1, a_max=3.5, v_max=1.5, n_samples=30):
+    Compatible with `IRSimAdapter` through the same `compute_velocities`
+    interface used by ORCA-style planners (returns an (N, 2) array of
+    holonomic velocities).
+    """
+
+    # Marker used by IRSimAdapter to detect this planner.
+    planner_type = "rvo"
+
+    def __init__(
+        self,
+        dt=0.1,
+        a_max=3.5,
+        v_max=1.5,
+        n_samples=30,
+        t_h=5.0,
+        d_max=10.0,
+    ):
         self.dt = dt
         self.a_max = a_max
         self.v_max = v_max
         self.n_samples = int(n_samples)
+        self.t_h = float(t_h)
+        self.d_max = float(d_max)
 
+    # ------------------------------------------------------------------
+    # Single-agent primitive
+    # ------------------------------------------------------------------
     def select_velocity(
         self,
         pos_a,
@@ -244,8 +266,8 @@ class PyRVO:
         radius_a,
         obstacles,
         pos_goal,
-        t_h=5.0,
-        d_max=10.0,
+        t_h=None,
+        d_max=None,
     ):
         """
         obstacles: list of dicts with keys:
@@ -254,6 +276,11 @@ class PyRVO:
             'radius'      : float
             'reciprocal'  : bool, optional (default True if moving, else False)
         """
+        if t_h is None:
+            t_h = self.t_h
+        if d_max is None:
+            d_max = self.d_max
+
         pos_a = _as_vec2(pos_a)
         v_a = _as_vec2(v_a)
         pos_goal = _as_vec2(pos_goal)
@@ -300,3 +327,109 @@ class PyRVO:
             self.n_samples,
             float(d_max),
         )
+
+    # ------------------------------------------------------------------
+    # Batch entry point, matches ORCA-style planners signature
+    # ------------------------------------------------------------------
+    def compute_velocities(
+        self,
+        positions,
+        velocities,
+        goals,
+        radii,
+        static_pos=None,
+        static_radii=None,
+        static_lines=None,   # accepted for API compat; ignored
+        t_h=None,
+        d_max=None,
+    ):
+        """
+        Priority-based (sequential) RVO: the agent closest to its goal
+        decides first, and its chosen velocity becomes a hard constraint
+        for the remaining agents (VO, non-reciprocal). Agents that have
+        not yet decided are treated as RVO (reciprocal).
+
+        Returns
+        -------
+        np.ndarray of shape (N, 2) with the new holonomic velocities.
+        """
+        if t_h is None:
+            t_h = self.t_h
+        if d_max is None:
+            d_max = self.d_max
+
+        positions = np.asarray(positions, dtype=np.float64)
+        velocities = np.asarray(velocities, dtype=np.float64)
+        goals = np.asarray(goals, dtype=np.float64)
+        radii = np.asarray(radii, dtype=np.float64).flatten()
+
+        n = positions.shape[0]
+        new_velocities = np.zeros((n, 2), dtype=np.float64)
+        if n == 0:
+            return new_velocities
+
+        # Static circular obstacles (optional)
+        static_obs = []
+        if static_pos is not None and len(static_pos) > 0:
+            sp = np.asarray(static_pos, dtype=np.float64)
+            sr = np.asarray(static_radii, dtype=np.float64).flatten()
+            for k in range(sp.shape[0]):
+                static_obs.append(
+                    {
+                        "pos": sp[k],
+                        "v": np.zeros(2, dtype=np.float64),
+                        "radius": float(sr[k]),
+                        "reciprocal": False,
+                    }
+                )
+
+        # Priority: agent with smallest remaining distance to goal decides first.
+        dists = np.linalg.norm(goals - positions, axis=1)
+        priority_order = np.argsort(dists)
+
+        decided = {}
+
+        for idx in priority_order:
+            obstacles = list(static_obs)
+            for other in range(n):
+                if other == idx:
+                    continue
+                if other in decided:
+                    # Already decided -> VO (non-reciprocal)
+                    obstacles.append(
+                        {
+                            "pos": positions[other],
+                            "v": decided[other],
+                            "radius": float(radii[other]),
+                            "reciprocal": False,
+                        }
+                    )
+                else:
+                    # Still to decide -> RVO (reciprocal)
+                    obstacles.append(
+                        {
+                            "pos": positions[other],
+                            "v": velocities[other],
+                            "radius": float(radii[other]),
+                            "reciprocal": True,
+                        }
+                    )
+
+            v_new = self.select_velocity(
+                pos_a=positions[idx],
+                v_a=velocities[idx],
+                radius_a=float(radii[idx]),
+                obstacles=obstacles,
+                pos_goal=goals[idx],
+                t_h=t_h,
+                d_max=d_max,
+            )
+
+            if v_new is None or np.any(~np.isfinite(v_new)):
+                v_new = np.zeros(2, dtype=np.float64)
+
+            v_new = np.asarray(v_new, dtype=np.float64).flatten()[:2]
+            new_velocities[idx] = v_new
+            decided[idx] = v_new
+
+        return new_velocities

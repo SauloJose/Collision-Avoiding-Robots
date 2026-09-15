@@ -1,39 +1,41 @@
-# Simulação de navegação multiagente com IR-Sim
+# Multi-agent Navigation Simulation with IR-Sim
 
-Este repositório reúne um conjunto de experimentos e implementações de planejadores de navegação para robôs móveis em ambientes 2D, integrados ao simulador [IR-Sim](https://github.com/hanruihua/ir_sim). O foco do projeto é comparar métodos de evasão de colisão e dinâmica de planejamento em cenários com múltiplos agentes e obstáculos.
+This repository contains a set of experiments and implementations of navigation planners for mobile robots in 2D environments, integrated with the [IR-Sim](https://github.com/hanruihua/ir_sim) simulator. The project focuses on comparing collision-avoidance methods and motion-planning strategies in scenarios with multiple agents and obstacles.
 
-A estrutura do projeto separa:
+This work is authored by Saulo José and developed in collaboration with the Federal University of Campina Grande (UFCG).
 
-- o núcleo dos planejadores em `src/`
-- os cenários e entrypoints em `projects/`
-- utilitários para geração de ambientes em `utils/`
-- o adaptador que converte estados do IR-Sim para as APIs dos planejadores
+The project structure separates:
 
-## Visão geral
+- the planner core in `src/`
+- scenarios and entrypoints in `projects/`
+- environment-generation utilities in `utils/`
+- the adapter that converts IR-Sim states into planner APIs
 
-O código implementa e testa os métodos:
+## Overview
+
+The code implements and tests the following methods:
 
 - `VO` (Velocity Obstacles)
 - `RVO` (Reciprocal Velocity Obstacles)
 - `ORCA` (Optimal Reciprocal Collision Avoidance)
-- `S-ORCA` (versão de robôs diferenciais com transformações efetivas)
-- `NH-ORCA` (versão não holonômica baseada em erro de rastreio e região viável)
+- `S-ORCA` (version for differential-drive robots with effective transformations)
+- `NH-ORCA` (non-holonomic variant based on tracking error and feasible region)
 
-O núcleo principal está em `src/orca.py`, com a classe `PyORCA`, e a conversão entre o ambiente IR-Sim e o planejador é feita por `src/adapter.py`.
+The main core is in `src/orca.py`, with the `PyORCA` class, and the conversion between the IR-Sim environment and the planner is handled by `src/adapter.py`.
 
-## Estrutura do projeto
+## Project structure
 
 ```text
 .
 ├── README.md
 ├── requirements.txt
 ├── src/
-│   ├── adapter.py      # adaptador entre IR-Sim e os planejadores
-│   ├── orca.py         # núcleo ORCA / PyORCA
-│   ├── rvo.py          # implementação de RVO
-│   ├── vo.py           # implementação de VO
-│   ├── sorca.py        # extensão S-ORCA
-│   ├── nhorca.py       # extensão NH-ORCA
+│   ├── adapter.py      # adapter between IR-Sim and the planners
+│   ├── orca.py         # ORCA core / PyORCA
+│   ├── rvo.py          # RVO implementation
+│   ├── vo.py           # VO implementation
+│   ├── sorca.py        # S-ORCA extension
+│   ├── nhorca.py       # NH-ORCA extension
 │   └── ...
 ├── projects/
 │   ├── basic_proj/
@@ -48,52 +50,52 @@ O núcleo principal está em `src/orca.py`, com a classe `PyORCA`, e a conversã
 └── ...
 ```
 
-## Implementações atuais
+## Current implementations
 
 ### VO
 
-O módulo `src/vo.py` aplica uma busca por velocidades amostradas em torno da velocidade preferida, escolhendo uma alternativa que minimize o risco de colisão com agentes e obstáculos.
+The module `src/vo.py` performs a search over sampled velocities around the preferred velocity and chooses the option that minimizes collision risk with neighboring agents and obstacles.
 
 ### RVO
 
-`src/rvo.py` implementa uma seleção de velocidade baseada em abordagem recíproca, com evitamento orientado por vizinhos e pelo vetor de objetivo do robô.
+`src/rvo.py` implements reciprocal collision avoidance by selecting a feasible velocity based on neighboring agents and the robot's goal vector.
 
 ### ORCA
 
-`src/orca.py` contém a implementação principal do método ORCA, incluindo:
+`src/orca.py` contains the main ORCA implementation, including:
 
-- cálculo de restrições ORCA
-- resolução de LP (programação linear) em 2D
-- uso de `cKDTree` para busca de vizinhos
-- suporte a obstáculos estáticos e dinâmicos
-- integração com NumPy, SciPy e `numba`
+- ORCA constraint computation
+- 2D LP optimization solving
+- use of `cKDTree` for neighbor search
+- support for static and dynamic obstacles
+- integration with NumPy, SciPy, and `numba`
 
-### S-ORCA e NH-ORCA
+### S-ORCA and NH-ORCA
 
-Os módulos `src/sorca.py` e `src/nhorca.py` estendem a base ORCA para robôs diferenciais e não holonômicos. A lógica foi organizada para manter uma interface separada em relação ao núcleo holonômico, permitindo estudos e experimentos específicos.
+The modules `src/sorca.py` and `src/nhorca.py` extend the base ORCA logic for differential-drive and non-holonomic robots. The design keeps a separate interface from the holonomic core to support specific experimental variants.
 
-## Configuração do ambiente
+## Environment setup
 
-Recomendado usar um ambiente virtual Python e instalar as dependências do projeto:
+It is recommended to use a Python virtual environment and install the project dependencies:
 
 ```bash
 python -m venv .venv
 ```
 
-No Windows PowerShell:
+On Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-Se o ambiente estiver configurado corretamente, as simulações podem ser executadas a partir da raiz do repositório ou dentro de cada projeto.
+Once configured correctly, the simulations can be executed from the repository root or inside each project directory.
 
-## Execução das simulações
+## Running the simulations
 
-Os scripts de execução ficam dentro de cada pasta de projeto. Em geral, os arquivos YAML são referenciados por caminho relativo ao diretório do projeto, então a execução costuma ser feita entrando na pasta correspondente.
+The execution scripts are located inside each project folder. In general, YAML files are referenced by a path relative to the project directory, so execution is usually done by entering the corresponding folder.
 
-### Exemplo mínimo
+### Basic example
 
 ```powershell
 cd projects/basic_proj
@@ -135,11 +137,11 @@ cd projects/NH-ORCA_proj
 python entry.py
 ```
 
-Os entrypoints costumam definir parâmetros como `DT`, `V_MAX`, `A_MAX`, `T_H`, `D_MAX`, `MAX_NEIGHBORS`, `BASE_BIAS`, `SAFETY_MARGIN`, `ARRIVAL_THRESHOLD` e `MAX_STEPS` no próprio arquivo.
+The entrypoints commonly define parameters such as `DT`, `V_MAX`, `A_MAX`, `T_H`, `D_MAX`, `MAX_NEIGHBORS`, `BASE_BIAS`, `SAFETY_MARGIN`, `ARRIVAL_THRESHOLD`, and `MAX_STEPS` directly in the file.
 
-## Estrutura dos cenários YAML
+## YAML scenario structure
 
-Os cenários em `projects/*/envs/*.yaml` descrevem um mundo 2D com robôs, metas, velocidades máximas e opções visuais. A estrutura típica é:
+The scenarios in `projects/*/envs/*.yaml` describe a 2D world with robots, goals, maximum speeds, and visualization options. A typical structure is:
 
 ```yaml
 world:
@@ -160,17 +162,17 @@ robot:
     color: 'blue'
 ```
 
-A geração em massa de ambientes pode ser feita com o utilitário:
+Bulk generation of environments can be performed with the utility:
 
 ```powershell
 python utils/gerador_yaml.py
 ```
 
-Esse script gera arquivos YAML em pastas de projetos, como `projects/NH-ORCA_proj/envs/` e `projects/ORCA_proj/envs/`.
+This script generates YAML files in project folders such as `projects/NH-ORCA_proj/envs/` and `projects/ORCA_proj/envs/`.
 
-## Uso direto do núcleo `PyORCA`
+## Direct use of the `PyORCA` core
 
-Além de rodar com IR-Sim, o núcleo dos planejadores pode ser usado diretamente em Python:
+In addition to running with IR-Sim, the planner core can be used directly in Python:
 
 ```python
 import numpy as np
@@ -188,23 +190,28 @@ velocities = planner.compute_velocities(
 print(velocities)
 ```
 
-O adaptador `src/adapter.py` encapsula a lógica para transformar estados do IR-Sim em entradas compatíveis com esse núcleo.
+The adapter in `src/adapter.py` encapsulates the logic needed to transform IR-Sim states into inputs compatible with this core.
 
-## Observações do estado atual
+## Current state observations
 
-- O projeto é uma base experimental e de pesquisa.
-- O foco principal é comparar arquiteturas de evasão e comportamento em múltiplos robôs.
-- O núcleo ORCA e os variantes de extensão estão ativos e integrados ao pipeline de simulação.
-- A primeira execução pode demorar mais devido à compilação Just-In-Time do `numba`.
-- Parâmetros e cenários devem ser registrados junto com cada experimento para permitir comparação reprodutível.
+- The project is an experimental and research-oriented codebase.
+- The main focus is to compare avoidance architectures and multi-robot behavior.
+- The ORCA core and its extension variants are active and integrated into the simulation pipeline.
+- The first run may take longer due to the JIT compilation of `numba`.
+- Parameters and scenarios should be recorded with each experiment to enable reproducible comparisons.
 
-## Referências principais
+## Main references
 
 - Fiorini, P.; Shiller, Z. Motion Planning in Dynamic Environments Using Velocity Obstacles. 1998.
 - van den Berg, J. et al. Reciprocal n-Body Collision Avoidance. 2011.
 - van den Berg, J. et al. Optimal Reciprocal Collision Avoidance. 2011/2013.
 - Alonso-Mora, J. et al. Optimal Reciprocal Collision Avoidance for Multiple Non-Holonomic Robots. 2013.
 
-## Observação
+## Note
 
-Este repositório foi estruturado como ambiente acadêmico de experimentação e não como uma biblioteca pública finalizada para uso industrial.
+This repository is structured as an academic experimentation environment and not as a finalized public library for industrial use.
+
+---
+
+Author: Saulo José  
+Institution: Federal University of Campina Grande (UFCG)
